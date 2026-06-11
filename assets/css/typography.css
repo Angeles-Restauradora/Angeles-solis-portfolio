@@ -1,0 +1,114 @@
+/* ─── Typography ─── */
+
+/* Labels / metadata */
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-light);
+  line-height: 1;
+}
+
+/* Dark-background label variant */
+.label--light {
+  color: rgba(248, 246, 243, 0.55);
+}
+
+/* Display headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.display-xl {
+  font-size: clamp(4rem, 9vw, 10rem);
+  font-weight: 300;
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+}
+
+.display-lg {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.display-md {
+  font-size: clamp(2rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.display-sm {
+  font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+/* Body text */
+.body-lg {
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.body-md {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.72;
+  color: var(--muted);
+}
+
+.body-sm {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+/* Lead — emphasized intro paragraph */
+.lead {
+  font-size: clamp(1.1rem, 1.8vw, 1.55rem);
+  line-height: 1.4;
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* Institutional quote */
+.blockquote {
+  padding-left: 22px;
+  border-left: 2px solid var(--accent);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.8vw, 2.8rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.18;
+  color: var(--fg);
+}
+
+/* Number / stat display */
+.stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 5.5rem);
+  font-weight: 300;
+  line-height: 0.9;
+  color: var(--fg);
+}
+
+/* Dark surface text overrides */
+.on-dark {
+  color: var(--warm-white);
+}
+
+.on-dark .body-md,
+.on-dark .body-lg,
+.on-dark .body-sm {
+  color: rgba(248, 246, 243, 0.68);
+}
+
+.on-dark .label {
+  color: rgba(248, 246, 243, 0.48);
+}

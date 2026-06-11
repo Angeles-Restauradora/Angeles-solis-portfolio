@@ -1,0 +1,11 @@
+{
+  "primary": [
+    { "label": "Home",            "href": "index.html" },
+    { "label": "Sculpture",       "href": "#sculpture" },
+    { "label": "Painting",        "href": "#painting" },
+    { "label": "About",           "href": "#about" },
+    { "label": "Recognition",     "href": "#recognition" },
+    { "label": "Complete Archive","href": "complete-archive.html", "highlight": true },
+    { "label": "Contact",         "href": "#contact" }
+  ]
+}

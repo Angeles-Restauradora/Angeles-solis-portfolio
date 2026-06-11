@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete archive of conservation and restoration projects by Ángeles Solís Parra — sculpture, painting, archaeological heritage, private collections and research.">
+  <title>Complete Archive — Ángeles Solís Parra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-nav" role="banner">
+    <a class="site-nav__brand" href="index.html">Ángeles Solís Parra</a>
+    <nav aria-label="Primary navigation">
+      <ul role="list">
+        <li><a href="index.html">Hall</a></li>
+        <li><a href="index.html">Vaciados</a></li>
+        <li><a href="index.html">Pintura</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#recognition">Recognition</a></li>
+        <li><a href="complete-archive.html" class="is-active" aria-current="page">Archive</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- HEADER -->
+  <header class="archive-header" aria-label="Archive page header">
+    <div>
+      <p class="archive-header__eyebrow">Complete Archive</p>
+      <h1 class="archive-header__title">The Work</h1>
+    </div>
+    <p class="archive-header__desc">A curated archive spanning sculpture, painting, archaeological heritage, institutional collections, private collections, research and teaching — more than 36 years of professional practice across Spain and Europe.</p>
+  </header>
+
+
+  <!-- FILTER BAR -->
+  <div class="archive-filters" role="group" aria-label="Filter by category">
+    <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+    <button class="filter-btn" data-filter="sculpture" type="button">Sculpture</button>
+    <button class="filter-btn" data-filter="painting" type="button">Painting</button>
+    <button class="filter-btn" data-filter="archaeological-mural" type="button">Archaeological &amp; Mural</button>
+    <button class="filter-btn" data-filter="institutional-collections" type="button">Institutional</button>
+    <button class="filter-btn" data-filter="private-collections" type="button">Private</button>
+    <button class="filter-btn" data-filter="research-methodology" type="button">Research</button>
+    <button class="filter-btn" data-filter="awards-grants" type="button">Awards</button>
+    <span class="archive-filters__count" id="archive-count" aria-live="polite"></span>
+  </div>
+
+
+  <!-- PROJECT GRID -->
+  <main>
+    <div class="archive-grid" id="archive-grid" aria-label="Project archive"></div>
+  </main>
+
+
+  <!-- NOTE -->
+  <section class="archive-note" aria-label="Archive note">
+    <div>
+      <p class="archive-header__eyebrow">Note on this archive</p>
+      <h2 class="archive-note__heading">The work speaks through evidence, not argument.</h2>
+    </div>
+    <div>
+      <p class="archive-note__body">This archive does not attempt to be exhaustive. It documents selected interventions that best represent the scope, methodology and institutional character of Ángeles Solís Parra's practice across more than three decades.</p>
+      <p class="archive-note__body">For specific enquiries, further documentation or institutional proposals, use the contact information on the home page.</p>
+      <a href="index.html#contact" class="btn-primary" style="margin-top:16px;">
+        Professional enquiries <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="archive-page-footer" role="contentinfo">
+    <span>Ángeles Solís Parra — Conservation Portfolio</span>
+    <nav aria-label="Footer navigation">
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="complete-archive.html">Archive</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+
+  <script>
+    const CATEGORY_LABELS = {
+      'sculpture': 'Sculpture',
+      'painting': 'Painting',
+      'archaeological-mural': 'Archaeological',
+      'institutional-collections': 'Institutional',
+      'private-collections': 'Private',
+      'research-methodology': 'Research',
+      'awards-grants': 'Awards'
+    };
+
+    function primaryCategory(cats) {
+      const order = ['research-methodology','awards-grants','archaeological-mural','private-collections','painting','institutional-collections','sculpture'];
+      for (const c of order) {
+        if (cats.includes(c)) return c;
+      }
+      return cats[0] || 'other';
+    }
+
+    function buildCard(p) {
+      const cat   = primaryCategory(p.category);
+      const label = CATEGORY_LABELS[cat] || cat;
+      const a = document.createElement('a');
+      a.className = 'archive-card';
+      a.href = `project-detail.html?id=${p.id}`;
+      a.dataset.category = p.category.join(',');
+      a.setAttribute('aria-label', p.title);
+      a.innerHTML = `
+        <div class="archive-card__thumb">
+          <img src="${p.heroImage}" alt="${p.title}" loading="lazy" width="600" height="375">
+        </div>
+        <div class="archive-card__body">
+          <div class="archive-card__meta">
+            <span class="archive-card__pill">${label}</span>
+            <span class="archive-card__year">${p.year}</span>
+          </div>
+          <h2 class="archive-card__title">${p.title}</h2>
+          <p class="archive-card__desc">${p.shortDescription}</p>
+          <span class="archive-card__cta">View project →</span>
+        </div>
+      `;
+      return a;
+    }
+
+    async function init() {
+      const grid    = document.getElementById('archive-grid');
+      const countEl = document.getElementById('archive-count');
+      let projects  = [];
+
+      try {
+        const res = await fetch('assets/data/projects.json');
+        projects  = await res.json();
+      } catch(e) {
+        grid.innerHTML = '<p style="padding:60px;font-family:var(--f-sans);color:rgba(255,255,255,0.3);">Unable to load projects.</p>';
+        return;
+      }
+
+      projects.forEach(p => grid.appendChild(buildCard(p)));
+      countEl.textContent = `${projects.length} projects`;
+
+      // Filtering
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          let n = 0;
+          document.querySelectorAll('.archive-card').forEach(card => {
+            const show = filter === 'all' || card.dataset.category.split(',').includes(filter);
+            card.classList.toggle('is-hidden', !show);
+            if (show) n++;
+          });
+          countEl.textContent = `${n} project${n !== 1 ? 's' : ''}`;
+        });
+      });
+    }
+
+    init();
+  </script>
+
+</body>
+</html>

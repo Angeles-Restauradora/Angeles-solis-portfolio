@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project — Ángeles Solís Parra, Senior Conservator-Restorer of Cultural Heritage">
+  <title>Project — Ángeles Solís Parra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-nav" role="banner">
+    <a class="site-nav__brand" href="index.html">Ángeles Solís Parra</a>
+    <nav aria-label="Primary navigation">
+      <ul role="list">
+        <li><a href="index.html">Hall</a></li>
+        <li><a href="index.html">Vaciados</a></li>
+        <li><a href="index.html">Pintura</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#recognition">Recognition</a></li>
+        <li><a href="complete-archive.html" class="is-active">Archive</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Loading state -->
+  <div class="detail-status" id="detail-status">
+    <p>Loading…</p>
+  </div>
+
+  <!-- Page content (hidden until JS populates) -->
+  <main id="detail-main" hidden>
+
+    <!-- HERO -->
+    <div class="detail-hero">
+      <img class="detail-hero__img" id="hero-img" src="" alt="">
+      <div class="detail-hero__gradient"></div>
+      <div class="detail-back">
+        <a href="complete-archive.html" class="js-back">← Back</a>
+      </div>
+      <div class="detail-hero__content">
+        <p class="detail-hero__eyebrow" id="hero-eyebrow"></p>
+        <h1 class="detail-hero__title" id="hero-title"></h1>
+      </div>
+    </div>
+
+    <!-- META BAR -->
+    <div class="detail-meta">
+      <div class="detail-meta__item">
+        <span class="detail-meta__label">Type</span>
+        <span class="detail-meta__value" id="meta-type"></span>
+      </div>
+      <div class="detail-meta__item">
+        <span class="detail-meta__label">Institution</span>
+        <span class="detail-meta__value" id="meta-institution"></span>
+      </div>
+      <div class="detail-meta__item">
+        <span class="detail-meta__label">Location</span>
+        <span class="detail-meta__value" id="meta-location"></span>
+      </div>
+      <div class="detail-meta__item">
+        <span class="detail-meta__label">Year</span>
+        <span class="detail-meta__value" id="meta-year"></span>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="detail-content">
+      <div>
+        <span class="detail-content__eyebrow">About this project</span>
+        <h2 class="detail-content__heading" id="content-heading"></h2>
+      </div>
+      <div>
+        <p class="detail-content__text" id="content-text"></p>
+      </div>
+    </div>
+
+    <!-- TAGS -->
+    <div class="detail-tags" id="detail-tags" aria-label="Project tags"></div>
+
+    <!-- GALLERY -->
+    <div class="detail-gallery" id="detail-gallery" hidden>
+      <span class="detail-gallery__label">Gallery</span>
+      <div class="detail-gallery__grid" id="gallery-grid"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="detail-nav" aria-label="Project navigation">
+      <a href="complete-archive.html" class="detail-nav__btn js-back">← Back</a>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="#" class="detail-nav__btn" id="nav-prev">← Previous</a>
+        <a href="#" class="detail-nav__btn detail-nav__btn--fill" id="nav-next">Next →</a>
+      </div>
+    </nav>
+
+  </main>
+
+
+  <script>
+    const CAT_LABELS = {
+      'sculpture': 'Sculpture',
+      'painting': 'Painting',
+      'archaeological-mural': 'Archaeological & Mural',
+      'institutional-collections': 'Institutional Collections',
+      'private-collections': 'Private Collections',
+      'research-methodology': 'Research & Methodology',
+      'awards-grants': 'Awards & Recognition'
+    };
+
+    async function init() {
+      const id        = new URLSearchParams(location.search).get('id');
+      const statusEl  = document.getElementById('detail-status');
+      const mainEl    = document.getElementById('detail-main');
+
+      let projects;
+      try {
+        projects = await fetch('assets/data/projects.json').then(r => r.json());
+      } catch(e) {
+        statusEl.innerHTML = '<p>Unable to load project data. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Return to archive →</a></p>';
+        return;
+      }
+
+      const idx = projects.findIndex(p => p.id === id);
+      if (idx === -1) {
+        statusEl.innerHTML = '<p>Project not found. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Return to archive →</a></p>';
+        return;
+      }
+
+      const p = projects[idx];
+      document.title = `${p.title} — Ángeles Solís Parra`;
+
+      // Hero
+      const img = document.getElementById('hero-img');
+      img.src = p.heroImage;
+      img.alt = p.title;
+      document.getElementById('hero-eyebrow').textContent = p.category.map(c => CAT_LABELS[c] || c).join(' · ');
+      document.getElementById('hero-title').textContent   = p.title;
+
+      // Meta
+      document.getElementById('meta-type').textContent        = p.type;
+      document.getElementById('meta-institution').textContent = p.institution;
+      document.getElementById('meta-location').textContent    = p.location;
+      document.getElementById('meta-year').textContent        = p.year;
+
+      // Content
+      document.getElementById('content-heading').textContent = p.title;
+      document.getElementById('content-text').textContent    = p.longDescription || p.shortDescription;
+
+      // Tags
+      const tagsEl = document.getElementById('detail-tags');
+      p.tags.forEach(tag => {
+        const s = document.createElement('span');
+        s.className = 'detail-tag';
+        s.textContent = tag;
+        tagsEl.appendChild(s);
+      });
+
+      // Gallery
+      if (p.gallery && p.gallery.length) {
+        const gallerySection = document.getElementById('detail-gallery');
+        const galleryGrid    = document.getElementById('gallery-grid');
+        gallerySection.removeAttribute('hidden');
+        p.gallery.forEach((src, i) => {
+          const div = document.createElement('div');
+          div.className = `detail-gallery__item${i === 0 ? ' is-wide' : ''}`;
+          const img2  = document.createElement('img');
+          img2.src    = src;
+          img2.alt    = `${p.title} — image ${i + 1}`;
+          img2.loading = 'lazy';
+          div.appendChild(img2);
+          galleryGrid.appendChild(div);
+        });
+      }
+
+      // Prev / Next
+      const prevBtn = document.getElementById('nav-prev');
+      const nextBtn = document.getElementById('nav-next');
+
+      if (idx > 0) {
+        prevBtn.href = `project-detail.html?id=${projects[idx - 1].id}`;
+      } else {
+        prevBtn.classList.add('is-hidden');
+      }
+
+      if (idx < projects.length - 1) {
+        nextBtn.href = `project-detail.html?id=${projects[idx + 1].id}`;
+      } else {
+        nextBtn.classList.add('is-hidden');
+      }
+
+      // Show
+      statusEl.hidden = true;
+      mainEl.removeAttribute('hidden');
+    }
+
+    // Set back link destination based on ?from= param
+    (function () {
+      const from = new URLSearchParams(location.search).get('from');
+      let backHref  = 'complete-archive.html';
+      let backLabel = '← Back';
+      if (from === 'vaciados') { backHref = 'index.html?room=vaciados'; backLabel = '← Sala de Vaciados'; }
+      if (from === 'pintura')  { backHref = 'index.html?room=pintura';  backLabel = '← Sala de Pintura';  }
+      document.querySelectorAll('.js-back').forEach(a => {
+        a.href        = backHref;
+        a.textContent = backLabel;
+      });
+    })();
+
+    init();
+  </script>
+
+</body>
+</html>
