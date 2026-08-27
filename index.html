@@ -18,15 +18,16 @@
        NAVIGATION
   ════════════════════════════════════════════ -->
   <header class="site-nav" role="banner">
-    <a class="site-nav__brand" href="#">Ángeles Solís Parra</a>
+    <a class="site-nav__brand" href="#" data-room="rp-home">Ángeles Solís Parra</a>
     <nav aria-label="Primary navigation">
       <ul role="list">
-        <li><a href="#" data-room="rp-home">Hall</a></li>
-        <li><a href="#" data-room="rp-vaciados">Vaciados</a></li>
+        <li><a href="#" data-room="rp-vaciados">Escultura</a></li>
         <li><a href="#" data-room="rp-pintura">Pintura</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#recognition">Recognition</a></li>
-        <li><a href="complete-archive.html">Archive</a></li>
+        <li><a href="#research">Investigación</a></li>
+        <li><a href="#publications">Publicaciones</a></li>
+        <li><a href="complete-archive.html">Obras</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -74,7 +75,7 @@
               data-reverse="false"
               aria-label="Enter Sculpture Room">
               <span class="room-nav__dest">Enter</span>
-              <span class="room-nav__name">Sala de Vaciados</span>
+              <span class="room-nav__name">Sala de Escultura</span>
               <span class="room-nav__arrow">→</span>
             </button>
           </div>
@@ -108,7 +109,7 @@
         data-reverse="false"
         aria-label="Enter Sculpture Room">
         <span class="room-nav__dest">Enter</span>
-        <span class="room-nav__name">Vaciados</span>
+        <span class="room-nav__name">Escultura</span>
         <span class="room-nav__arrow">→</span>
       </button>
     </div>
@@ -125,7 +126,7 @@
 
           <div class="room__intro">
             <p class="room__eyebrow">Sala I</p>
-            <h2 class="room__title">Vaciados</h2>
+            <h2 class="room__title">Escultura</h2>
             <p class="room__subtitle">Historical plaster casts, sculpture collections and institutional heritage.</p>
             <p class="room__text">A study of volume, surface and restoration: how institutional casts recover presence without erasing the evidence of time.</p>
           </div>
@@ -264,9 +265,9 @@
           data-to="rp-vaciados"
           data-video="assets/videos/sculpture-to-painting.mp4"
           data-reverse="true"
-          aria-label="Back to Vaciados">
+          aria-label="Back to Escultura">
           <span class="room-nav__arrow">←</span>
-          <span class="room-nav__name">Sala de Vaciados</span>
+          <span class="room-nav__name">Sala de Escultura</span>
           <span class="room-nav__dest">Back to</span>
         </button>
 
@@ -307,24 +308,24 @@
       <p class="s-eyebrow" data-reveal="0">Recognition</p>
       <h2 class="recognition__heading" id="recognition-heading" data-reveal="1">Institutional recognition as evidence of practice.</h2>
       <div class="recognition__grid">
-        <div class="recognition__item" data-reveal="1">
+        <div class="recognition__item recognition__item--emphasis" data-reveal="1">
           <p class="recognition__year-ghost">2004</p>
           <p class="recognition__award">Premio Nacional de Conservación y Restauración del Patrimonio Cultural</p>
           <p class="recognition__inst">Ministerio de Cultura · España</p>
         </div>
-        <div class="recognition__item" data-reveal="2">
+        <div class="recognition__item recognition__item--emphasis" data-reveal="2">
           <p class="recognition__year-ghost">2006</p>
           <p class="recognition__award">Europa Nostra Award</p>
           <p class="recognition__inst">Europa Nostra / European Commission</p>
         </div>
-        <div class="recognition__item" data-reveal="3">
+        <div class="recognition__item recognition__item--emphasis" data-reveal="3">
           <p class="recognition__year-ghost">Prado</p>
           <p class="recognition__award">Fundación Botín scholarship at Museo Nacional del Prado</p>
           <p class="recognition__inst">Museo Nacional del Prado · Madrid</p>
         </div>
         <div class="recognition__item" data-reveal="4">
           <p class="recognition__year-ghost">®</p>
-          <p class="recognition__award">Anjusil® — Patented conservation methodology for historical plaster casts</p>
+          <p class="recognition__award">Anjusil® — Proprietary conservation methodology for historical plaster casts</p>
           <p class="recognition__inst">Independent research · RABASF</p>
         </div>
       </div>
@@ -341,19 +342,33 @@
       </div>
       <div class="research__items" data-reveal="2">
         <div class="research__item">
-          <span class="research__item-label">Patent</span>
+          <span class="research__item-label">Methodology</span>
           <p class="research__item-title">Anjusil® — Cleaning methodology for historical plaster casts</p>
-          <p class="research__item-desc">Developed during the RABASF restoration project. Patented and extended to the Universidad de Sevilla and MNRA. Directly connected to the National Award 2004 and Europa Nostra 2006.</p>
+          <p class="research__item-desc">Developed by Ángeles Solís Parra during the RABASF restoration project and applied in restoration work at the Universidad de Sevilla and MNRA. Directly connected to the National Award 2004 and Europa Nostra 2006.</p>
         </div>
         <div class="research__item">
           <span class="research__item-label">Research</span>
-          <p class="research__item-title">Material analysis and documentation of historical casts</p>
+          <p class="research__item-title">Material analysis and documentation of historical plaster casts</p>
           <p class="research__item-desc">Development of diagnostic protocols and material testing methods applied across institutional collections in Spain and Europe.</p>
         </div>
         <div class="research__item">
           <span class="research__item-label">Teaching</span>
           <p class="research__item-title">Conservation pedagogy and institutional training</p>
           <p class="research__item-desc">Contribution to the training of conservation professionals through academic institutions and heritage organisations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="scroll-section scroll-section--warm" aria-labelledby="publications-heading">
+    <div class="publications__content">
+      <p class="s-eyebrow" data-reveal="0">Publicaciones</p>
+      <h2 class="publications__heading" id="publications-heading" data-reveal="1">Written and published contributions to the field.</h2>
+      <p class="publications__body" data-reveal="2">A record of publications, conference contributions and written research connected to Ángeles Solís Parra's conservation practice.</p>
+      <div class="publications__list" data-reveal="2">
+        <div class="publications__item publications__item--pending">
+          <p class="publications__item-note">Publication list to be confirmed with Ángeles Solís Parra.</p>
         </div>
       </div>
     </div>
@@ -395,10 +410,14 @@
           </div>
           <div class="contact__row">
             <dt>Email</dt>
-            <dd>To be provided</dd>
+            <dd>angsolis@gmail.com</dd>
+          </div>
+          <div class="contact__row">
+            <dt>LinkedIn</dt>
+            <dd><a href="https://linkedin.com/in/angeles-solis">linkedin.com/in/angeles-solis</a></dd>
           </div>
         </dl>
-        <a href="mailto:" class="btn-primary" data-reveal="3">
+        <a href="mailto:angsolis@gmail.com" class="btn-primary" data-reveal="3">
           Send enquiry <span class="btn-arrow">→</span>
         </a>
       </div>

@@ -18,12 +18,13 @@
     <a class="site-nav__brand" href="index.html">Ángeles Solís Parra</a>
     <nav aria-label="Primary navigation">
       <ul role="list">
-        <li><a href="index.html">Hall</a></li>
-        <li><a href="index.html">Vaciados</a></li>
-        <li><a href="index.html">Pintura</a></li>
+        <li><a href="index.html?room=vaciados">Escultura</a></li>
+        <li><a href="index.html?room=pintura">Pintura</a></li>
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#recognition">Recognition</a></li>
-        <li><a href="complete-archive.html" class="is-active">Archive</a></li>
+        <li><a href="index.html#research">Investigación</a></li>
+        <li><a href="index.html#publications">Publicaciones</a></li>
+        <li><a href="complete-archive.html" class="is-active">Obras</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
@@ -204,7 +205,7 @@
       const from = new URLSearchParams(location.search).get('from');
       let backHref  = 'complete-archive.html';
       let backLabel = '← Back';
-      if (from === 'vaciados') { backHref = 'index.html?room=vaciados'; backLabel = '← Sala de Vaciados'; }
+      if (from === 'vaciados') { backHref = 'index.html?room=vaciados'; backLabel = '← Sala de Escultura'; }
       if (from === 'pintura')  { backHref = 'index.html?room=pintura';  backLabel = '← Sala de Pintura';  }
       document.querySelectorAll('.js-back').forEach(a => {
         a.href        = backHref;

@@ -243,11 +243,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .home-role {
   font-family: var(--f-sans);
-  font-size: 0.68rem;
-  font-weight: 500;
+  font-size: 0.76rem;
+  font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.48);
+  color: rgba(255,255,255,0.62);
   margin-bottom: 14px;
 }
 
@@ -651,7 +651,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .scroll-section--warm    { background: #181512; }
 .scroll-section--black   { background: var(--ink); }
 .scroll-section--darker  { background: #111009; }
-.scroll-section--charcoal { background: var(--charcoal); }
+.scroll-section--charcoal { background: #1c1a17; }
 
 /* ── PER-SECTION VISUAL DIFFERENTIATION ─────────────
    ID overrides (higher specificity) give each section
@@ -897,6 +897,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   letter-spacing: 0.04em;
 }
 
+.recognition__item--emphasis .recognition__year-ghost {
+  color: rgba(255,255,255,0.12);
+}
+
+.recognition__item--emphasis .recognition__award {
+  font-weight: 500;
+  font-size: clamp(1.05rem, 1.6vw, 1.4rem);
+}
+
 
 /* ── RESEARCH / METHODOLOGY ──────────────────────── */
 .research__content {
@@ -968,6 +977,44 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   color: rgba(255,255,255,0.38);
 }
 
+
+/* ── PUBLICATIONS ─────────────────────────────────── */
+.publications__content {
+  padding: 80px;
+  max-width: 860px;
+}
+
+.publications__heading {
+  font-family: var(--f-serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--white);
+  margin-bottom: 24px;
+  max-width: 22ch;
+}
+
+.publications__body {
+  font-family: var(--f-sans);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.5);
+  max-width: 52ch;
+  margin-bottom: 48px;
+}
+
+.publications__list {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 32px;
+}
+
+.publications__item--pending .publications__item-note {
+  font-family: var(--f-sans);
+  font-size: 0.78rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.35);
+}
 
 /* ── ARCHIVE CTA ─────────────────────────────────── */
 .archive__content {
