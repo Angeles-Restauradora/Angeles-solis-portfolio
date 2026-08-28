@@ -66,6 +66,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   letter-spacing: 0.04em;
   color: var(--white);
   opacity: 0.85;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: opacity 0.2s;
 }
 
@@ -178,6 +180,23 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   flex-direction: column;
 }
 
+/* Progressive reveal on room switch: content settles in a
+   beat after the panel itself fades in, staggered by zone. */
+.home-identity, .home-enter-wrap, .home-stats,
+.room__intro, .feature-card, .room__secondary {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.room-panel.is-active .home-identity  { opacity: 1; transform: none; transition-delay: 0.15s; }
+.room-panel.is-active .home-enter-wrap { opacity: 1; transform: none; transition-delay: 0.26s; }
+.room-panel.is-active .home-stats     { opacity: 1; transform: none; transition-delay: 0.34s; }
+
+.room-panel.is-active .room__intro     { opacity: 1; transform: none; transition-delay: 0.15s; }
+.room-panel.is-active .feature-card    { opacity: 1; transform: none; transition-delay: 0.26s; }
+.room-panel.is-active .room__secondary { opacity: 1; transform: none; transition-delay: 0.36s; }
+
 
 /* ══════════════════════════════════════════════════
    HOME ROOM
@@ -241,22 +260,29 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .home-name span { font-weight: 300; }
 .home-name em   { font-style: italic; font-weight: 300; }
 
+.home-role-rule {
+  width: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.28);
+  margin: 4px 0 18px;
+}
+
 .home-role {
   font-family: var(--f-sans);
-  font-size: 0.76rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.62);
-  margin-bottom: 14px;
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 16px;
 }
 
 .home-desc {
   font-family: var(--f-sans);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   line-height: 1.85;
-  color: rgba(255,255,255,0.42);
-  max-width: 40ch;
+  color: rgba(255,255,255,0.58);
+  max-width: 42ch;
   text-align: center;
 }
 
@@ -264,11 +290,64 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .home-enter-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 52px;
 }
 
 /* Hide the duplicate absolutely-positioned room-nav on home */
 #rp-home > .room-nav--right { display: none; }
+
+/* ── Hall CTA — museum wayfinding placard ───────────
+   Bordered sign, not a generic pill button: sharp
+   corners, arrow-in-circle, brightens on hover.
+   ──────────────────────────────────────────────────── */
+.room-nav.room-nav--cta {
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  padding: 18px 22px 18px 26px;
+  border: 1px solid rgba(255,255,255,0.28);
+  transition: border-color 0.3s var(--easing), background 0.3s var(--easing);
+}
+
+.room-nav--cta:hover {
+  border-color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.04);
+}
+
+.room-nav--cta .room-nav__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.room-nav--cta .room-nav__dest {
+  color: rgba(255,255,255,0.45);
+}
+
+.room-nav--cta .room-nav__name {
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+}
+
+.room-nav--cta .room-nav__arrow {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  transition: transform 0.3s var(--easing), background 0.3s var(--easing), border-color 0.3s var(--easing);
+}
+
+.room-nav--cta:hover .room-nav__arrow {
+  transform: translateX(4px);
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.7);
+  color: var(--white);
+}
 
 /* Stats strip */
 .home-stats {
@@ -278,18 +357,18 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 }
 
 .home-stat {
-  padding: 20px 28px 28px;
+  padding: 26px 28px 10px;
   border-right: 1px solid rgba(255,255,255,0.07);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .home-stat:last-child { border-right: none; }
 
 .home-stat strong {
   font-family: var(--f-serif);
-  font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+  font-size: clamp(1.7rem, 2.8vw, 2.7rem);
   font-weight: 300;
   letter-spacing: -0.02em;
   color: var(--white);
@@ -298,9 +377,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .home-stat span {
   font-family: var(--f-sans);
-  font-size: 0.72rem;
-  line-height: 1.6;
-  color: var(--white);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.5);
   max-width: 24ch;
 }
 
@@ -381,15 +462,18 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
    Three-zone layout: room-nav top · content centred
    ══════════════════════════════════════════════════ */
 
-/* Diagonal overlay: dark left (text) → lighter right (cards have own bg) */
+/* Diagonal overlay: dark left (intro text) → graduated right
+   (projects sit closer to the photo; a soft floor of darkness
+   plus per-element text-shadow carries legibility instead of
+   one opaque panel over the whole image). */
 #rp-vaciados .rp-overlay,
 #rp-pintura  .rp-overlay {
   background: linear-gradient(
     108deg,
-    rgba(12,11,10,0.84) 0%,
-    rgba(12,11,10,0.62) 30%,
-    rgba(12,11,10,0.24) 60%,
-    rgba(12,11,10,0.10) 100%
+    rgba(12,11,10,0.86) 0%,
+    rgba(12,11,10,0.68) 28%,
+    rgba(12,11,10,0.46) 55%,
+    rgba(12,11,10,0.40) 100%
   );
 }
 
@@ -459,19 +543,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .room__subtitle {
   font-family: var(--f-sans);
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   font-weight: 400;
-  line-height: 1.65;
-  color: rgba(255,255,255,0.58);
-  max-width: 30ch;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+  max-width: 32ch;
 }
 
 .room__text {
   font-family: var(--f-sans);
-  font-size: 0.7rem;
-  line-height: 1.8;
-  color: rgba(255,255,255,0.38);
-  max-width: 34ch;
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.63);
+  max-width: 36ch;
 }
 
 
@@ -566,75 +650,271 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .project-card__link::after { content: '→'; font-weight: 300; letter-spacing: 0; }
 .project-card:hover .project-card__link { color: rgba(255,255,255,0.75); }
 
-/* ── ROOM PANELS: horizontal catalog list override ───
-   Scoped to .room__projects so archive grid is untouched
+/* ── ROOM PANELS: curated editorial spread ───────────
+   One protagonist (feature-card) + a quieter secondary
+   strip — replaces the old four-equal-rows list so the
+   room reads as a curated exhibit, not a UI panel glued
+   onto the photograph. No opaque panel behind the whole
+   list: each element carries its own legibility.
+   Scoped to .room__projects so the Archive grid (its own
+   page) is untouched.
    ──────────────────────────────────────────────────── */
 
-/* Dark frosted panel behind the list for readability */
 .room__projects {
-  background: rgba(10, 8, 7, 0.72);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 0 24px 6px;
-  border-top: 1px solid rgba(255,255,255,0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
-.room__projects .project-card {
+/* Protagonist — image and text share one continuous frame
+   (border + wash) so the pair reads as a single exhibition
+   piece, not two elements placed near each other. */
+.feature-card {
   display: grid;
-  grid-template-columns: 106px 1fr auto;
-  align-items: center;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding: 16px 0;
-  transition: background 0.22s var(--easing);
-  overflow: visible;
+  grid-template-columns: 210px 1fr;
+  align-items: stretch;
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(8,7,6,0.26);
+  transition: border-color 0.3s var(--easing), background 0.3s var(--easing);
 }
 
-.room__projects .project-card:hover {
-  transform: none;
-  background: rgba(255,255,255,0.04);
-  border-bottom-color: rgba(255,255,255,0.08);
+.feature-card:hover,
+.feature-card:focus-visible {
+  border-color: rgba(255,255,255,0.42);
+  background: rgba(8,7,6,0.4);
 }
 
-.room__projects .project-card__img {
-  aspect-ratio: 1;
-  width: 106px;
-  height: 106px;
-  overflow: hidden;
-  flex-shrink: 0;
+.feature-card:focus-visible {
+  outline: 1px solid rgba(255,255,255,0.6);
+  outline-offset: 3px;
 }
 
-.room__projects .project-card:hover .project-card__img img {
-  transform: scale(1.08);
-}
-
-.room__projects .project-card__body {
-  padding: 0 20px;
-  gap: 5px;
-  flex: 1;
-}
-
-.room__projects .project-card__body h3 {
-  font-size: 1.13rem;
-  color: rgba(255,255,255,0.90);
-}
-
-.room__projects .project-card__meta {
-  font-size: 0.70rem;
-  color: rgba(255,255,255,0.36);
-}
-
-.room__projects .project-card__link {
-  margin-top: 0;
-  font-size: 0.65rem;
-  color: rgba(255,255,255,0.26);
-  letter-spacing: 0.13em;
+/* Museum label plate — small, always-legible date chip in the
+   protagonist image's corner. Echoes the Hall CTA's bordered-
+   placard language rather than fighting a photograph for
+   contrast the way a giant translucent numeral would. */
+.feature-card__ghost {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 6px 12px;
+  background: rgba(12,11,10,0.74);
+  border: 1px solid rgba(255,255,255,0.24);
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.88);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
   white-space: nowrap;
 }
 
-.room__projects .project-card:hover .project-card__link {
-  color: rgba(255,255,255,0.65);
+.feature-card__frame {
+  position: relative;
+  z-index: 1;
+  min-height: 210px;
+  height: 100%;
+}
+
+.feature-card__img {
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+.feature-card__img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--easing);
+}
+
+.feature-card:hover .feature-card__img img { transform: scale(1.06); }
+
+.feature-card__detail {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 14px;
+  bottom: -16px;
+  overflow: hidden;
+  border: 3px solid var(--ink);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.55);
+}
+
+.feature-card__detail img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.feature-card__body {
+  position: relative;
+  z-index: 1;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.feature-card__meta {
+  font-family: var(--f-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.66);
+}
+
+.feature-card__body h3 {
+  font-family: var(--f-serif);
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--white);
+  max-width: 20ch;
+}
+
+.feature-card__link {
+  font-family: var(--f-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.74);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  transition: color 0.2s, gap 0.2s;
+}
+
+.feature-card__link::after { content: '→'; font-weight: 300; letter-spacing: 0; }
+.feature-card:hover .feature-card__link,
+.feature-card:focus-visible .feature-card__link { color: var(--white); gap: 10px; }
+
+/* Secondary strip — each project is a compact, bounded cluster
+   (image + title + meta + action, all within reach of the eye)
+   rather than a row spread across the full width of the room.
+   The rest of the row stays open photograph. */
+/* Three clear horizontal rows: image, then a comfortably
+   sized text stack (metadata / title / CTA) immediately next
+   to it. Generous type and air — legibility for an audience
+   that should never have to lean in, over squeezing three
+   projects into the smallest possible space. */
+.room__secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.room__secondary .project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 116px;
+  background: linear-gradient(100deg, rgba(8,7,6,0.36) 0%, rgba(8,7,6,0.12) 82%, transparent 100%);
+  border: none;
+  padding: 12px 32px 12px 12px;
+  transition: background 0.2s var(--easing);
+  overflow: visible;
+}
+
+.room__secondary .project-card:hover,
+.room__secondary .project-card:focus-visible {
+  transform: none;
+  background: linear-gradient(100deg, rgba(8,7,6,0.5) 0%, rgba(8,7,6,0.18) 82%, transparent 100%);
+}
+
+.room__secondary .project-card:focus-visible {
+  outline: 1px solid rgba(255,255,255,0.55);
+  outline-offset: 3px;
+}
+
+.room__secondary .project-card__img {
+  aspect-ratio: 1;
+  width: 112px;
+  height: 112px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.room__secondary .project-card:hover .project-card__img img,
+.room__secondary .project-card:focus-visible .project-card__img img {
+  transform: scale(1.06);
+}
+
+.room__secondary .project-card__body {
+  padding: 0;
+  gap: 8px;
+  max-width: 34ch;
+  flex: none;
+}
+
+.room__secondary .project-card__meta {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.66);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
+
+.room__secondary .project-card__body h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.65);
+}
+
+.room__secondary .project-card__link {
+  margin-top: 2px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.76);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.room__secondary .project-card:hover .project-card__link,
+.room__secondary .project-card:focus-visible .project-card__link {
+  color: var(--white);
+}
+
+/* Pintura variant: mirror the protagonist and warm the
+   image treatment slightly so the two rooms read as
+   siblings, not clones. */
+.feature-card { grid-template-columns: 210px 1fr; }
+#rp-pintura .feature-card { grid-template-columns: 1fr 210px; }
+
+#rp-pintura .feature-card__frame { order: 2; }
+#rp-pintura .feature-card__body  { order: 1; }
+
+#rp-pintura .feature-card__ghost {
+  left: auto;
+  right: 14px;
+}
+
+#rp-pintura .feature-card__detail {
+  right: auto;
+  left: 14px;
+}
+
+#rp-pintura .feature-card__img img,
+#rp-pintura .room__secondary .project-card__img img {
+  filter: sepia(10%) saturate(1.08);
 }
 
 
@@ -1712,7 +1992,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 @media (prefers-reduced-motion: reduce) {
   .room-panel, #stage-video, #stage-dark, #stage-bg,
   .room-nav, [data-reveal], .archive-card__thumb img,
-  .project-card__img img { transition: none !important; }
+  .project-card__img img,
+  .home-identity, .home-enter-wrap, .home-stats,
+  .room__intro, .feature-card, .room__secondary,
+  .feature-card__img img { transition: none !important; opacity: 1 !important; transform: none !important; }
 }
 
 
@@ -1733,6 +2016,16 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 }
 
 @media (max-width: 1024px) {
+  /* Nav no longer has room for 8 items + brand at full tracking —
+     let the link list scroll horizontally instead of wrapping the
+     brand or clipping links. No hamburger in this phase: all items
+     stay one tap/swipe away rather than hidden behind a menu. */
+  .site-nav { padding: 0 24px; gap: 14px; }
+  .site-nav nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .site-nav nav::-webkit-scrollbar { display: none; }
+  .site-nav nav ul { gap: 22px; flex-wrap: nowrap; padding-right: 4px; }
+  .site-nav nav a { white-space: nowrap; }
+
   .archive-grid { grid-template-columns: repeat(2, 1fr); }
   .archive-header { grid-template-columns: 1fr; gap: 24px; }
   .recognition__grid { grid-template-columns: repeat(2, 1fr); }
@@ -1760,9 +2053,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   #rp-vaciados .rp-content,
   #rp-pintura  .rp-content {
     grid-template-columns: 1fr;
-    padding: calc(var(--nav-h) + 40px) 60px 100px 40px;
+    padding: calc(var(--nav-h) + 104px) 60px 100px 40px;
     align-items: start;
+    row-gap: 32px;
   }
+
+  .feature-card { grid-template-columns: 150px 1fr; }
+  #rp-pintura .feature-card { grid-template-columns: 1fr 150px; }
+  .feature-card__frame { min-height: 160px; }
+  .feature-card__body { padding: 16px 20px; }
 
   .home-stats { grid-template-columns: repeat(2, 1fr); }
   .home-stat:nth-child(2) { border-right: none; }
@@ -1780,21 +2079,66 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 }
 
 @media (max-width: 640px) {
-  .site-nav { padding: 0 20px; }
-  .site-nav__brand { display: none; }
-  .site-nav nav ul { gap: 16px; }
+  .site-nav { padding: 0 16px; gap: 12px; }
+  .site-nav__brand { font-size: 0.8rem; }
+  .site-nav nav ul { gap: 15px; }
   .site-nav nav a { font-size: 0.6rem; }
 
-  #rp-home .rp-content { padding: calc(var(--nav-h) + 32px) 24px 0; }
+  /* Density pass: #room-stage is overflow:hidden (fixed, tied
+     to the video-transition system) so on short mobile viewports
+     every zone must genuinely fit — no internal scroll available. */
+  #rp-home .rp-content { padding: calc(var(--nav-h) + 20px) 24px 0; }
+  .home-eyebrow { margin-bottom: 12px; }
+  .home-name { font-size: 3.2rem; margin-bottom: 16px; }
+  .home-role-rule { margin: 2px 0 12px; }
+  .home-role { margin-bottom: 10px; }
+  .home-enter-wrap { margin-top: 28px; }
+  .home-stat { padding: 16px 16px 8px; gap: 6px; }
+  .home-stat strong { font-size: 1.5rem; }
 
   #rp-vaciados .rp-content,
   #rp-pintura  .rp-content {
-    padding: calc(var(--nav-h) + 28px) 60px 90px 24px;
+    padding: calc(var(--nav-h) + 88px) 20px 24px 20px;
+    row-gap: 12px;
   }
 
   .room-nav--right { right: 16px; bottom: 44px; }
   .room-nav--left  { left: 16px; bottom: 44px; }
   #rp-home .room-nav--right { right: 16px; }
+
+  .room__intro { gap: 6px; }
+  .room__title { font-size: 3rem; }
+  .room__subtitle { max-width: none; }
+  .room__text { display: none; }
+  .room__projects { gap: 2px; }
+
+  /* Feature card stacks fully: image on top, text below —
+     still one bordered piece, just stacked instead of side by side. */
+  .feature-card,
+  #rp-pintura .feature-card {
+    grid-template-columns: 1fr;
+  }
+  #rp-pintura .feature-card__frame,
+  #rp-pintura .feature-card__body { order: initial; }
+
+  .feature-card__frame { min-height: 0; width: 100%; height: 30vw; max-height: 126px; }
+  .feature-card__body { padding: 10px 14px 12px; gap: 4px; }
+  .feature-card__body h3 { font-size: 1.3rem; }
+  .feature-card__meta { font-size: 0.85rem; }
+  .feature-card__link { font-size: 0.85rem; }
+  .feature-card__detail { width: 40px; height: 40px; right: 8px; bottom: -8px; }
+  #rp-pintura .feature-card__detail { left: 8px; right: auto; }
+
+  .room__secondary { gap: 18px; }
+  .room__secondary .project-card { gap: 14px; padding: 6px 12px 6px 4px; min-height: 0; max-width: none; }
+  .room__secondary .project-card__img { width: 76px; height: 76px; }
+  .room__secondary .project-card__body { gap: 4px; max-width: none; flex-shrink: 1; min-width: 0; }
+  .room__secondary .project-card__body h3 { font-size: 1rem; line-height: 1.25; }
+  .room__secondary .project-card__meta { font-size: 0.85rem; }
+  .room__secondary .project-card__link { font-size: 0.85rem; margin-top: 0; }
+
+  .room-nav--cta { padding: 14px 16px 14px 18px; gap: 18px; }
+  .room-nav--cta .room-nav__arrow { width: 32px; height: 32px; }
 
   .about__content, .recognition__content,
   .contact__left,  .contact__right { padding: 44px 24px; }
