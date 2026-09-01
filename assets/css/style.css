@@ -56,7 +56,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   align-items: center;
   justify-content: space-between;
   padding: 0 48px;
-  background: linear-gradient(to bottom, rgba(12,11,10,0.6) 0%, transparent 100%);
+  /* Constant frosted scrim — legible over dark room photography
+     AND light editorial sections alike, unlike a fade-to-transparent
+     gradient that assumes a dark backdrop. */
+  background: rgba(10,9,8,0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .site-nav__brand {
@@ -949,13 +954,17 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   align-items: stretch;
 }
 #about .about__content {
-  background: #181410;
-  padding: calc(var(--nav-h) + 80px) 60px 80px;
+  /* Ivory read as a veil, not a solid block — a faint hint of
+     the page's own dark atmosphere shows through at the edges. */
+  background: rgba(236,212,198,0.8);
+  padding: calc(var(--nav-h) + 8px) 64px 8px;
   max-width: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+#about .s-eyebrow           { color: rgba(12,10,8,0.42); }
+#about .s-eyebrow::before   { background: rgba(12,10,8,0.22); }
 .about__photo {
   position: relative;
   overflow: hidden;
@@ -986,9 +995,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 }
 #recognition .recognition__content { position: relative; z-index: 1; }
 
-/* Research — stone-grey from museum wall palette + plaster overlay */
+/* Investigación — ivory field, aligned with the site's light
+   token (matches About/Publications), a faint plaster-texture
+   watermark keeps the material/technical thread visible. */
 #research {
-  background: #C2BBB4;
+  background: var(--ivory);
   position: relative;
   overflow: hidden;
 }
@@ -999,7 +1010,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   background-image: url('../images/sculpture-plaster-detail-01.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.18;
+  opacity: 0.07;
   mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 0;
@@ -1007,15 +1018,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 #research .research__content { position: relative; z-index: 1; }
 
 /* Research text — dark on light */
-#research .s-eyebrow                { color: rgba(18,14,8,0.42); }
-#research .s-eyebrow::before        { background: rgba(18,14,8,0.2); }
-#research .research__heading        { color: #141008; }
-#research .research__body           { color: rgba(18,14,8,0.58); }
-#research .research__item           { border-bottom-color: rgba(18,14,8,0.1); }
-#research .research__item:first-child { border-top-color: rgba(18,14,8,0.1); }
-#research .research__item-label     { color: rgba(18,14,8,0.38); }
-#research .research__item-title     { color: #201410; }
-#research .research__item-desc      { color: rgba(18,14,8,0.52); }
+#research .s-eyebrow                { color: rgba(12,10,8,0.42); }
+#research .s-eyebrow::before        { background: rgba(12,10,8,0.22); }
+#research .research__heading        { color: var(--ink); }
+#research .research__body           { color: rgba(12,10,8,0.64); }
 
 /* Archive CTA — warm dark charcoal, aligned with warm family */
 #archive {
@@ -1087,18 +1093,21 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   font-weight: 300;
   line-height: 1.07;
   letter-spacing: -0.015em;
-  color: var(--white);
-  margin-bottom: 36px;
+  color: var(--ink);
+  margin-bottom: 6px;
   max-width: 22ch;
 }
 
 .about__body {
   font-family: var(--f-sans);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.9;
-  color: rgba(255,255,255,0.48);
+  /* Solid, not alpha-blended: with a translucent panel behind it,
+     a semi-transparent text color compounds against the veil and
+     quietly erodes contrast. Solid ink is the ceiling available here. */
+  color: var(--ink);
   max-width: 52ch;
-  margin-bottom: 52px;
+  margin-bottom: 12px;
 }
 
 .about__quote {
@@ -1107,10 +1116,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   font-weight: 300;
   font-style: italic;
   line-height: 1.55;
-  color: rgba(255,255,255,0.7);
+  color: var(--ink);
   max-width: 52ch;
   padding-left: 28px;
-  border-left: 1px solid rgba(255,255,255,0.12);
+  border-left: 1px solid rgba(12,10,8,0.3);
   border-top: none;
 }
 
@@ -1123,12 +1132,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .recognition__heading {
   font-family: var(--f-serif);
-  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-size: clamp(2.2rem, 4.4vw, 5rem);
   font-weight: 300;
-  line-height: 1.08;
+  line-height: 1.06;
   letter-spacing: -0.015em;
   color: var(--white);
-  margin-bottom: 64px;
+  margin-bottom: 72px;
   max-width: 24ch;
 }
 
@@ -1151,40 +1160,46 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .recognition__item:last-child   { border-right: none; padding-right: 0; padding-left: 32px; }
 .recognition__item:not(:first-child):not(:last-child) { padding-left: 32px; }
 
+/* One shared type scale across all four items — hierarchy comes
+   from content and composition, not from four different sizes. */
+/* Identifier is now the supporting element — a small tracked
+   label, same register as the site's other eyebrows (room__eyebrow,
+   s-eyebrow), not a giant numeral competing with the award title. */
 .recognition__year-ghost {
-  font-family: var(--f-serif);
-  font-size: clamp(4rem, 8vw, 8rem);
-  font-weight: 300;
-  letter-spacing: -0.04em;
-  color: rgba(255,255,255,0.06);
+  font-family: var(--f-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
+/* Award title is now the primary element in each block. */
 .recognition__award {
   font-family: var(--f-serif);
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-size: clamp(1.4rem, 2.1vw, 1.9rem);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.25;
   color: var(--white);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .recognition__inst {
   font-family: var(--f-sans);
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   line-height: 1.5;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.04em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 
-.recognition__item--emphasis .recognition__year-ghost {
-  color: rgba(255,255,255,0.12);
-}
-
-.recognition__item--emphasis .recognition__award {
-  font-weight: 500;
-  font-size: clamp(1.05rem, 1.6vw, 1.4rem);
-}
+/* recognition__item--emphasis intentionally carries no
+   typographic difference now — all four items share one scale
+   (see .recognition__year-ghost / __award / __inst above). The
+   class stays in the markup but is a typographic no-op. */
 
 
 /* ── RESEARCH / METHODOLOGY ──────────────────────── */
@@ -1221,48 +1236,104 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .research__items {
   display: flex;
   flex-direction: column;
+  gap: 32px;
+}
+
+/* Methodology (Anjusil®) as protagonist — same "one framed
+   piece" language as the Escultura/Pintura feature-card, minus
+   the photograph: a bordered plate for the label, generous
+   type, room to read the full description at a glance. */
+.research__feature {
+  border: 1px solid rgba(12,10,8,0.16);
+  padding: 32px;
+}
+
+.research__feature-label {
+  display: inline-block;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  padding: 5px 12px;
+  border: 1px solid rgba(12,10,8,0.24);
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+
+.research__feature-title {
+  font-family: var(--f-serif);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 14px;
+  max-width: 26ch;
+}
+
+.research__feature-desc {
+  font-family: var(--f-sans);
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: rgba(12,10,8,0.66);
+  max-width: 46ch;
+}
+
+/* Research + Teaching — quieter secondary pair */
+.research__secondary {
+  display: flex;
+  flex-direction: column;
 }
 
 .research__item {
   padding: 22px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(12,10,8,0.12);
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.research__item:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+.research__item:first-child { border-top: 1px solid rgba(12,10,8,0.12); }
 
 .research__item-label {
   font-family: var(--f-sans);
-  font-size: 0.56rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.24);
+  color: rgba(12,10,8,0.4);
 }
 
 .research__item-title {
   font-family: var(--f-serif);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 400;
-  color: var(--white);
+  color: var(--ink);
   line-height: 1.3;
 }
 
 .research__item-desc {
   font-family: var(--f-sans);
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   line-height: 1.65;
-  color: rgba(255,255,255,0.38);
+  color: rgba(12,10,8,0.56);
 }
 
 
 /* ── PUBLICATIONS ─────────────────────────────────── */
+/* Ivory field, deliberately restrained — a placeholder that
+   reads as "considered, pending real content" rather than
+   unfinished. Not worth heavier design investment until
+   Ángeles provides the actual list. */
+#publications {
+  background: var(--ivory);
+}
+
 .publications__content {
   padding: 80px;
   max-width: 860px;
 }
+
+#publications .s-eyebrow         { color: rgba(12,10,8,0.42); }
+#publications .s-eyebrow::before { background: rgba(12,10,8,0.22); }
 
 .publications__heading {
   font-family: var(--f-serif);
@@ -1270,30 +1341,30 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: -0.015em;
-  color: var(--white);
+  color: var(--ink);
   margin-bottom: 24px;
   max-width: 22ch;
 }
 
 .publications__body {
   font-family: var(--f-sans);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   line-height: 1.7;
-  color: rgba(255,255,255,0.5);
+  color: rgba(12,10,8,0.6);
   max-width: 52ch;
   margin-bottom: 48px;
 }
 
 .publications__list {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(12,10,8,0.14);
   padding-top: 32px;
 }
 
 .publications__item--pending .publications__item-note {
   font-family: var(--f-sans);
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-style: italic;
-  color: rgba(255,255,255,0.35);
+  color: rgba(12,10,8,0.46);
 }
 
 /* ── ARCHIVE CTA ─────────────────────────────────── */
@@ -1339,16 +1410,20 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 
 /* ── CONTACT ─────────────────────────────────────── */
+/* Closing composition, not a form: identity on the left,
+   two clear editorial link-lines on the right — no table,
+   no bordered card, no boxed panel. */
 .contact__content {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: stretch;
+  align-items: center;
+  column-gap: 80px;
+  padding: 0 80px;
 }
 
 .contact__left {
-  padding: 80px;
-  border-right: 1px solid rgba(255,255,255,0.06);
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1366,50 +1441,81 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .contact__sub {
   font-family: var(--f-sans);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 1.75;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.46);
   max-width: 36ch;
 }
 
 .contact__right {
-  padding: 80px;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 36px;
 }
 
-.contact__table {
+.contact__identity {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  gap: 8px;
 }
 
-.contact__row {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  gap: 16px;
+.contact__name {
+  font-family: var(--f-serif);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 400;
+  color: var(--white);
+}
+
+.contact__role {
+  font-family: var(--f-sans);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.44);
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.contact__link {
+  display: flex;
   align-items: baseline;
+  gap: 14px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+  font-family: var(--f-sans);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.86);
+  transition: color 0.2s, gap 0.2s;
 }
 
-.contact__row:first-child { border-top: 1px solid rgba(255,255,255,0.05); }
-
-.contact__row dt {
-  font-family: var(--f-sans);
-  font-size: 0.58rem;
+.contact__link-label {
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.24);
+  color: rgba(255,255,255,0.4);
+  flex-shrink: 0;
+  width: 64px;
 }
 
-.contact__row dd {
-  font-family: var(--f-sans);
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.7);
+.contact__link .btn-arrow {
+  font-size: 0.85rem;
+  font-weight: 300;
+  transition: transform 0.25s var(--easing);
 }
+
+.contact__link:hover {
+  color: var(--white);
+  gap: 20px;
+}
+
+.contact__link:hover .btn-arrow { transform: translateX(4px); }
 
 
 /* ══════════════════════════════════════════════════
@@ -2071,9 +2177,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .about__content { padding: 60px; }
   .recognition__content { padding: 60px; }
   .research__content { grid-template-columns: 1fr; gap: 48px; padding: 60px; }
-  .contact__content { grid-template-columns: 1fr; }
-  .contact__left  { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 60px; }
-  .contact__right { padding: 60px; }
+  .contact__content { grid-template-columns: 1fr; padding: 0 60px; }
+  .contact__left  { padding: 60px 0; }
+  .contact__right { padding: 60px 0; }
   .detail-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 40px; }
   .detail-gallery { padding: 60px 40px; }
 }
