@@ -163,7 +163,7 @@
       let projects  = [];
 
       try {
-        const res = await fetch('assets/data/projects.json');
+        const res = await fetch('assets/data/projects.json', { cache: 'no-store' });
         projects  = await res.json();
       } catch(e) {
         grid.innerHTML = '<p style="padding:60px;font-family:var(--f-sans);color:rgba(255,255,255,0.3);">Unable to load projects.</p>';

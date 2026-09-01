@@ -2,7 +2,10 @@
   {
     "id": "vaciados-rabasf",
     "title": "Historical Plaster Cast Collection — RABASF",
-    "category": ["sculpture", "institutional-collections"],
+    "category": [
+      "sculpture",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, Spain",
@@ -16,7 +19,13 @@
       "assets/images/sculpture-process-01.jpg",
       "assets/images/sculpture-plaster-detail-01.jpg"
     ],
-    "tags": ["plaster casts", "RABASF", "Anjusil®", "national award", "Europa Nostra"],
+    "tags": [
+      "plaster casts",
+      "RABASF",
+      "Anjusil®",
+      "national award",
+      "Europa Nostra"
+    ],
     "roomNumber": "01",
     "schemaVersion": 2,
     "primaryCategory": "institutional-collections",
@@ -35,14 +44,22 @@
         "intervention": null,
         "images": {
           "hero": null,
-          "before": ["assets/images/work-vaciados-rabasf-ariadna-before-01.jpg"],
-          "during": ["assets/images/work-vaciados-rabasf-ariadna-during-01.jpg"],
+          "before": [
+            "assets/images/work-vaciados-rabasf-ariadna-before-01.jpg"
+          ],
+          "during": [
+            "assets/images/work-vaciados-rabasf-ariadna-during-01.jpg"
+          ],
           "process": [
             "assets/images/work-vaciados-rabasf-ariadna-process-01.jpg",
             "assets/images/work-vaciados-rabasf-ariadna-process-02.jpg"
           ],
-          "after": ["assets/images/work-vaciados-rabasf-ariadna-after-01.jpg"],
-          "detail": ["assets/images/work-vaciados-rabasf-ariadna-detail-01.jpg"]
+          "after": [
+            "assets/images/work-vaciados-rabasf-ariadna-after-01.jpg"
+          ],
+          "detail": [
+            "assets/images/work-vaciados-rabasf-ariadna-detail-01.jpg"
+          ]
         },
         "notes": null
       },
@@ -56,10 +73,18 @@
         "intervention": null,
         "images": {
           "hero": null,
-          "before": ["assets/images/work-vaciados-rabasf-cratera-estabia-before-01.jpg"],
-          "during": ["assets/images/work-vaciados-rabasf-cratera-estabia-during-01.jpg"],
-          "process": ["assets/images/work-vaciados-rabasf-cratera-estabia-process-01.jpg"],
-          "after": ["assets/images/work-vaciados-rabasf-cratera-estabia-after-01.jpg"],
+          "before": [
+            "assets/images/work-vaciados-rabasf-cratera-estabia-before-01.jpg"
+          ],
+          "during": [
+            "assets/images/work-vaciados-rabasf-cratera-estabia-during-01.jpg"
+          ],
+          "process": [
+            "assets/images/work-vaciados-rabasf-cratera-estabia-process-01.jpg"
+          ],
+          "after": [
+            "assets/images/work-vaciados-rabasf-cratera-estabia-after-01.jpg"
+          ],
           "detail": [
             "assets/images/work-vaciados-rabasf-cratera-estabia-detail-01.jpg",
             "assets/images/work-vaciados-rabasf-cratera-estabia-detail-02.jpg"
@@ -77,15 +102,23 @@
         "intervention": null,
         "images": {
           "hero": "assets/images/work-vaciados-rabasf-flora-farnese-hero.jpg",
-          "before": ["assets/images/work-vaciados-rabasf-flora-farnese-before-01.jpg"],
-          "during": ["assets/images/work-vaciados-rabasf-flora-farnese-during-01.jpg"],
+          "before": [
+            "assets/images/work-vaciados-rabasf-flora-farnese-before-01.jpg"
+          ],
+          "during": [
+            "assets/images/work-vaciados-rabasf-flora-farnese-during-01.jpg"
+          ],
           "process": [
             "assets/images/work-vaciados-rabasf-flora-farnese-process-01.jpg",
             "assets/images/work-vaciados-rabasf-flora-farnese-process-02.jpg",
             "assets/images/work-vaciados-rabasf-flora-farnese-process-03.jpg"
           ],
-          "after": ["assets/images/work-vaciados-rabasf-flora-farnese-after-01.jpg"],
-          "detail": ["assets/images/work-vaciados-rabasf-flora-farnese-detail-01.jpg"]
+          "after": [
+            "assets/images/work-vaciados-rabasf-flora-farnese-after-01.jpg"
+          ],
+          "detail": [
+            "assets/images/work-vaciados-rabasf-flora-farnese-detail-01.jpg"
+          ]
         },
         "notes": null
       },
@@ -103,7 +136,9 @@
             "assets/images/work-vaciados-rabasf-puerta-paraiso-before-01.jpg",
             "assets/images/work-vaciados-rabasf-puerta-paraiso-before-02.jpg"
           ],
-          "during": ["assets/images/work-vaciados-rabasf-puerta-paraiso-during-01.jpg"],
+          "during": [
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-during-01.jpg"
+          ],
           "process": [
             "assets/images/work-vaciados-rabasf-puerta-paraiso-process-01.jpg",
             "assets/images/work-vaciados-rabasf-puerta-paraiso-process-02.jpg"
@@ -126,15 +161,21 @@
         "intervention": null,
         "images": {
           "hero": "assets/images/work-vaciados-rabasf-venus-pomo-hero.jpg",
-          "before": ["assets/images/work-vaciados-rabasf-venus-pomo-before-01.jpg"],
+          "before": [
+            "assets/images/work-vaciados-rabasf-venus-pomo-before-01.jpg"
+          ],
           "during": [
             "assets/images/work-vaciados-rabasf-venus-pomo-during-01.jpg",
             "assets/images/work-vaciados-rabasf-venus-pomo-during-02.jpg",
             "assets/images/work-vaciados-rabasf-venus-pomo-during-03.jpg"
           ],
           "process": [],
-          "after": ["assets/images/work-vaciados-rabasf-venus-pomo-after-01.jpg"],
-          "detail": ["assets/images/work-vaciados-rabasf-venus-pomo-detail-01.jpg"]
+          "after": [
+            "assets/images/work-vaciados-rabasf-venus-pomo-after-01.jpg"
+          ],
+          "detail": [
+            "assets/images/work-vaciados-rabasf-venus-pomo-detail-01.jpg"
+          ]
         },
         "notes": null
       },
@@ -148,7 +189,9 @@
         "intervention": null,
         "images": {
           "hero": "assets/images/work-vaciados-rabasf-venus-medici-hero.jpg",
-          "before": ["assets/images/work-vaciados-rabasf-venus-medici-before-01.jpg"],
+          "before": [
+            "assets/images/work-vaciados-rabasf-venus-medici-before-01.jpg"
+          ],
           "during": [
             "assets/images/work-vaciados-rabasf-venus-medici-during-01.jpg",
             "assets/images/work-vaciados-rabasf-venus-medici-during-02.jpg",
@@ -168,7 +211,10 @@
   {
     "id": "premios-envios-roma",
     "title": "Premios y Envíos de Roma — RABASF Sculpture Collection",
-    "category": ["sculpture", "institutional-collections"],
+    "category": [
+      "sculpture",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, Spain",
@@ -178,13 +224,185 @@
     "isSelected": false,
     "heroImage": "assets/images/proj-premios-roma-hero.jpg",
     "gallery": [],
-    "tags": ["RABASF", "academic sculpture", "Roma Prizes", "marble", "institutional"],
-    "roomNumber": "01"
+    "tags": [
+      "RABASF",
+      "academic sculpture",
+      "Roma Prizes",
+      "marble",
+      "institutional"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "institutional-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet — 6 works documented (E-213, E-222, E-393, E-396, E-501, E-7). Client sheet gives project-level year 2015–2022, conflicting with published 2002–2007; not applied without confirmation from Ángeles"
+    ],
+    "works": [
+      {
+        "id": "premios-envios-roma--andres-atado-cruz",
+        "title": "Andrés atado a la Cruz",
+        "author": "Huberto Dumandré",
+        "inventoryCode": "E-213",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-premios-envios-roma-andres-atado-cruz-before-01.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-premios-envios-roma-andres-atado-cruz-process-01.jpg",
+            "assets/images/work-premios-envios-roma-andres-atado-cruz-process-02.jpg"
+          ],
+          "after": [
+            "assets/images/work-premios-envios-roma-andres-atado-cruz-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "premios-envios-roma--marsias",
+        "title": "Marsias",
+        "author": "Juan Adán",
+        "inventoryCode": "E-222",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-premios-envios-roma-marsias-before-01.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-premios-envios-roma-marsias-process-01.jpg",
+            "assets/images/work-premios-envios-roma-marsias-process-02.jpg"
+          ],
+          "after": [
+            "assets/images/work-premios-envios-roma-marsias-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "premios-envios-roma--santa-leocadia",
+        "title": "Santa Leocadia azotada",
+        "author": "Manuel Llorente",
+        "inventoryCode": "E-393",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-premios-envios-roma-santa-leocadia-before-01.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-premios-envios-roma-santa-leocadia-process-01.jpg",
+            "assets/images/work-premios-envios-roma-santa-leocadia-process-02.jpg",
+            "assets/images/work-premios-envios-roma-santa-leocadia-process-03.jpg"
+          ],
+          "after": [
+            "assets/images/work-premios-envios-roma-santa-leocadia-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "premios-envios-roma--san-francisco-paula",
+        "title": "San Francisco de Paula",
+        "author": "José Guerra",
+        "inventoryCode": "E-396",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-premios-envios-roma-san-francisco-paula-before-01.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-premios-envios-roma-san-francisco-paula-process-01.jpg",
+            "assets/images/work-premios-envios-roma-san-francisco-paula-process-02.jpg",
+            "assets/images/work-premios-envios-roma-san-francisco-paula-process-03.jpg",
+            "assets/images/work-premios-envios-roma-san-francisco-paula-process-04.jpg",
+            "assets/images/work-premios-envios-roma-san-francisco-paula-process-05.jpg"
+          ],
+          "after": [
+            "assets/images/work-premios-envios-roma-san-francisco-paula-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "premios-envios-roma--rey-alonso-casto",
+        "title": "El Rey Don Alonso el Casto y la Cruz de Oviedo",
+        "author": "Santiago Rodríguez",
+        "inventoryCode": "E-501",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-premios-envios-roma-rey-alonso-casto-before-01.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-premios-envios-roma-rey-alonso-casto-process-01.jpg",
+            "assets/images/work-premios-envios-roma-rey-alonso-casto-process-02.jpg"
+          ],
+          "after": [
+            "assets/images/work-premios-envios-roma-rey-alonso-casto-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "premios-envios-roma--apolino",
+        "title": "Apolino",
+        "author": "José Ginés",
+        "inventoryCode": "E-7",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-premios-envios-roma-apolino-before-01.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-premios-envios-roma-apolino-process-01.jpg",
+            "assets/images/work-premios-envios-roma-apolino-process-02.jpg",
+            "assets/images/work-premios-envios-roma-apolino-process-03.jpg"
+          ],
+          "after": [
+            "assets/images/work-premios-envios-roma-apolino-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      }
+    ]
   },
   {
     "id": "universidad-sevilla",
     "title": "Plaster Cast Collection — Universidad de Sevilla",
-    "category": ["sculpture", "institutional-collections"],
+    "category": [
+      "sculpture",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Universidad de Sevilla",
     "location": "Sevilla, Spain",
@@ -193,14 +411,35 @@
     "longDescription": "Following the recognised work at RABASF, the University of Seville commissioned the conservation of its own plaster cast collection. This project extended the Anjusil® methodology to a different institutional and material context, consolidating its application beyond the original RABASF collection.",
     "isSelected": false,
     "heroImage": "assets/images/proj-sevilla-hero.jpg",
-    "gallery": [],
-    "tags": ["plaster casts", "university", "Anjusil®", "Sevilla"],
-    "roomNumber": "01"
+    "gallery": [
+      "assets/images/proj-sevilla-gallery-01.jpg",
+      "assets/images/proj-sevilla-gallery-02.jpg",
+      "assets/images/proj-sevilla-gallery-03.jpg",
+      "assets/images/proj-sevilla-gallery-04.jpg",
+      "assets/images/proj-sevilla-gallery-05.jpg",
+      "assets/images/proj-sevilla-gallery-06.jpg"
+    ],
+    "tags": [
+      "plaster casts",
+      "university",
+      "Anjusil®",
+      "Sevilla"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "institutional-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives years 2009, 2010, 2014, 2015, conflicting with published 2007–2009; not applied without confirmation from Ángeles"
+    ]
   },
   {
     "id": "museo-reproducciones-madrid",
     "title": "Museo Nacional de Reproducciones Artísticas",
-    "category": ["sculpture", "institutional-collections"],
+    "category": [
+      "sculpture",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Museo Nacional de Reproducciones Artísticas de Madrid",
     "location": "Madrid, Spain",
@@ -209,14 +448,37 @@
     "longDescription": "The Museo Nacional de Reproducciones Artísticas holds one of Europe's most significant collections of artistic reproductions, including plaster casts, bronze and stone copies after major antique and Renaissance works. This conservation project involved assessment, stabilization and treatment of selected works from the permanent collection.",
     "isSelected": true,
     "heroImage": "assets/images/proj-mnra-hero.jpg",
-    "gallery": [],
-    "tags": ["MNRA", "reproductions", "plaster casts", "Madrid"],
-    "roomNumber": "01"
+    "gallery": [
+      "assets/images/proj-mnra-gallery-01.jpg",
+      "assets/images/proj-mnra-gallery-02.jpg",
+      "assets/images/proj-mnra-gallery-03.jpg",
+      "assets/images/proj-mnra-gallery-04.jpg",
+      "assets/images/proj-mnra-gallery-05.jpg",
+      "assets/images/proj-mnra-gallery-06.jpg",
+      "assets/images/proj-mnra-gallery-07.jpg",
+      "assets/images/proj-mnra-gallery-08.jpg"
+    ],
+    "tags": [
+      "MNRA",
+      "reproductions",
+      "plaster casts",
+      "Madrid"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "institutional-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives years 2009, 2010, 2011, matching published 2009–2011, no conflict"
+    ]
   },
   {
     "id": "pompeya",
     "title": "Archaeological Conservation — Pompeii",
-    "category": ["sculpture", "archaeological-mural"],
+    "category": [
+      "sculpture",
+      "archaeological-mural"
+    ],
     "type": "Archaeological Conservation",
     "institution": "Pompeii Archaeological Site",
     "location": "Pompeii, Italy",
@@ -226,13 +488,22 @@
     "isSelected": true,
     "heroImage": "assets/images/proj-pompeya-hero.jpg",
     "gallery": [],
-    "tags": ["Pompeii", "archaeological", "international", "in-situ", "Italy"],
+    "tags": [
+      "Pompeii",
+      "archaeological",
+      "international",
+      "in-situ",
+      "Italy"
+    ],
     "roomNumber": "01"
   },
   {
     "id": "museo-del-prado",
     "title": "Sculpture Conservation — Museo Nacional del Prado",
-    "category": ["sculpture", "institutional-collections"],
+    "category": [
+      "sculpture",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Museo Nacional del Prado",
     "location": "Madrid, Spain",
@@ -241,30 +512,170 @@
     "longDescription": "Selected for the prestigious Fundación Botín scholarship at the Museo Nacional del Prado, Ángeles Solís Parra carried out conservation work on sculptural pieces from the Prado's permanent collection. This project represented a singular professional endorsement and the opportunity to work directly with one of the world's most important art collections.",
     "isSelected": true,
     "heroImage": "assets/images/proj-prado-hero.jpg",
-    "gallery": [],
-    "tags": ["Prado", "Fundación Botín", "scholarship", "Madrid", "national museum"],
-    "roomNumber": "01"
+    "gallery": [
+      "assets/images/proj-prado-gallery-01.jpg",
+      "assets/images/proj-prado-gallery-02.jpg",
+      "assets/images/proj-prado-gallery-03.jpg",
+      "assets/images/proj-prado-gallery-04.jpg",
+      "assets/images/proj-prado-gallery-05.jpg",
+      "assets/images/proj-prado-gallery-06.jpg",
+      "assets/images/proj-prado-gallery-07.jpg"
+    ],
+    "tags": [
+      "Prado",
+      "Fundación Botín",
+      "scholarship",
+      "Madrid",
+      "national museum"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "institutional-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives years 1996, 1998, 1999, 2000, 2001, conflicting with published 2003–2004; not applied without confirmation from Ángeles"
+    ]
   },
   {
-    "id": "retablos-polychrome",
-    "title": "Retablos & Polychrome Wood Heritage",
-    "category": ["sculpture"],
+    "id": "retablo-berzosa-bureba",
+    "title": "Plateresque High Altar Retable (1538) — Berzosa de Bureba",
+    "category": [
+      "sculpture"
+    ],
     "type": "Conservation & Restoration",
-    "institution": "Various — Churches and Heritage Sites",
-    "location": "Castilla y León, Asturias, Canary Islands, Spain",
-    "year": "1995–2012",
-    "shortDescription": "Conservation and restoration of polychrome wood retablos and sculptural ensembles in ecclesiastical heritage across Spain.",
-    "longDescription": "A sequence of conservation interventions on polychrome wood retablos and associated sculptural ensembles in various Spanish heritage contexts: Grandas de Salime (Asturias), Berzosa de Bureba (Burgos), Medina de Rioseco (Valladolid) and the Retablo de San José in San Juan de la Rambla (Tenerife). Each intervention adapted conservation criteria to the specific material, climatic and institutional context.",
+    "institution": "Kipsa",
+    "location": "Berzosa de Bureba, Burgos, Spain",
+    "year": "1990",
+    "shortDescription": "Restoration of the plateresque high altar retable (1538) at the Iglesia de la Asunción de Nuestra Señora, Berzosa de Bureba, in gilded and polychrome wood.",
+    "longDescription": "The restoration of the high altar retable was carried out in 1990 with the company Kipsa. The ensemble, made of gilded and polychrome wood, presented significant structural damage as well as deterioration of its sculptural group. The intervention included general cleaning, consolidation of the polychromy, material consolidation, fungicidal treatments and chromatic reintegration, aiming to stabilise the piece and recover its aesthetic and historic-artistic legibility.",
     "isSelected": false,
-    "heroImage": "assets/images/proj-retablos-hero.jpg",
-    "gallery": [],
-    "tags": ["retablos", "polychrome", "wood", "ecclesiastical", "heritage"],
-    "roomNumber": "01"
+    "heroImage": "assets/images/proj-retablo-berzosa-hero.jpg",
+    "gallery": [
+      "assets/images/proj-retablo-berzosa-gallery-01.jpg",
+      "assets/images/proj-retablo-berzosa-gallery-02.jpg",
+      "assets/images/proj-retablo-berzosa-gallery-03.jpg"
+    ],
+    "tags": [
+      "retablos",
+      "polychrome wood",
+      "gilded wood",
+      "Burgos",
+      "ecclesiastical heritage"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "sculpture",
+    "years": [],
+    "sources": [
+      "client-project-sheet"
+    ]
+  },
+  {
+    "id": "retablo-grandas-salime",
+    "title": "Baroque High Altar Retable (1628–34) — Grandas de Salime",
+    "category": [
+      "sculpture"
+    ],
+    "type": "Conservation & Restoration",
+    "institution": "Facultad de Bellas Artes, Universidad Complutense de Madrid",
+    "location": "Grandas de Salime, Asturias, Spain",
+    "year": "1993",
+    "shortDescription": "Restoration of the baroque high altar retable (1628–34) at the Colegiata de El Salvador, Grandas de Salime, including structural remounting and polychromy conservation.",
+    "longDescription": "The restoration of the high altar retable was carried out in 1993 at the Faculty of Fine Arts of the Universidad Complutense de Madrid. The ensemble, made of gilded and polychrome wood, presented deterioration affecting both its structure and its sculptural group. The intervention included mounting and anchoring the retable structure to the wall, carpentry work, general cleaning, polychromy consolidation, material consolidation, fungicidal treatments and volumetric and chromatic reintegration. In 1993 the town received the Premio al Pueblo Ejemplar de Asturias, among other reasons for the rehabilitation of the Romanesque Colegiata de El Salvador, including this retable.",
+    "isSelected": false,
+    "heroImage": "assets/images/proj-retablo-grandas-hero.jpg",
+    "gallery": [
+      "assets/images/proj-retablo-grandas-gallery-01.jpg",
+      "assets/images/proj-retablo-grandas-gallery-02.jpg",
+      "assets/images/proj-retablo-grandas-gallery-03.jpg",
+      "assets/images/proj-retablo-grandas-gallery-04.jpg"
+    ],
+    "tags": [
+      "retablos",
+      "polychrome wood",
+      "gilded wood",
+      "Asturias",
+      "ecclesiastical heritage"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "sculpture",
+    "years": [],
+    "sources": [
+      "client-project-sheet"
+    ]
+  },
+  {
+    "id": "retablo-medina-rioseco",
+    "title": "Baroque High Altar Retable (1666) — Medina de Rioseco",
+    "category": [
+      "sculpture"
+    ],
+    "type": "Conservation & Restoration",
+    "institution": "Kipsa",
+    "location": "Medina de Rioseco, Valladolid, Spain",
+    "year": "1991",
+    "shortDescription": "Restoration of the dismantled baroque high altar retable (1666) at the Iglesia-Museo de la Santa Cruz, Medina de Rioseco.",
+    "longDescription": "The restoration of the high altar retable was carried out in 1991 with the company Kipsa. The ensemble, made of gilded and polychrome wood, was found dismantled, posing a significant structural intervention challenge. The work focused on restoring and remounting the retable structure, together with general cleaning, polychromy consolidation, material consolidation, fungicidal treatments and volumetric and chromatic reintegration, aiming to recover its stability and historic-artistic legibility.",
+    "isSelected": false,
+    "heroImage": "assets/images/proj-retablo-medina-rioseco-hero.jpg",
+    "gallery": [
+      "assets/images/proj-retablo-medina-rioseco-gallery-01.jpg"
+    ],
+    "tags": [
+      "retablos",
+      "polychrome wood",
+      "gilded wood",
+      "Valladolid",
+      "ecclesiastical heritage"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "sculpture",
+    "years": [],
+    "sources": [
+      "client-project-sheet"
+    ]
+  },
+  {
+    "id": "retablo-san-juan-rambla",
+    "title": "Baroque Altar Retable of Saint Joseph (1707) — San Juan de la Rambla",
+    "category": [
+      "sculpture"
+    ],
+    "type": "Conservation & Restoration",
+    "institution": "Cabildo de Tenerife",
+    "location": "San Juan de la Rambla, Tenerife, Spain",
+    "year": "1995",
+    "shortDescription": "Restoration of the baroque altar retable of Saint Joseph (1707) at the Iglesia de San Juan de la Rambla, Tenerife.",
+    "longDescription": "The restoration of the altar retable of Saint Joseph was carried out in 1995 for the Cabildo de Tenerife. The ensemble, made of gilded and polychrome wood, presented structural alterations and surface conservation problems. The intervention included general cleaning, polychromy consolidation, material consolidation, fungicidal treatments and volumetric and chromatic reintegration, aiming to stabilise the piece and recover its historic-artistic legibility.",
+    "isSelected": false,
+    "heroImage": "assets/images/proj-retablo-san-juan-rambla-hero.jpg",
+    "gallery": [
+      "assets/images/proj-retablo-san-juan-rambla-gallery-01.jpg"
+    ],
+    "tags": [
+      "retablos",
+      "polychrome wood",
+      "gilded wood",
+      "Tenerife",
+      "ecclesiastical heritage"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "sculpture",
+    "years": [],
+    "sources": [
+      "client-project-sheet"
+    ]
   },
   {
     "id": "cupula-san-andres",
     "title": "Sculptural Ensemble — Cúpula de San Andrés",
-    "category": ["sculpture", "archaeological-mural"],
+    "category": [
+      "sculpture",
+      "archaeological-mural"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Parroquia de San Andrés",
     "location": "Madrid, Spain",
@@ -273,14 +684,37 @@
     "longDescription": "Conservation of the sculptural programme associated with the dome of San Andrés church in Madrid, a significant baroque heritage ensemble. Work involved structural consolidation, surface cleaning and chromatic integration of sculptural elements within an active ecclesiastical building.",
     "isSelected": false,
     "heroImage": "assets/images/proj-san-andres-hero.jpg",
-    "gallery": [],
-    "tags": ["San Andrés", "Madrid", "baroque", "dome", "ecclesiastical"],
-    "roomNumber": "01"
+    "gallery": [
+      "assets/images/proj-san-andres-gallery-01.jpg",
+      "assets/images/proj-san-andres-gallery-02.jpg",
+      "assets/images/proj-san-andres-gallery-03.jpg",
+      "assets/images/proj-san-andres-gallery-04.jpg",
+      "assets/images/proj-san-andres-gallery-05.jpg",
+      "assets/images/proj-san-andres-gallery-06.jpg",
+      "assets/images/proj-san-andres-gallery-07.jpg"
+    ],
+    "tags": [
+      "San Andrés",
+      "Madrid",
+      "baroque",
+      "dome",
+      "ecclesiastical"
+    ],
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "archaeological-mural",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives year 1997, conflicting with published 2008; not applied without confirmation from Ángeles"
+    ]
   },
   {
     "id": "pintura-rabasf",
     "title": "Painting Conservation — RABASF Collection",
-    "category": ["painting", "institutional-collections"],
+    "category": [
+      "painting",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, Spain",
@@ -294,13 +728,22 @@
       "assets/images/painting-process-01.jpg",
       "assets/images/painting-before-after-01.jpg"
     ],
-    "tags": ["RABASF", "easel painting", "Alonso Cano", "Van Dyck", "institutional"],
+    "tags": [
+      "RABASF",
+      "easel painting",
+      "Alonso Cano",
+      "Van Dyck",
+      "institutional"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "museo-malaga",
     "title": "Painting Conservation — Museo de Bellas Artes de Málaga",
-    "category": ["painting", "institutional-collections"],
+    "category": [
+      "painting",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Museo de Bellas Artes de Málaga",
     "location": "Málaga, Spain",
@@ -310,13 +753,21 @@
     "isSelected": true,
     "heroImage": "assets/images/proj-malaga-hero.jpg",
     "gallery": [],
-    "tags": ["Málaga", "easel painting", "regional museum", "Nogales"],
+    "tags": [
+      "Málaga",
+      "easel painting",
+      "regional museum",
+      "Nogales"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "museo-granada",
     "title": "Painting Conservation — Museo de Bellas Artes de Granada",
-    "category": ["painting", "institutional-collections"],
+    "category": [
+      "painting",
+      "institutional-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Museo de Bellas Artes de Granada",
     "location": "Granada, Spain",
@@ -326,13 +777,21 @@
     "isSelected": true,
     "heroImage": "assets/images/proj-granada-hero.jpg",
     "gallery": [],
-    "tags": ["Granada", "easel painting", "regional museum", "large format"],
+    "tags": [
+      "Granada",
+      "easel painting",
+      "regional museum",
+      "large format"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "campo-valdes-gijon",
     "title": "Archaeological Mural — Museo-Yacimiento de Campo Valdés",
-    "category": ["painting", "archaeological-mural"],
+    "category": [
+      "painting",
+      "archaeological-mural"
+    ],
     "type": "Archaeological Conservation",
     "institution": "Museo-Yacimiento de Campo Valdés",
     "location": "Gijón, Asturias, Spain",
@@ -342,13 +801,22 @@
     "isSelected": false,
     "heroImage": "assets/images/proj-campo-valdes-hero.jpg",
     "gallery": [],
-    "tags": ["mural painting", "Roman", "archaeological", "Asturias", "in-situ"],
+    "tags": [
+      "mural painting",
+      "Roman",
+      "archaeological",
+      "Asturias",
+      "in-situ"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "somosierra-mural",
     "title": "Mural Painting — Casa de Diezmos, Somosierra",
-    "category": ["painting", "archaeological-mural"],
+    "category": [
+      "painting",
+      "archaeological-mural"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Casa de Diezmos",
     "location": "Somosierra, Madrid, Spain",
@@ -358,13 +826,21 @@
     "isSelected": false,
     "heroImage": "assets/images/proj-somosierra-hero.jpg",
     "gallery": [],
-    "tags": ["mural painting", "historic building", "Madrid", "decorative"],
+    "tags": [
+      "mural painting",
+      "historic building",
+      "Madrid",
+      "decorative"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "catedral-zamora",
     "title": "Mural Painting — Capilla del Cardenal, Catedral de Zamora",
-    "category": ["painting", "archaeological-mural"],
+    "category": [
+      "painting",
+      "archaeological-mural"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Catedral de Zamora",
     "location": "Zamora, Spain",
@@ -374,13 +850,22 @@
     "isSelected": true,
     "heroImage": "assets/images/proj-zamora-hero.jpg",
     "gallery": [],
-    "tags": ["mural painting", "cathedral", "medieval", "Zamora", "ecclesiastical"],
+    "tags": [
+      "mural painting",
+      "cathedral",
+      "medieval",
+      "Zamora",
+      "ecclesiastical"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "colecciones-privadas",
     "title": "Private Collections — Esperanza Parada & José Nogué Massó",
-    "category": ["painting", "private-collections"],
+    "category": [
+      "painting",
+      "private-collections"
+    ],
     "type": "Conservation & Restoration",
     "institution": "Private collectors",
     "location": "Madrid, Spain",
@@ -390,13 +875,21 @@
     "isSelected": false,
     "heroImage": "assets/images/proj-particulares-hero.jpg",
     "gallery": [],
-    "tags": ["private collection", "Esperanza Parada", "José Nogué", "easel painting", "discretion"],
+    "tags": [
+      "private collection",
+      "Esperanza Parada",
+      "José Nogué",
+      "easel painting",
+      "discretion"
+    ],
     "roomNumber": "02"
   },
   {
     "id": "anjusil-metodologia",
     "title": "Anjusil® — Patented Conservation Methodology",
-    "category": ["research-methodology"],
+    "category": [
+      "research-methodology"
+    ],
     "type": "Research & Methodology",
     "institution": "Independent / RABASF",
     "location": "Madrid, Spain",
@@ -406,13 +899,21 @@
     "isSelected": true,
     "heroImage": "assets/images/proj-anjusil-hero.jpg",
     "gallery": [],
-    "tags": ["Anjusil®", "patent", "research", "methodology", "plaster casts"],
+    "tags": [
+      "Anjusil®",
+      "patent",
+      "research",
+      "methodology",
+      "plaster casts"
+    ],
     "roomNumber": null
   },
   {
     "id": "premios-reconocimientos",
     "title": "National Award 2004 & Europa Nostra 2006",
-    "category": ["awards-grants"],
+    "category": [
+      "awards-grants"
+    ],
     "type": "Recognition",
     "institution": "Ministry of Culture / Europa Nostra",
     "location": "Spain / Europe",
@@ -422,7 +923,12 @@
     "isSelected": true,
     "heroImage": "assets/images/proj-premios-hero.jpg",
     "gallery": [],
-    "tags": ["National Award", "Europa Nostra", "Ministry of Culture", "recognition"],
+    "tags": [
+      "National Award",
+      "Europa Nostra",
+      "Ministry of Culture",
+      "recognition"
+    ],
     "roomNumber": null
   }
 ]
