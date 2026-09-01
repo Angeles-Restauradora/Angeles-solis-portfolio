@@ -1,0 +1,10 @@
+# Local tooling / QA artifacts — never part of the deployed site
+.playwright-mcp/
+.superpowers/
+docs/screenshots/
+
+# Client-supplied source material — private, not for the public repo
+docs/client-revisions*/
+
+# OS metadata
+.DS_Store
