@@ -1,17 +1,17 @@
 [
   {
     "id": "vaciados-rabasf",
-    "title": "Historical Plaster Cast Collection — RABASF",
+    "title": "Colección de Vaciados Históricos — RABASF",
     "category": [
       "sculpture",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Real Academia de Bellas Artes de San Fernando",
-    "location": "Madrid, Spain",
+    "location": "Madrid, España",
     "year": "2001–2006",
-    "shortDescription": "Conservation and restoration of the historical plaster cast collection at the Real Academia de Bellas Artes de San Fernando. Project directly linked to the National Award 2004 and the Europa Nostra Award 2006.",
-    "longDescription": "This project represents the defining work of Ángeles Solís Parra's career: the conservation and systematic restoration of the historical plaster cast collection at the Real Academia de Bellas Artes de San Fernando. Works treated include the Ariadna, Crátera de Estabia, Flora Farnese, Puerta del Paraíso, Venus del Pomo and Venus Médici. The project required the development of a patented cleaning methodology — Anjusil® — specifically designed for the complex surface behavior of historical plaster casts.",
+    "shortDescription": "Conservación y restauración de la colección de vaciados históricos en la Real Academia de Bellas Artes de San Fernando. Proyecto vinculado directamente al Premio Nacional 2004 y al Premio Europa Nostra 2006.",
+    "longDescription": "Este proyecto representa el trabajo definitorio de la carrera de Ángeles Solís Parra: la conservación y restauración sistemática de la colección de vaciados históricos en la Real Academia de Bellas Artes de San Fernando. Las obras tratadas incluyen la Ariadna, la Crátera de Estabia, la Flora Farnese, la Puerta del Paraíso, la Venus del Pomo y la Venus Médici. El proyecto exigió el desarrollo de una metodología de limpieza patentada — Anjusil® — diseñada específicamente para el complejo comportamiento superficial de los vaciados históricos en yeso.",
     "isSelected": true,
     "heroImage": "assets/images/proj-vaciados-rabasf-hero.jpg",
     "gallery": [
@@ -20,10 +20,10 @@
       "assets/images/sculpture-plaster-detail-01.jpg"
     ],
     "tags": [
-      "plaster casts",
+      "vaciados en yeso",
       "RABASF",
       "Anjusil®",
-      "national award",
+      "premio nacional",
       "Europa Nostra"
     ],
     "roomNumber": "01",
@@ -210,26 +210,26 @@
   },
   {
     "id": "premios-envios-roma",
-    "title": "Premios y Envíos de Roma — RABASF Sculpture Collection",
+    "title": "Premios y Envíos de Roma — Colección Escultórica RABASF",
     "category": [
       "sculpture",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Real Academia de Bellas Artes de San Fernando",
-    "location": "Madrid, Spain",
+    "location": "Madrid, España",
     "year": "2002–2007",
-    "shortDescription": "Conservation of the Roma Prizes and Envíos collection at RABASF, including works by José Ginés (Apolino), Huberto Dumandré, Juan Adán and others.",
-    "longDescription": "The Roma Prizes and Envíos collection represents the institutional memory of academic sculpture formation in Spain. Works treated include the Apolino de José Ginés (E-7), Andrés Atado a la Cruz de Huberto Dumandré (E-213), Marsias de Juan Adán (E-222), Santa Leocadia Azotada de Manuel Llorente (E-393), San Francisco de Paula de José Guerra (E-396) and El Rey Don Alonso el Casto de Santiago Rodríguez (E-501). Each piece required individual treatment protocols adapted to material history and institutional context.",
+    "shortDescription": "Conservación de la colección de Premios y Envíos de Roma en la RABASF, incluyendo obras de José Ginés (Apolino), Huberto Dumandré, Juan Adán y otros.",
+    "longDescription": "La colección de Premios y Envíos de Roma representa la memoria institucional de la formación escultórica académica en España. Las obras tratadas incluyen el Apolino de José Ginés (E-7), Andrés Atado a la Cruz de Huberto Dumandré (E-213), Marsias de Juan Adán (E-222), Santa Leocadia Azotada de Manuel Llorente (E-393), San Francisco de Paula de José Guerra (E-396) y El Rey Don Alonso el Casto de Santiago Rodríguez (E-501). Cada pieza requirió protocolos de tratamiento individualizados, adaptados a su historia material y contexto institucional.",
     "isSelected": false,
     "heroImage": "assets/images/proj-premios-roma-hero.jpg",
     "gallery": [],
     "tags": [
       "RABASF",
-      "academic sculpture",
-      "Roma Prizes",
-      "marble",
-      "institutional"
+      "escultura académica",
+      "Premios de Roma",
+      "mármol",
+      "institucional"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -398,17 +398,17 @@
   },
   {
     "id": "universidad-sevilla",
-    "title": "Plaster Cast Collection — Universidad de Sevilla",
+    "title": "Colección de Vaciados — Universidad de Sevilla",
     "category": [
       "sculpture",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Universidad de Sevilla",
-    "location": "Sevilla, Spain",
+    "location": "Sevilla, España",
     "year": "2007–2009",
-    "shortDescription": "Conservation of the historical plaster cast collection at the Universidad de Sevilla, applying the Anjusil® methodology developed at RABASF.",
-    "longDescription": "Following the recognised work at RABASF, the University of Seville commissioned the conservation of its own plaster cast collection. This project extended the Anjusil® methodology to a different institutional and material context, consolidating its application beyond the original RABASF collection.",
+    "shortDescription": "Conservación de la colección de vaciados históricos en la Universidad de Sevilla, aplicando la metodología Anjusil® desarrollada en la RABASF.",
+    "longDescription": "Tras el reconocido trabajo en la RABASF, la Universidad de Sevilla encargó la conservación de su propia colección de vaciados. Este proyecto extendió la metodología Anjusil® a un contexto institucional y material distinto, consolidando su aplicación más allá de la colección original de la RABASF.",
     "isSelected": false,
     "heroImage": "assets/images/proj-sevilla-hero.jpg",
     "gallery": [
@@ -420,8 +420,8 @@
       "assets/images/proj-sevilla-gallery-06.jpg"
     ],
     "tags": [
-      "plaster casts",
-      "university",
+      "vaciados en yeso",
+      "universidad",
       "Anjusil®",
       "Sevilla"
     ],
@@ -440,12 +440,12 @@
       "sculpture",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Museo Nacional de Reproducciones Artísticas de Madrid",
-    "location": "Madrid, Spain",
+    "location": "Madrid, España",
     "year": "2009–2011",
-    "shortDescription": "Conservation of the plaster cast and reproduction collection at the Museo Nacional de Reproducciones Artísticas de Madrid.",
-    "longDescription": "The Museo Nacional de Reproducciones Artísticas holds one of Europe's most significant collections of artistic reproductions, including plaster casts, bronze and stone copies after major antique and Renaissance works. This conservation project involved assessment, stabilization and treatment of selected works from the permanent collection.",
+    "shortDescription": "Conservación de la colección de vaciados y reproducciones del Museo Nacional de Reproducciones Artísticas de Madrid.",
+    "longDescription": "El Museo Nacional de Reproducciones Artísticas alberga una de las colecciones de reproducciones artísticas más importantes de Europa, incluyendo vaciados en yeso y copias en bronce y piedra de grandes obras antiguas y renacentistas. Este proyecto de conservación abarcó la evaluación, estabilización y tratamiento de obras seleccionadas de la colección permanente.",
     "isSelected": true,
     "heroImage": "assets/images/proj-mnra-hero.jpg",
     "gallery": [
@@ -460,8 +460,8 @@
     ],
     "tags": [
       "MNRA",
-      "reproductions",
-      "plaster casts",
+      "reproducciones",
+      "vaciados en yeso",
       "Madrid"
     ],
     "roomNumber": "01",
@@ -474,42 +474,42 @@
   },
   {
     "id": "pompeya",
-    "title": "Archaeological Conservation — Pompeii",
+    "title": "Conservación Arqueológica — Pompeya",
     "category": [
       "sculpture",
       "archaeological-mural"
     ],
-    "type": "Archaeological Conservation",
-    "institution": "Pompeii Archaeological Site",
-    "location": "Pompeii, Italy",
+    "type": "Conservación Arqueológica",
+    "institution": "Yacimiento Arqueológico de Pompeya",
+    "location": "Pompeya, Italia",
     "year": "2005",
-    "shortDescription": "Conservation intervention at the Pompeii archaeological site, treating sculptural and architectural heritage in situ.",
-    "longDescription": "International conservation work at the Pompeii archaeological site. Ángeles Solís Parra contributed to in-situ conservation of sculptural elements, working within the complex material and environmental conditions specific to the volcanic context and the demands of an active archaeological site.",
+    "shortDescription": "Intervención de conservación en el yacimiento arqueológico de Pompeya, tratando patrimonio escultórico y arquitectónico in situ.",
+    "longDescription": "Trabajo internacional de conservación en el yacimiento arqueológico de Pompeya. Ángeles Solís Parra contribuyó a la conservación in situ de elementos escultóricos, trabajando en las complejas condiciones materiales y ambientales propias del contexto volcánico y las exigencias de un yacimiento arqueológico en activo.",
     "isSelected": true,
     "heroImage": "assets/images/proj-pompeya-hero.jpg",
     "gallery": [],
     "tags": [
-      "Pompeii",
-      "archaeological",
-      "international",
-      "in-situ",
-      "Italy"
+      "Pompeya",
+      "arqueológico",
+      "internacional",
+      "in situ",
+      "Italia"
     ],
     "roomNumber": "01"
   },
   {
     "id": "museo-del-prado",
-    "title": "Sculpture Conservation — Museo Nacional del Prado",
+    "title": "Conservación Escultórica — Museo Nacional del Prado",
     "category": [
       "sculpture",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Museo Nacional del Prado",
-    "location": "Madrid, Spain",
+    "location": "Madrid, España",
     "year": "2003–2004",
-    "shortDescription": "Conservation of sculptural works from the collection of the Museo Nacional del Prado, under the Fundación Botín scholarship.",
-    "longDescription": "Selected for the prestigious Fundación Botín scholarship at the Museo Nacional del Prado, Ángeles Solís Parra carried out conservation work on sculptural pieces from the Prado's permanent collection. This project represented a singular professional endorsement and the opportunity to work directly with one of the world's most important art collections.",
+    "shortDescription": "Conservación de obras escultóricas de la colección del Museo Nacional del Prado, en el marco de la beca Fundación Botín.",
+    "longDescription": "Seleccionada para la prestigiosa beca de la Fundación Botín en el Museo Nacional del Prado, Ángeles Solís Parra realizó trabajos de conservación sobre piezas escultóricas de la colección permanente del Prado. Este proyecto supuso un reconocimiento profesional singular y la oportunidad de trabajar directamente con una de las colecciones de arte más importantes del mundo.",
     "isSelected": true,
     "heroImage": "assets/images/proj-prado-hero.jpg",
     "gallery": [
@@ -524,9 +524,9 @@
     "tags": [
       "Prado",
       "Fundación Botín",
-      "scholarship",
+      "beca",
       "Madrid",
-      "national museum"
+      "museo nacional"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -538,16 +538,16 @@
   },
   {
     "id": "retablo-berzosa-bureba",
-    "title": "Plateresque High Altar Retable (1538) — Berzosa de Bureba",
+    "title": "Retablo Mayor Plateresco (1538) — Berzosa de Bureba",
     "category": [
       "sculpture"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Kipsa",
-    "location": "Berzosa de Bureba, Burgos, Spain",
+    "location": "Berzosa de Bureba, Burgos, España",
     "year": "1990",
-    "shortDescription": "Restoration of the plateresque high altar retable (1538) at the Iglesia de la Asunción de Nuestra Señora, Berzosa de Bureba, in gilded and polychrome wood.",
-    "longDescription": "The restoration of the high altar retable was carried out in 1990 with the company Kipsa. The ensemble, made of gilded and polychrome wood, presented significant structural damage as well as deterioration of its sculptural group. The intervention included general cleaning, consolidation of the polychromy, material consolidation, fungicidal treatments and chromatic reintegration, aiming to stabilise the piece and recover its aesthetic and historic-artistic legibility.",
+    "shortDescription": "Restauración del retablo mayor plateresco (1538) de la Iglesia de la Asunción de Nuestra Señora, en Berzosa de Bureba, en madera dorada y policromada.",
+    "longDescription": "La restauración del retablo mayor se llevó a cabo en 1990 con la empresa Kipsa. El conjunto, realizado en madera dorada y policromada, presentaba un importante deterioro estructural, además de daños en su conjunto escultórico. La intervención incluyó limpieza general, consolidación de la policromía, consolidación de materiales, tratamientos fungicidas y reintegración cromática, con el objetivo de estabilizar la pieza y recuperar su lectura estética e histórico-artística.",
     "isSelected": false,
     "heroImage": "assets/images/proj-retablo-berzosa-hero.jpg",
     "gallery": [
@@ -557,10 +557,10 @@
     ],
     "tags": [
       "retablos",
-      "polychrome wood",
-      "gilded wood",
+      "madera policromada",
+      "madera dorada",
       "Burgos",
-      "ecclesiastical heritage"
+      "patrimonio eclesiástico"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -572,16 +572,16 @@
   },
   {
     "id": "retablo-grandas-salime",
-    "title": "Baroque High Altar Retable (1628–34) — Grandas de Salime",
+    "title": "Retablo Mayor Barroco (1628–34) — Grandas de Salime",
     "category": [
       "sculpture"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Facultad de Bellas Artes, Universidad Complutense de Madrid",
-    "location": "Grandas de Salime, Asturias, Spain",
+    "location": "Grandas de Salime, Asturias, España",
     "year": "1993",
-    "shortDescription": "Restoration of the baroque high altar retable (1628–34) at the Colegiata de El Salvador, Grandas de Salime, including structural remounting and polychromy conservation.",
-    "longDescription": "The restoration of the high altar retable was carried out in 1993 at the Faculty of Fine Arts of the Universidad Complutense de Madrid. The ensemble, made of gilded and polychrome wood, presented deterioration affecting both its structure and its sculptural group. The intervention included mounting and anchoring the retable structure to the wall, carpentry work, general cleaning, polychromy consolidation, material consolidation, fungicidal treatments and volumetric and chromatic reintegration. In 1993 the town received the Premio al Pueblo Ejemplar de Asturias, among other reasons for the rehabilitation of the Romanesque Colegiata de El Salvador, including this retable.",
+    "shortDescription": "Restauración del retablo mayor barroco (1628–34) de la Colegiata de El Salvador, en Grandas de Salime, incluyendo el remontaje estructural y la conservación de la policromía.",
+    "longDescription": "La restauración del retablo mayor se llevó a cabo en 1993 en la Facultad de Bellas Artes de la Universidad Complutense de Madrid. El conjunto, realizado en madera dorada y policromada, presentaba deterioro tanto en su estructura como en su conjunto escultórico. La intervención incluyó el montaje y anclaje de la estructura del retablo al muro, labores de carpintería, limpieza general, consolidación de la policromía, consolidación de materiales, tratamientos fungicidas y reintegración volumétrica y cromática. En 1993 el pueblo recibió el Premio al Pueblo Ejemplar de Asturias, entre otros motivos por la rehabilitación de la Colegiata románica de El Salvador, incluyendo este retablo.",
     "isSelected": false,
     "heroImage": "assets/images/proj-retablo-grandas-hero.jpg",
     "gallery": [
@@ -592,10 +592,10 @@
     ],
     "tags": [
       "retablos",
-      "polychrome wood",
-      "gilded wood",
+      "madera policromada",
+      "madera dorada",
       "Asturias",
-      "ecclesiastical heritage"
+      "patrimonio eclesiástico"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -607,16 +607,16 @@
   },
   {
     "id": "retablo-medina-rioseco",
-    "title": "Baroque High Altar Retable (1666) — Medina de Rioseco",
+    "title": "Retablo Mayor Barroco (1666) — Medina de Rioseco",
     "category": [
       "sculpture"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Kipsa",
-    "location": "Medina de Rioseco, Valladolid, Spain",
+    "location": "Medina de Rioseco, Valladolid, España",
     "year": "1991",
-    "shortDescription": "Restoration of the dismantled baroque high altar retable (1666) at the Iglesia-Museo de la Santa Cruz, Medina de Rioseco.",
-    "longDescription": "The restoration of the high altar retable was carried out in 1991 with the company Kipsa. The ensemble, made of gilded and polychrome wood, was found dismantled, posing a significant structural intervention challenge. The work focused on restoring and remounting the retable structure, together with general cleaning, polychromy consolidation, material consolidation, fungicidal treatments and volumetric and chromatic reintegration, aiming to recover its stability and historic-artistic legibility.",
+    "shortDescription": "Restauración del retablo mayor barroco (1666), desmontado, de la Iglesia-Museo de la Santa Cruz, en Medina de Rioseco.",
+    "longDescription": "La restauración del retablo mayor se llevó a cabo en 1991 con la empresa Kipsa. El conjunto, realizado en madera dorada y policromada, se encontraba desmontado, lo que supuso un importante reto de intervención estructural. El trabajo se centró en la restauración y el remontaje de la estructura del retablo, junto con limpieza general, consolidación de la policromía, consolidación de materiales, tratamientos fungicidas y reintegración volumétrica y cromática, con el objetivo de recuperar su estabilidad y lectura histórico-artística.",
     "isSelected": false,
     "heroImage": "assets/images/proj-retablo-medina-rioseco-hero.jpg",
     "gallery": [
@@ -624,10 +624,10 @@
     ],
     "tags": [
       "retablos",
-      "polychrome wood",
-      "gilded wood",
+      "madera policromada",
+      "madera dorada",
       "Valladolid",
-      "ecclesiastical heritage"
+      "patrimonio eclesiástico"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -639,16 +639,16 @@
   },
   {
     "id": "retablo-san-juan-rambla",
-    "title": "Baroque Altar Retable of Saint Joseph (1707) — San Juan de la Rambla",
+    "title": "Retablo Barroco de San José (1707) — San Juan de la Rambla",
     "category": [
       "sculpture"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Cabildo de Tenerife",
-    "location": "San Juan de la Rambla, Tenerife, Spain",
+    "location": "San Juan de la Rambla, Tenerife, España",
     "year": "1995",
-    "shortDescription": "Restoration of the baroque altar retable of Saint Joseph (1707) at the Iglesia de San Juan de la Rambla, Tenerife.",
-    "longDescription": "The restoration of the altar retable of Saint Joseph was carried out in 1995 for the Cabildo de Tenerife. The ensemble, made of gilded and polychrome wood, presented structural alterations and surface conservation problems. The intervention included general cleaning, polychromy consolidation, material consolidation, fungicidal treatments and volumetric and chromatic reintegration, aiming to stabilise the piece and recover its historic-artistic legibility.",
+    "shortDescription": "Restauración del retablo barroco de San José (1707) de la Iglesia de San Juan de la Rambla, en Tenerife.",
+    "longDescription": "La restauración del retablo de San José se llevó a cabo en 1995 para el Cabildo de Tenerife. El conjunto, realizado en madera dorada y policromada, presentaba alteraciones estructurales y problemas de conservación superficial. La intervención incluyó limpieza general, consolidación de la policromía, consolidación de materiales, tratamientos fungicidas y reintegración volumétrica y cromática, con el objetivo de estabilizar la pieza y recuperar su lectura histórico-artística.",
     "isSelected": false,
     "heroImage": "assets/images/proj-retablo-san-juan-rambla-hero.jpg",
     "gallery": [
@@ -656,10 +656,10 @@
     ],
     "tags": [
       "retablos",
-      "polychrome wood",
-      "gilded wood",
+      "madera policromada",
+      "madera dorada",
       "Tenerife",
-      "ecclesiastical heritage"
+      "patrimonio eclesiástico"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -671,17 +671,17 @@
   },
   {
     "id": "cupula-san-andres",
-    "title": "Sculptural Ensemble — Cúpula de San Andrés",
+    "title": "Conjunto Escultórico — Cúpula de San Andrés",
     "category": [
       "sculpture",
       "archaeological-mural"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Parroquia de San Andrés",
-    "location": "Madrid, Spain",
+    "location": "Madrid, España",
     "year": "2008",
-    "shortDescription": "Conservation of the sculptural ensemble of the Cúpula de San Andrés in Madrid.",
-    "longDescription": "Conservation of the sculptural programme associated with the dome of San Andrés church in Madrid, a significant baroque heritage ensemble. Work involved structural consolidation, surface cleaning and chromatic integration of sculptural elements within an active ecclesiastical building.",
+    "shortDescription": "Conservación del conjunto escultórico de la Cúpula de San Andrés, en Madrid.",
+    "longDescription": "Conservación del programa escultórico asociado a la cúpula de la iglesia de San Andrés en Madrid, un conjunto patrimonial barroco de gran relevancia. El trabajo incluyó consolidación estructural, limpieza superficial e integración cromática de los elementos escultóricos dentro de un edificio eclesiástico en uso activo.",
     "isSelected": false,
     "heroImage": "assets/images/proj-san-andres-hero.jpg",
     "gallery": [
@@ -696,9 +696,9 @@
     "tags": [
       "San Andrés",
       "Madrid",
-      "baroque",
-      "dome",
-      "ecclesiastical"
+      "barroco",
+      "cúpula",
+      "eclesiástico"
     ],
     "roomNumber": "01",
     "schemaVersion": 2,
@@ -710,17 +710,17 @@
   },
   {
     "id": "pintura-rabasf",
-    "title": "Painting Conservation — RABASF Collection",
+    "title": "Conservación de Pintura — Colección RABASF",
     "category": [
       "painting",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Real Academia de Bellas Artes de San Fernando",
-    "location": "Madrid, Spain",
+    "location": "Madrid, España",
     "year": "2004–2014",
-    "shortDescription": "Conservation and restoration of paintings from the permanent collection of the Real Academia de Bellas Artes de San Fernando, including works by Alonso Cano and Van Dyck.",
-    "longDescription": "Over a decade of sustained work on the painting collection of the Real Academia de Bellas Artes de San Fernando. Works treated include La Muerte de San Francisco de Asís by Alonso Cano (inv. 553) and a painting attributed to Van Dyck, as well as numerous other works from the permanent collection. Conservation criteria prioritised material integrity, chromatic coherence and institutional accountability.",
+    "shortDescription": "Conservación y restauración de pinturas de la colección permanente de la Real Academia de Bellas Artes de San Fernando, incluyendo obras de Alonso Cano y Van Dyck.",
+    "longDescription": "Más de una década de trabajo continuado sobre la colección pictórica de la Real Academia de Bellas Artes de San Fernando. Las obras tratadas incluyen La Muerte de San Francisco de Asís de Alonso Cano (inv. 553) y una pintura atribuida a Van Dyck, además de numerosas otras obras de la colección permanente. Los criterios de conservación priorizaron la integridad material, la coherencia cromática y la responsabilidad institucional.",
     "isSelected": true,
     "heroImage": "assets/images/proj-pintura-rabasf-hero.jpg",
     "gallery": [
@@ -730,204 +730,204 @@
     ],
     "tags": [
       "RABASF",
-      "easel painting",
+      "pintura de caballete",
       "Alonso Cano",
       "Van Dyck",
-      "institutional"
+      "institucional"
     ],
     "roomNumber": "02"
   },
   {
     "id": "museo-malaga",
-    "title": "Painting Conservation — Museo de Bellas Artes de Málaga",
+    "title": "Conservación de Pintura — Museo de Bellas Artes de Málaga",
     "category": [
       "painting",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Museo de Bellas Artes de Málaga",
-    "location": "Málaga, Spain",
+    "location": "Málaga, España",
     "year": "2010–2012",
-    "shortDescription": "Conservation of paintings from the Museo de Bellas Artes de Málaga, including works by Nogales and Denis Belgrano.",
-    "longDescription": "Conservation project for the Museo de Bellas Artes de Málaga, treating works of significant regional heritage value including paintings by Nogales and Pato Denis Belgrano. The project required adaptation of conservation criteria to works with complex varnish histories and previous interventions.",
+    "shortDescription": "Conservación de pinturas del Museo de Bellas Artes de Málaga, incluyendo obras de Nogales y Denis Belgrano.",
+    "longDescription": "Proyecto de conservación para el Museo de Bellas Artes de Málaga, con obras de gran valor patrimonial regional, incluyendo pinturas de Nogales y Pato Denis Belgrano. El proyecto exigió adaptar los criterios de conservación a obras con historiales complejos de barnices e intervenciones previas.",
     "isSelected": true,
     "heroImage": "assets/images/proj-malaga-hero.jpg",
     "gallery": [],
     "tags": [
       "Málaga",
-      "easel painting",
-      "regional museum",
+      "pintura de caballete",
+      "museo regional",
       "Nogales"
     ],
     "roomNumber": "02"
   },
   {
     "id": "museo-granada",
-    "title": "Painting Conservation — Museo de Bellas Artes de Granada",
+    "title": "Conservación de Pintura — Museo de Bellas Artes de Granada",
     "category": [
       "painting",
       "institutional-collections"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Museo de Bellas Artes de Granada",
-    "location": "Granada, Spain",
+    "location": "Granada, España",
     "year": "2011–2014",
-    "shortDescription": "Extensive conservation project for the Museo de Bellas Artes de Granada, involving multiple canvas paintings with complex structural and surface interventions.",
-    "longDescription": "One of the most extensive painting conservation projects in Ángeles Solís Parra's practice, involving multiple large-format canvas works from the permanent collection of the Museo de Bellas Artes de Granada. Interventions addressed canvas support, ground layer, paint film and varnish for a series of works with layered conservation histories.",
+    "shortDescription": "Amplio proyecto de conservación para el Museo de Bellas Artes de Granada, con múltiples pinturas sobre lienzo e intervenciones estructurales y superficiales complejas.",
+    "longDescription": "Uno de los proyectos de conservación de pintura más extensos de la trayectoria de Ángeles Solís Parra, con múltiples obras de gran formato sobre lienzo de la colección permanente del Museo de Bellas Artes de Granada. Las intervenciones abordaron el soporte de lienzo, la capa de preparación, la película pictórica y el barniz de una serie de obras con historiales de conservación superpuestos.",
     "isSelected": true,
     "heroImage": "assets/images/proj-granada-hero.jpg",
     "gallery": [],
     "tags": [
       "Granada",
-      "easel painting",
-      "regional museum",
-      "large format"
+      "pintura de caballete",
+      "museo regional",
+      "gran formato"
     ],
     "roomNumber": "02"
   },
   {
     "id": "campo-valdes-gijon",
-    "title": "Archaeological Mural — Museo-Yacimiento de Campo Valdés",
+    "title": "Pintura Mural Arqueológica — Museo-Yacimiento de Campo Valdés",
     "category": [
       "painting",
       "archaeological-mural"
     ],
-    "type": "Archaeological Conservation",
+    "type": "Conservación Arqueológica",
     "institution": "Museo-Yacimiento de Campo Valdés",
-    "location": "Gijón, Asturias, Spain",
+    "location": "Gijón, Asturias, España",
     "year": "2006",
-    "shortDescription": "Conservation of mural painting fragments within the archaeological museum-site of Campo Valdés in Gijón.",
-    "longDescription": "In-situ conservation of Roman mural painting fragments within the Campo Valdés archaeological site in Gijón, a significant bath complex from Roman Hispania. Work required adaptation to the archaeological context and the specific material behavior of fragmentary wall painting.",
+    "shortDescription": "Conservación de fragmentos de pintura mural en el museo-yacimiento arqueológico de Campo Valdés, en Gijón.",
+    "longDescription": "Conservación in situ de fragmentos de pintura mural romana en el yacimiento arqueológico de Campo Valdés, en Gijón, un importante complejo termal de la Hispania romana. El trabajo exigió adaptación al contexto arqueológico y al comportamiento material específico de la pintura mural fragmentaria.",
     "isSelected": false,
     "heroImage": "assets/images/proj-campo-valdes-hero.jpg",
     "gallery": [],
     "tags": [
-      "mural painting",
-      "Roman",
-      "archaeological",
+      "pintura mural",
+      "romano",
+      "arqueológico",
       "Asturias",
-      "in-situ"
+      "in situ"
     ],
     "roomNumber": "02"
   },
   {
     "id": "somosierra-mural",
-    "title": "Mural Painting — Casa de Diezmos, Somosierra",
+    "title": "Pintura Mural — Casa de Diezmos, Somosierra",
     "category": [
       "painting",
       "archaeological-mural"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Casa de Diezmos",
-    "location": "Somosierra, Madrid, Spain",
+    "location": "Somosierra, Madrid, España",
     "year": "2007",
-    "shortDescription": "Conservation of mural painting in the historic Casa de Diezmos in Somosierra, Madrid.",
-    "longDescription": "Conservation of interior mural paintings in the Casa de Diezmos in Somosierra, a historic building associated with ecclesiastical land management. The intervention addressed structural support, surface cleaning and consolidation of figurative and decorative mural schemes.",
+    "shortDescription": "Conservación de pintura mural en la histórica Casa de Diezmos de Somosierra, Madrid.",
+    "longDescription": "Conservación de pinturas murales interiores en la Casa de Diezmos de Somosierra, un edificio histórico vinculado a la administración de tierras eclesiásticas. La intervención abordó el soporte estructural, la limpieza superficial y la consolidación de los programas murales figurativos y decorativos.",
     "isSelected": false,
     "heroImage": "assets/images/proj-somosierra-hero.jpg",
     "gallery": [],
     "tags": [
-      "mural painting",
-      "historic building",
+      "pintura mural",
+      "edificio histórico",
       "Madrid",
-      "decorative"
+      "decorativo"
     ],
     "roomNumber": "02"
   },
   {
     "id": "catedral-zamora",
-    "title": "Mural Painting — Capilla del Cardenal, Catedral de Zamora",
+    "title": "Pintura Mural — Capilla del Cardenal, Catedral de Zamora",
     "category": [
       "painting",
       "archaeological-mural"
     ],
-    "type": "Conservation & Restoration",
+    "type": "Conservación y Restauración",
     "institution": "Catedral de Zamora",
-    "location": "Zamora, Spain",
+    "location": "Zamora, España",
     "year": "2009",
-    "shortDescription": "Conservation of the mural painting cycle in the Capilla del Cardenal at the Cathedral of Zamora.",
-    "longDescription": "Conservation of medieval mural paintings in the Capilla del Cardenal at the Cathedral of Zamora, a building of major architectural and heritage significance. The project involved preventive consolidation, cleaning and chromatic reintegration of a multi-layered mural programme.",
+    "shortDescription": "Conservación del ciclo de pintura mural de la Capilla del Cardenal, en la Catedral de Zamora.",
+    "longDescription": "Conservación de pinturas murales medievales en la Capilla del Cardenal de la Catedral de Zamora, un edificio de gran relevancia arquitectónica y patrimonial. El proyecto incluyó consolidación preventiva, limpieza y reintegración cromática de un programa mural de varias capas superpuestas.",
     "isSelected": true,
     "heroImage": "assets/images/proj-zamora-hero.jpg",
     "gallery": [],
     "tags": [
-      "mural painting",
-      "cathedral",
+      "pintura mural",
+      "catedral",
       "medieval",
       "Zamora",
-      "ecclesiastical"
+      "eclesiástico"
     ],
     "roomNumber": "02"
   },
   {
     "id": "colecciones-privadas",
-    "title": "Private Collections — Esperanza Parada & José Nogué Massó",
+    "title": "Colecciones Privadas — Esperanza Parada y José Nogué Massó",
     "category": [
       "painting",
       "private-collections"
     ],
-    "type": "Conservation & Restoration",
-    "institution": "Private collectors",
-    "location": "Madrid, Spain",
+    "type": "Conservación y Restauración",
+    "institution": "Coleccionistas privados",
+    "location": "Madrid, España",
     "year": "2000–2018",
-    "shortDescription": "Conservation of easel paintings from private collections, including works from the collection of the artist Esperanza Parada and works attributed to José Nogué Massó.",
-    "longDescription": "A sustained programme of conservation work for private collectors, requiring the discretion, technical precision and personal trust specific to private collection practice. Works include multiple still-life paintings by Esperanza Parada (Bodegones) and paintings from the estate of José Nogué Massó, the Spanish landscape painter.",
+    "shortDescription": "Conservación de pinturas de caballete de colecciones privadas, incluyendo obras de la colección de la artista Esperanza Parada y obras atribuidas a José Nogué Massó.",
+    "longDescription": "Un programa continuado de trabajo de conservación para coleccionistas privados, que exige la discreción, precisión técnica y confianza personal propias de la práctica en colecciones privadas. Las obras incluyen varios bodegones de Esperanza Parada y pinturas del legado de José Nogué Massó, el pintor paisajista español.",
     "isSelected": false,
     "heroImage": "assets/images/proj-particulares-hero.jpg",
     "gallery": [],
     "tags": [
-      "private collection",
+      "colección privada",
       "Esperanza Parada",
       "José Nogué",
-      "easel painting",
-      "discretion"
+      "pintura de caballete",
+      "discreción"
     ],
     "roomNumber": "02"
   },
   {
     "id": "anjusil-metodologia",
-    "title": "Anjusil® — Patented Conservation Methodology",
+    "title": "Anjusil® — Metodología de Conservación Patentada",
     "category": [
       "research-methodology"
     ],
-    "type": "Research & Methodology",
-    "institution": "Independent / RABASF",
-    "location": "Madrid, Spain",
+    "type": "Investigación y Metodología",
+    "institution": "Independiente / RABASF",
+    "location": "Madrid, España",
     "year": "2003–2006",
-    "shortDescription": "Development, testing and patenting of Anjusil®, a specialised cleaning methodology for historical plaster cast collections. Connected to the National Award 2004 and Europa Nostra Award 2006.",
-    "longDescription": "Anjusil® is the patented conservation methodology developed by Ángeles Solís Parra during the restoration of the RABASF plaster cast collection. The methodology addresses the specific challenges of cleaning historical plaster casts: the porosity of the material, the surface accumulation of dust, soiling and biological growth, and the need to preserve evidence of historical handling and aging without aggressive intervention. The development process involved material testing, chemical analysis and documentation across multiple cast typologies.",
+    "shortDescription": "Desarrollo, ensayo y patente de Anjusil®, una metodología de limpieza especializada para colecciones de vaciados históricos en yeso. Vinculada al Premio Nacional 2004 y al Premio Europa Nostra 2006.",
+    "longDescription": "Anjusil® es la metodología de conservación patentada desarrollada por Ángeles Solís Parra durante la restauración de la colección de vaciados de la RABASF. La metodología aborda los retos específicos de la limpieza de vaciados históricos en yeso: la porosidad del material, la acumulación superficial de polvo, suciedad y crecimiento biológico, y la necesidad de preservar las huellas del uso y el envejecimiento históricos sin una intervención agresiva. El proceso de desarrollo incluyó ensayos de materiales, análisis químicos y documentación a lo largo de múltiples tipologías de vaciados.",
     "isSelected": true,
     "heroImage": "assets/images/proj-anjusil-hero.jpg",
     "gallery": [],
     "tags": [
       "Anjusil®",
-      "patent",
-      "research",
-      "methodology",
-      "plaster casts"
+      "patente",
+      "investigación",
+      "metodología",
+      "vaciados en yeso"
     ],
     "roomNumber": null
   },
   {
     "id": "premios-reconocimientos",
-    "title": "National Award 2004 & Europa Nostra 2006",
+    "title": "Premio Nacional 2004 y Europa Nostra 2006",
     "category": [
       "awards-grants"
     ],
-    "type": "Recognition",
-    "institution": "Ministry of Culture / Europa Nostra",
-    "location": "Spain / Europe",
+    "type": "Reconocimiento",
+    "institution": "Ministerio de Cultura / Europa Nostra",
+    "location": "España / Europa",
     "year": "2004–2006",
-    "shortDescription": "National Award for Conservation and Restoration of Cultural Heritage (2004, Ministry of Culture) and Europa Nostra Award (2006), both connected to the recovery of the historical plaster cast collections.",
-    "longDescription": "In 2004, Ángeles Solís Parra received the National Award for Conservation and Restoration of Cultural Heritage from the Spanish Ministry of Culture, in recognition of the work carried out on the historical plaster cast collection at RABASF. In 2006, the same project was recognised with the Europa Nostra Award, the most prestigious European prize for cultural heritage practice. These recognitions confirm the professional and institutional significance of the work and the Anjusil® methodology at European level.",
+    "shortDescription": "Premio Nacional de Restauración y Conservación de Bienes Culturales (2004, Ministerio de Cultura) y Premio Europa Nostra (2006), ambos vinculados a la recuperación de las colecciones de vaciados históricos.",
+    "longDescription": "En 2004, Ángeles Solís Parra recibió el Premio Nacional de Restauración y Conservación de Bienes Culturales del Ministerio de Cultura, en reconocimiento al trabajo realizado en la colección de vaciados históricos de la RABASF. En 2006, el mismo proyecto fue reconocido con el Premio Europa Nostra, el galardón europeo más prestigioso en materia de patrimonio cultural. Estos reconocimientos confirman la relevancia profesional e institucional del trabajo y de la metodología Anjusil® a nivel europeo.",
     "isSelected": true,
     "heroImage": "assets/images/proj-premios-hero.jpg",
     "gallery": [],
     "tags": [
-      "National Award",
+      "Premio Nacional",
       "Europa Nostra",
-      "Ministry of Culture",
-      "recognition"
+      "Ministerio de Cultura",
+      "reconocimiento"
     ],
     "roomNumber": null
   }

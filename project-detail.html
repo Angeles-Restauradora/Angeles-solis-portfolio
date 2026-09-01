@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Project — Ángeles Solís Parra, Senior Conservator-Restorer of Cultural Heritage">
-  <title>Project — Ángeles Solís Parra</title>
+  <meta name="description" content="Proyecto — Ángeles Solís Parra, Conservadora-Restauradora Senior de Patrimonio Cultural">
+  <title>Proyecto — Ángeles Solís Parra</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,23 +16,23 @@
   <!-- NAVIGATION -->
   <header class="site-nav" role="banner">
     <a class="site-nav__brand" href="index.html">Ángeles Solís Parra</a>
-    <nav aria-label="Primary navigation">
+    <nav aria-label="Navegación principal">
       <ul role="list">
         <li><a href="index.html?room=vaciados">Escultura</a></li>
         <li><a href="index.html?room=pintura">Pintura</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#recognition">Recognition</a></li>
+        <li><a href="index.html#about">Perfil</a></li>
+        <li><a href="index.html#recognition">Reconocimientos</a></li>
         <li><a href="index.html#research">Investigación</a></li>
         <li><a href="index.html#publications">Publicaciones</a></li>
         <li><a href="complete-archive.html" class="is-active">Obras</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Loading state -->
   <div class="detail-status" id="detail-status">
-    <p>Loading…</p>
+    <p>Cargando…</p>
   </div>
 
   <!-- Page content (hidden until JS populates) -->
@@ -43,7 +43,7 @@
       <img class="detail-hero__img" id="hero-img" src="" alt="">
       <div class="detail-hero__gradient"></div>
       <div class="detail-back">
-        <a href="complete-archive.html" class="js-back">← Back</a>
+        <a href="complete-archive.html" class="js-back">← Volver</a>
       </div>
       <div class="detail-hero__content">
         <p class="detail-hero__eyebrow" id="hero-eyebrow"></p>
@@ -54,26 +54,26 @@
     <!-- META BAR -->
     <div class="detail-meta">
       <div class="detail-meta__item">
-        <span class="detail-meta__label">Type</span>
+        <span class="detail-meta__label">Tipo</span>
         <span class="detail-meta__value" id="meta-type"></span>
       </div>
       <div class="detail-meta__item">
-        <span class="detail-meta__label">Institution</span>
+        <span class="detail-meta__label">Institución</span>
         <span class="detail-meta__value" id="meta-institution"></span>
       </div>
       <div class="detail-meta__item">
-        <span class="detail-meta__label">Location</span>
+        <span class="detail-meta__label">Ubicación</span>
         <span class="detail-meta__value" id="meta-location"></span>
       </div>
       <div class="detail-meta__item">
-        <span class="detail-meta__label">Year</span>
+        <span class="detail-meta__label">Año</span>
         <span class="detail-meta__value" id="meta-year"></span>
       </div>
     </div>
 
     <!-- CONTENT -->
     <div class="detail-content">
-      <span class="detail-content__eyebrow">About this project</span>
+      <span class="detail-content__eyebrow">Sobre este proyecto</span>
       <p class="detail-content__lead" id="content-lead"></p>
       <p class="detail-content__text" id="content-text"></p>
     </div>
@@ -81,26 +81,26 @@
     <!-- SELECTED WORKS — renders only when project.works[] exists.
          Stays hidden for every project without real works data, so
          it never appears as an empty section. -->
-    <section class="detail-works" id="detail-works" hidden aria-label="Selected works">
-      <span class="detail-section-label">Selected Works</span>
+    <section class="detail-works" id="detail-works" hidden aria-label="Obras seleccionadas">
+      <span class="detail-section-label">Obras Seleccionadas</span>
       <div class="detail-works__list" id="detail-works-list"></div>
     </section>
 
     <!-- GALLERY -->
     <div class="detail-gallery" id="detail-gallery" hidden>
-      <span class="detail-section-label">Gallery</span>
+      <span class="detail-section-label">Galería</span>
       <div class="detail-gallery__grid" id="gallery-grid"></div>
     </div>
 
     <!-- TAGS -->
-    <div class="detail-tags" id="detail-tags" aria-label="Project tags"></div>
+    <div class="detail-tags" id="detail-tags" aria-label="Etiquetas del proyecto"></div>
 
     <!-- NAVIGATION -->
-    <nav class="detail-nav" aria-label="Project navigation">
-      <a href="complete-archive.html" class="detail-nav__btn js-back">← Complete Archive</a>
+    <nav class="detail-nav" aria-label="Navegación del proyecto">
+      <a href="complete-archive.html" class="detail-nav__btn js-back">← Archivo Completo</a>
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a href="#" class="detail-nav__btn" id="nav-prev">← Previous</a>
-        <a href="#" class="detail-nav__btn detail-nav__btn--fill" id="nav-next">Next →</a>
+        <a href="#" class="detail-nav__btn" id="nav-prev">← Anterior</a>
+        <a href="#" class="detail-nav__btn detail-nav__btn--fill" id="nav-next">Siguiente →</a>
       </div>
     </nav>
 
@@ -109,13 +109,13 @@
 
   <script>
     const CAT_LABELS = {
-      'sculpture': 'Sculpture',
-      'painting': 'Painting',
-      'archaeological-mural': 'Archaeological & Mural',
-      'institutional-collections': 'Institutional Collections',
-      'private-collections': 'Private Collections',
-      'research-methodology': 'Research & Methodology',
-      'awards-grants': 'Awards & Recognition'
+      'sculpture': 'Escultura',
+      'painting': 'Pintura',
+      'archaeological-mural': 'Arqueológico y Mural',
+      'institutional-collections': 'Colecciones Institucionales',
+      'private-collections': 'Colecciones Privadas',
+      'research-methodology': 'Investigación y Metodología',
+      'awards-grants': 'Reconocimientos'
     };
 
     // Same presentation-only safeguard applied in Complete Archive:
@@ -128,15 +128,16 @@
     function safeguardEuropaNostra(text) {
       if (!text) return text;
       return text
-        // premios-reconocimientos.longDescription: "In 2006, the same
-        // project was recognised with the Europa Nostra Award" — the
-        // year precedes the phrase here, so it needs its own exact
-        // match before the generic "Europa Nostra ... 2006" patterns.
+        // premios-reconocimientos.longDescription: "En 2006, el mismo
+        // proyecto fue reconocido con el Premio Europa Nostra" — el
+        // año precede la frase aquí, así que necesita su propia
+        // coincidencia exacta antes de los patrones genéricos
+        // "Europa Nostra ... 2006".
         .replace(
-          /In 2006,\s*the same project was recognised with the Europa Nostra Award/i,
-          'The same project was recognised with the Europa Nostra Award'
+          /En 2006,\s*el mismo proyecto fue reconocido con el Premio Europa Nostra/i,
+          'El mismo proyecto fue reconocido con el Premio Europa Nostra'
         )
-        .replace(/Europa Nostra Award\s*\(?2006\)?/gi, 'Europa Nostra Award')
+        .replace(/Premio Europa Nostra\s*\(?2006\)?/gi, 'Premio Europa Nostra')
         .replace(/Europa Nostra\s*\(?2006\)?/gi, 'Europa Nostra')
         .replace(/\s{2,}/g, ' ')
         .trim();
@@ -156,13 +157,13 @@
       try {
         projects = await fetch('assets/data/projects.json', { cache: 'no-store' }).then(r => r.json());
       } catch(e) {
-        statusEl.innerHTML = '<p>Unable to load project data. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Return to archive →</a></p>';
+        statusEl.innerHTML = '<p>No se han podido cargar los datos del proyecto. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Volver al archivo →</a></p>';
         return;
       }
 
       const idx = projects.findIndex(p => p.id === id);
       if (idx === -1) {
-        statusEl.innerHTML = '<p>Project not found. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Return to archive →</a></p>';
+        statusEl.innerHTML = '<p>Proyecto no encontrado. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Volver al archivo →</a></p>';
         return;
       }
 
@@ -198,8 +199,8 @@
       // role (hero/before/during/process/after/detail); role labels
       // are the schema's own field names, not invented captions.
       const ROLE_LABELS = {
-        hero: 'Overview', before: 'Before', during: 'During',
-        process: 'Process', after: 'After', detail: 'Detail'
+        hero: 'Vista general', before: 'Antes', during: 'Durante',
+        process: 'Proceso', after: 'Después', detail: 'Detalle'
       };
       if (p.works && p.works.length) {
         const worksSection = document.getElementById('detail-works');
@@ -242,7 +243,7 @@
           div.className = `detail-gallery__item${i === 0 ? ' is-wide' : ''}`;
           const img2  = document.createElement('img');
           img2.src    = src;
-          img2.alt    = `${p.title} — image ${i + 1}`;
+          img2.alt    = `${p.title} — imagen ${i + 1}`;
           img2.loading = 'lazy';
           div.appendChild(img2);
           galleryGrid.appendChild(div);
@@ -283,7 +284,7 @@
     (function () {
       const from = new URLSearchParams(location.search).get('from');
       let backHref  = 'complete-archive.html';
-      let backLabel = '← Complete Archive';
+      let backLabel = '← Archivo Completo';
       if (from === 'vaciados') { backHref = 'index.html?room=vaciados'; backLabel = '← Sala de Escultura'; }
       if (from === 'pintura')  { backHref = 'index.html?room=pintura';  backLabel = '← Sala de Pintura';  }
       document.querySelectorAll('.js-back').forEach(a => {
