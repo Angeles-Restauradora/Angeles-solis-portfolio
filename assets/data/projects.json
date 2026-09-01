@@ -17,7 +17,153 @@
       "assets/images/sculpture-plaster-detail-01.jpg"
     ],
     "tags": ["plaster casts", "RABASF", "Anjusil®", "national award", "Europa Nostra"],
-    "roomNumber": "01"
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "institutional-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet — 6 works documented (Ariadna V-011, Crátera Estabia V-465, Flora Farnese V-002, Puerta del Paraíso, Venus del Pomo V-007, Venus Médici V-076): image roles only, no per-work date/material/intervention text provided by the client for these pieces"
+    ],
+    "works": [
+      {
+        "id": "vaciados-rabasf--ariadna",
+        "title": "Ariadna",
+        "author": null,
+        "inventoryCode": "V-011",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": ["assets/images/work-vaciados-rabasf-ariadna-before-01.jpg"],
+          "during": ["assets/images/work-vaciados-rabasf-ariadna-during-01.jpg"],
+          "process": [
+            "assets/images/work-vaciados-rabasf-ariadna-process-01.jpg",
+            "assets/images/work-vaciados-rabasf-ariadna-process-02.jpg"
+          ],
+          "after": ["assets/images/work-vaciados-rabasf-ariadna-after-01.jpg"],
+          "detail": ["assets/images/work-vaciados-rabasf-ariadna-detail-01.jpg"]
+        },
+        "notes": null
+      },
+      {
+        "id": "vaciados-rabasf--cratera-de-estabia",
+        "title": "Crátera de Estabia",
+        "author": null,
+        "inventoryCode": "V-465",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": ["assets/images/work-vaciados-rabasf-cratera-estabia-before-01.jpg"],
+          "during": ["assets/images/work-vaciados-rabasf-cratera-estabia-during-01.jpg"],
+          "process": ["assets/images/work-vaciados-rabasf-cratera-estabia-process-01.jpg"],
+          "after": ["assets/images/work-vaciados-rabasf-cratera-estabia-after-01.jpg"],
+          "detail": [
+            "assets/images/work-vaciados-rabasf-cratera-estabia-detail-01.jpg",
+            "assets/images/work-vaciados-rabasf-cratera-estabia-detail-02.jpg"
+          ]
+        },
+        "notes": null
+      },
+      {
+        "id": "vaciados-rabasf--flora-farnese",
+        "title": "Flora Farnese",
+        "author": null,
+        "inventoryCode": "V-002",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-vaciados-rabasf-flora-farnese-hero.jpg",
+          "before": ["assets/images/work-vaciados-rabasf-flora-farnese-before-01.jpg"],
+          "during": ["assets/images/work-vaciados-rabasf-flora-farnese-during-01.jpg"],
+          "process": [
+            "assets/images/work-vaciados-rabasf-flora-farnese-process-01.jpg",
+            "assets/images/work-vaciados-rabasf-flora-farnese-process-02.jpg",
+            "assets/images/work-vaciados-rabasf-flora-farnese-process-03.jpg"
+          ],
+          "after": ["assets/images/work-vaciados-rabasf-flora-farnese-after-01.jpg"],
+          "detail": ["assets/images/work-vaciados-rabasf-flora-farnese-detail-01.jpg"]
+        },
+        "notes": null
+      },
+      {
+        "id": "vaciados-rabasf--puerta-del-paraiso",
+        "title": "Puerta del Paraíso",
+        "author": null,
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-vaciados-rabasf-puerta-paraiso-hero.jpg",
+          "before": [
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-before-01.jpg",
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-before-02.jpg"
+          ],
+          "during": ["assets/images/work-vaciados-rabasf-puerta-paraiso-during-01.jpg"],
+          "process": [
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-process-01.jpg",
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-process-02.jpg"
+          ],
+          "after": [
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-after-01.jpg",
+            "assets/images/work-vaciados-rabasf-puerta-paraiso-after-02.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "vaciados-rabasf--venus-del-pomo",
+        "title": "Venus del Pomo",
+        "author": null,
+        "inventoryCode": "V-007",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-vaciados-rabasf-venus-pomo-hero.jpg",
+          "before": ["assets/images/work-vaciados-rabasf-venus-pomo-before-01.jpg"],
+          "during": [
+            "assets/images/work-vaciados-rabasf-venus-pomo-during-01.jpg",
+            "assets/images/work-vaciados-rabasf-venus-pomo-during-02.jpg",
+            "assets/images/work-vaciados-rabasf-venus-pomo-during-03.jpg"
+          ],
+          "process": [],
+          "after": ["assets/images/work-vaciados-rabasf-venus-pomo-after-01.jpg"],
+          "detail": ["assets/images/work-vaciados-rabasf-venus-pomo-detail-01.jpg"]
+        },
+        "notes": null
+      },
+      {
+        "id": "vaciados-rabasf--venus-medici",
+        "title": "Venus Médici",
+        "author": null,
+        "inventoryCode": "V-076",
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-vaciados-rabasf-venus-medici-hero.jpg",
+          "before": ["assets/images/work-vaciados-rabasf-venus-medici-before-01.jpg"],
+          "during": [
+            "assets/images/work-vaciados-rabasf-venus-medici-during-01.jpg",
+            "assets/images/work-vaciados-rabasf-venus-medici-during-02.jpg",
+            "assets/images/work-vaciados-rabasf-venus-medici-during-03.jpg"
+          ],
+          "process": [
+            "assets/images/work-vaciados-rabasf-venus-medici-process-01.jpg",
+            "assets/images/work-vaciados-rabasf-venus-medici-process-02.jpg"
+          ],
+          "after": [],
+          "detail": []
+        },
+        "notes": null
+      }
+    ]
   },
   {
     "id": "premios-envios-roma",

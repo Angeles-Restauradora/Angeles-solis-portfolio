@@ -78,12 +78,12 @@
       <p class="detail-content__text" id="content-text"></p>
     </div>
 
-    <!-- SELECTED WORKS — prepared for the future project.works[] model.
-         Stays hidden while no project carries real works data, so it
-         never renders as an empty section on the current site. -->
+    <!-- SELECTED WORKS — renders only when project.works[] exists.
+         Stays hidden for every project without real works data, so
+         it never appears as an empty section. -->
     <section class="detail-works" id="detail-works" hidden aria-label="Selected works">
       <span class="detail-section-label">Selected Works</span>
-      <div class="detail-works__grid" id="detail-works-grid"></div>
+      <div class="detail-works__list" id="detail-works-list"></div>
     </section>
 
     <!-- GALLERY -->
@@ -154,7 +154,7 @@
 
       let projects;
       try {
-        projects = await fetch('assets/data/projects.json').then(r => r.json());
+        projects = await fetch('assets/data/projects.json', { cache: 'no-store' }).then(r => r.json());
       } catch(e) {
         statusEl.innerHTML = '<p>Unable to load project data. <a href="complete-archive.html" style="color:var(--white);text-decoration:underline;">Return to archive →</a></p>';
         return;
@@ -194,16 +194,41 @@
       }
 
       // Selected Works — only shown once a project carries real
-      // works[] data (future V2 model); no projects have it yet.
+      // works[] data (V2 model). Images grouped by their documented
+      // role (hero/before/during/process/after/detail); role labels
+      // are the schema's own field names, not invented captions.
+      const ROLE_LABELS = {
+        hero: 'Overview', before: 'Before', during: 'During',
+        process: 'Process', after: 'After', detail: 'Detail'
+      };
       if (p.works && p.works.length) {
         const worksSection = document.getElementById('detail-works');
-        const worksGrid     = document.getElementById('detail-works-grid');
+        const worksList     = document.getElementById('detail-works-list');
         worksSection.removeAttribute('hidden');
         p.works.forEach(w => {
-          const div = document.createElement('div');
-          div.className = 'detail-works__item';
-          div.textContent = w.title;
-          worksGrid.appendChild(div);
+          const item = document.createElement('article');
+          item.className = 'detail-work';
+
+          const thumbs = Object.keys(ROLE_LABELS).flatMap(role => {
+            const val = w.images && w.images[role];
+            const srcs = Array.isArray(val) ? val : (val ? [val] : []);
+            return srcs.map(src => ({ src, role }));
+          });
+
+          item.innerHTML = `
+            <div class="detail-work__head">
+              <h3 class="detail-work__title">${w.title}</h3>
+              ${w.inventoryCode ? `<span class="detail-work__code">${w.inventoryCode}</span>` : ''}
+            </div>
+            <div class="detail-work__grid">
+              ${thumbs.map(t => `
+                <div class="detail-work__thumb">
+                  <img src="${t.src}" alt="${w.title} — ${ROLE_LABELS[t.role]}" loading="lazy">
+                  <span class="detail-work__role">${ROLE_LABELS[t.role]}</span>
+                </div>`).join('')}
+            </div>
+          `;
+          worksList.appendChild(item);
         });
       }
 

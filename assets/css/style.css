@@ -2078,25 +2078,88 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   margin-bottom: 26px;
 }
 
-/* Selected Works — prepared for project.works[] (V2). No project
-   has real works data yet, so this stays [hidden] on the live site;
-   kept intentionally minimal since nothing renders it today. */
+/* Selected Works — project.works[] (V2). Hidden entirely for any
+   project without real works data. Each work is a documentary
+   block (title + inventory code, then its images grouped by role
+   via a small always-visible plate label — no hover dependency,
+   no cards, no accordion), stacked as a list rather than a grid
+   of equal panels. */
 .detail-works {
   padding: 8px 60px 64px;
 }
 
-.detail-works__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+.detail-works__list {
+  display: flex;
+  flex-direction: column;
 }
 
-.detail-works__item {
-  padding: 18px 20px;
-  border: 1px solid rgba(255,255,255,0.1);
+.detail-work {
+  padding: 32px 0;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.detail-works__list .detail-work:last-child {
+  padding-bottom: 0;
+}
+
+.detail-work__head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.detail-work__title {
   font-family: var(--f-serif);
-  font-size: 1rem;
-  color: rgba(255,255,255,0.8);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.detail-work__code {
+  font-family: var(--f-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.34);
+}
+
+.detail-work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.detail-work__thumb {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.detail-work__thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--easing);
+}
+
+.detail-work__thumb:hover img,
+.detail-work__thumb:focus-within img { transform: scale(1.05); }
+
+/* Museum label plate — same bordered/opaque chip language as the
+   room feature-card's date plate; always visible, never hover-only. */
+.detail-work__role {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 4px 9px;
+  background: rgba(12,11,10,0.74);
+  border: 1px solid rgba(255,255,255,0.22);
+  font-family: var(--f-sans);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
 }
 
 /* Gallery — treated as intervention documentation (context, process,
