@@ -1925,10 +1925,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
    PROJECT DETAIL PAGE
    ══════════════════════════════════════════════════ */
 
-/* Hero */
+/* Hero — protagonist but no longer full-viewport: a documentation
+   heading, not a landing-page cover. */
 .detail-hero {
   position: relative;
-  height: 100svh;
+  height: clamp(440px, 60vh, 640px);
   overflow: hidden;
 }
 
@@ -1987,12 +1988,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .detail-hero__title {
   font-family: var(--f-serif);
-  font-size: clamp(2.5rem, 5.5vw, 6.5rem);
+  font-size: clamp(2.2rem, 4.4vw, 4.6rem);
   font-weight: 300;
-  line-height: 0.93;
-  letter-spacing: -0.025em;
+  line-height: 1;
+  letter-spacing: -0.02em;
   color: var(--white);
-  max-width: 18ch;
+  max-width: 16ch;
 }
 
 /* Meta bar */
@@ -2012,62 +2013,129 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .detail-meta__label {
   display: block;
   font-family: var(--f-sans);
-  font-size: 0.56rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.24);
+  color: rgba(255,255,255,0.3);
   margin-bottom: 9px;
 }
 
 .detail-meta__value {
   font-family: var(--f-sans);
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 400;
   line-height: 1.4;
-  color: rgba(255,255,255,0.82);
+  color: rgba(255,255,255,0.84);
 }
 
-/* Content */
+/* Content — a lead paragraph (shortDescription) carries the
+   editorial "kicker" role that the repeated title used to; the
+   body (longDescription) follows as the quieter reading text.
+   No title repetition. */
 .detail-content {
-  padding: 80px 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  padding: 64px 60px;
+  max-width: 780px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .detail-content__eyebrow {
   display: block;
   font-family: var(--f-sans);
-  font-size: 0.56rem;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.24);
+  color: rgba(255,255,255,0.3);
   margin-bottom: 22px;
 }
 
-.detail-content__heading {
+.detail-content__lead {
   font-family: var(--f-serif);
-  font-size: clamp(1.8rem, 2.8vw, 3rem);
-  font-weight: 300;
-  line-height: 1.08;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.25rem, 1.9vw, 1.6rem);
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--white);
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .detail-content__text {
   font-family: var(--f-sans);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   line-height: 1.9;
-  color: rgba(255,255,255,0.52);
+  color: rgba(255,255,255,0.54);
 }
 
-/* Tags */
+/* Shared section label — Gallery / Selected Works */
+.detail-section-label {
+  display: block;
+  font-family: var(--f-sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 26px;
+}
+
+/* Selected Works — prepared for project.works[] (V2). No project
+   has real works data yet, so this stays [hidden] on the live site;
+   kept intentionally minimal since nothing renders it today. */
+.detail-works {
+  padding: 8px 60px 64px;
+}
+
+.detail-works__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.detail-works__item {
+  padding: 18px 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-family: var(--f-serif);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Gallery — treated as intervention documentation (context, process,
+   detail), not generic thumbnails: the first plate runs wide as the
+   establishing shot, the rest sit in a generous two-up grid. */
+.detail-gallery {
+  padding: 64px 60px 72px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.detail-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.detail-gallery__item {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.detail-gallery__item.is-wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 21/9;
+}
+
+.detail-gallery__item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--easing);
+}
+
+.detail-gallery__item:hover img,
+.detail-gallery__item:focus-visible img { transform: scale(1.04); }
+
+/* Tags — trailing metadata, deliberately quiet, placed just before
+   the exit navigation rather than as its own content section. */
 .detail-tags {
-  padding: 28px 60px;
+  padding: 20px 60px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
   display: flex;
   gap: 6px;
@@ -2077,50 +2145,13 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .detail-tag {
   padding: 5px 11px;
   font-family: var(--f-sans);
-  font-size: 0.58rem;
+  font-size: 0.6rem;
   font-weight: 600;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.36);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.32);
 }
-
-/* Gallery */
-.detail-gallery {
-  padding: 72px 60px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-
-.detail-gallery__label {
-  display: block;
-  font-family: var(--f-sans);
-  font-size: 0.56rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.24);
-  margin-bottom: 28px;
-}
-
-.detail-gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-}
-
-.detail-gallery__item {
-  aspect-ratio: 4/3;
-  overflow: hidden;
-}
-
-.detail-gallery__item img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s var(--easing);
-}
-
-.detail-gallery__item:hover img { transform: scale(1.05); }
-.detail-gallery__item.is-wide { grid-column: span 2; }
 
 /* Bottom nav */
 .detail-nav {
@@ -2136,13 +2167,13 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 11px 22px;
+  padding: 14px 22px;
   font-family: var(--f-sans);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.5);
   border: 1px solid rgba(255,255,255,0.14);
   text-decoration: none;
   background: transparent;
@@ -2272,8 +2303,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .contact__content { grid-template-columns: 1fr; padding: 0 60px; }
   .contact__left  { padding: 60px 0; }
   .contact__right { padding: 60px 0; }
-  .detail-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 40px; }
-  .detail-gallery { padding: 60px 40px; }
+  .detail-content { padding: 56px 40px; }
+  .detail-works { padding: 8px 40px 56px; }
+  .detail-gallery { padding: 56px 40px 60px; }
 
   /* Archive: image full-width above the text block instead of
      a fixed side column — same plate, stacked for a touch screen. */
@@ -2373,9 +2405,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .detail-meta { grid-template-columns: 1fr 1fr; }
   .detail-meta__item { padding: 20px; }
   .detail-meta__item:nth-child(2) { border-right: none; }
-  .detail-content, .detail-tags, .detail-gallery { padding: 44px 24px; }
-  .detail-gallery__grid { grid-template-columns: 1fr; }
-  .detail-gallery__item.is-wide { grid-column: 1; }
+  .detail-content, .detail-tags, .detail-gallery { padding: 40px 24px; }
+  .detail-works { padding: 4px 24px 40px; }
+  .detail-gallery__grid { grid-template-columns: 1fr; gap: 16px; }
+  .detail-gallery__item.is-wide { grid-column: 1; aspect-ratio: 4/3; }
   .detail-nav { padding: 24px; }
 
   .recognition__grid { grid-template-columns: 1fr; }
