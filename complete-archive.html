@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -33,24 +33,24 @@
 
   <!-- HEADER -->
   <header class="archive-header" aria-label="Archive page header">
-    <div>
-      <p class="archive-header__eyebrow">Complete Archive</p>
-      <h1 class="archive-header__title">The Work</h1>
-    </div>
+    <p class="s-eyebrow">Complete Archive</p>
+    <h1 class="archive-header__title">The Work</h1>
     <p class="archive-header__desc">A curated archive spanning sculpture, painting, archaeological heritage, institutional collections, private collections, research and teaching — more than 36 years of professional practice across Spain and Europe.</p>
   </header>
 
 
   <!-- FILTER BAR -->
   <div class="archive-filters" role="group" aria-label="Filter by category">
-    <button class="filter-btn is-active" data-filter="all" type="button">All</button>
-    <button class="filter-btn" data-filter="sculpture" type="button">Sculpture</button>
-    <button class="filter-btn" data-filter="painting" type="button">Painting</button>
-    <button class="filter-btn" data-filter="archaeological-mural" type="button">Archaeological &amp; Mural</button>
-    <button class="filter-btn" data-filter="institutional-collections" type="button">Institutional</button>
-    <button class="filter-btn" data-filter="private-collections" type="button">Private</button>
-    <button class="filter-btn" data-filter="research-methodology" type="button">Research</button>
-    <button class="filter-btn" data-filter="awards-grants" type="button">Awards</button>
+    <div class="archive-filters__scroll">
+      <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="sculpture" type="button">Sculpture</button>
+      <button class="filter-btn" data-filter="painting" type="button">Painting</button>
+      <button class="filter-btn" data-filter="archaeological-mural" type="button">Archaeological &amp; Mural</button>
+      <button class="filter-btn" data-filter="institutional-collections" type="button">Institutional</button>
+      <button class="filter-btn" data-filter="private-collections" type="button">Private</button>
+      <button class="filter-btn" data-filter="research-methodology" type="button">Research</button>
+      <button class="filter-btn" data-filter="awards-grants" type="button">Awards</button>
+    </div>
     <span class="archive-filters__count" id="archive-count" aria-live="polite"></span>
   </div>
 
@@ -64,7 +64,7 @@
   <!-- NOTE -->
   <section class="archive-note" aria-label="Archive note">
     <div>
-      <p class="archive-header__eyebrow">Note on this archive</p>
+      <p class="s-eyebrow">Note on this archive</p>
       <h2 class="archive-note__heading">The work speaks through evidence, not argument.</h2>
     </div>
     <div>
@@ -109,26 +109,49 @@
       return cats[0] || 'other';
     }
 
+    // Presentation-only safeguard: the Europa Nostra award year is
+    // disputed (diploma says 2005, CV says 2006) and unconfirmed by
+    // Ángeles. projects.json is not touched — this only strips the
+    // unconfirmed "2006" from text as it's rendered here, without
+    // ever substituting the disputed "2005" in its place.
+    function safeguardEuropaNostra(text) {
+      if (!text) return text;
+      return text
+        .replace(/Europa Nostra Award\s*\(?2006\)?/gi, 'Europa Nostra Award')
+        .replace(/Europa Nostra\s*\(?2006\)?/gi, 'Europa Nostra')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
+
+    function safeguardYear(p) {
+      // premios-reconocimientos' "2004–2006" range encodes the same
+      // disputed Europa Nostra date as its end point — show only the
+      // confirmed National Award year until it's resolved.
+      if (p.id === 'premios-reconocimientos') return '2004';
+      return p.year;
+    }
+
     function buildCard(p) {
       const cat   = primaryCategory(p.category);
       const label = CATEGORY_LABELS[cat] || cat;
+      const instLine = [p.institution, p.location].filter(Boolean).join(' · ');
+      const title = safeguardEuropaNostra(p.title);
+      const desc  = safeguardEuropaNostra(p.shortDescription);
       const a = document.createElement('a');
-      a.className = 'archive-card';
+      a.className = 'archive-entry';
       a.href = `project-detail.html?id=${p.id}`;
       a.dataset.category = p.category.join(',');
-      a.setAttribute('aria-label', p.title);
+      a.setAttribute('aria-label', title);
       a.innerHTML = `
-        <div class="archive-card__thumb">
-          <img src="${p.heroImage}" alt="${p.title}" loading="lazy" width="600" height="375">
+        <div class="archive-entry__thumb">
+          <img src="${p.heroImage}" alt="${title}" loading="lazy" width="600" height="450">
         </div>
-        <div class="archive-card__body">
-          <div class="archive-card__meta">
-            <span class="archive-card__pill">${label}</span>
-            <span class="archive-card__year">${p.year}</span>
-          </div>
-          <h2 class="archive-card__title">${p.title}</h2>
-          <p class="archive-card__desc">${p.shortDescription}</p>
-          <span class="archive-card__cta">View project →</span>
+        <div class="archive-entry__body">
+          <p class="archive-entry__meta">${label} · ${safeguardYear(p)}</p>
+          <h2 class="archive-entry__title">${title}</h2>
+          ${instLine ? `<p class="archive-entry__inst">${instLine}</p>` : ''}
+          <p class="archive-entry__desc">${desc}</p>
+          <span class="archive-entry__cta">View project <span aria-hidden="true">→</span></span>
         </div>
       `;
       return a;
@@ -158,7 +181,7 @@
           btn.classList.add('is-active');
 
           let n = 0;
-          document.querySelectorAll('.archive-card').forEach(card => {
+          document.querySelectorAll('.archive-entry').forEach(card => {
             const show = filter === 'all' || card.dataset.category.split(',').includes(filter);
             card.classList.toggle('is-hidden', !show);
             if (show) n++;

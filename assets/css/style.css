@@ -1670,202 +1670,205 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
    ══════════════════════════════════════════════════ */
 
 .archive-header {
-  padding: calc(var(--nav-h) + 80px) 60px 64px;
+  padding: calc(var(--nav-h) + 64px) 60px 56px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: end;
-}
-
-.archive-header__eyebrow {
-  font-family: var(--f-sans);
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
-  margin-bottom: 28px;
   display: flex;
-  align-items: center;
-  gap: 14px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.archive-header__eyebrow::before {
-  content: '';
-  display: inline-block;
-  width: 28px;
-  height: 1px;
-  background: rgba(255,255,255,0.18);
-  flex-shrink: 0;
-}
+.archive-header .s-eyebrow { margin-bottom: 26px; }
 
 .archive-header__title {
   font-family: var(--f-serif);
-  font-size: clamp(3.5rem, 7vw, 9rem);
+  font-size: clamp(3rem, 6vw, 6.5rem);
   font-weight: 300;
-  line-height: 0.88;
-  letter-spacing: -0.03em;
+  line-height: 0.95;
+  letter-spacing: -0.025em;
   color: var(--white);
+  margin-bottom: 22px;
 }
 
 .archive-header__desc {
   font-family: var(--f-sans);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.85;
-  color: rgba(255,255,255,0.42);
-  max-width: 50ch;
-  padding-bottom: 6px;
+  color: rgba(255,255,255,0.46);
+  max-width: 62ch;
 }
 
-/* Filter bar */
+/* Filter bar — reads as archive wayfinding (underline on the
+   active section) rather than an application's button toolbar. */
 .archive-filters {
-  padding: 20px 60px;
+  padding: 0 60px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
   display: flex;
   align-items: center;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: 24px;
 }
+
+.archive-filters__scroll {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.archive-filters__scroll::-webkit-scrollbar { display: none; }
 
 .filter-btn {
-  padding: 7px 14px;
+  position: relative;
+  flex-shrink: 0;
+  padding: 21px 16px;
   font-family: var(--f-sans);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.12);
-  color: rgba(255,255,255,0.4);
+  border: none;
+  color: rgba(255,255,255,0.42);
   cursor: pointer;
-  transition: all 0.18s var(--easing);
+  transition: color 0.2s var(--easing);
 }
 
-.filter-btn:hover {
-  border-color: rgba(255,255,255,0.4);
-  color: var(--white);
-}
-
-.filter-btn.is-active {
+.filter-btn::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
   background: var(--white);
-  border-color: var(--white);
-  color: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s var(--easing);
 }
+
+.filter-btn:hover { color: rgba(255,255,255,0.75); }
+
+.filter-btn.is-active { color: var(--white); }
+.filter-btn.is-active::after { transform: scaleX(1); }
 
 .archive-filters__count {
-  margin-left: auto;
+  flex-shrink: 0;
   font-family: var(--f-sans);
-  font-size: 0.62rem;
-  color: rgba(255,255,255,0.22);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.34);
   white-space: nowrap;
 }
 
-/* Archive grid */
+/* Archive list — a single editorial sequence of plates, not a
+   grid of equal cards. Each entry carries its own legibility
+   (no card panel/background); a hairline separates entries and
+   natural description length gives the rhythm gentle variation. */
 .archive-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: rgba(255,255,255,0.05);
-}
-
-.archive-card {
-  background: var(--ink);
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  color: var(--white);
-  transition: background 0.2s var(--easing);
-  overflow: hidden;
+  padding: 0 60px;
 }
 
-.archive-card:hover  { background: #171512; }
-.archive-card.is-hidden { display: none; }
+.archive-entry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  color: var(--white);
+}
 
-.archive-card__thumb {
-  aspect-ratio: 16 / 10;
+.archive-entry:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
+.archive-entry.is-hidden { display: none; }
+
+.archive-entry:focus-visible {
+  outline: 1px solid rgba(255,255,255,0.5);
+  outline-offset: 8px;
+}
+
+.archive-entry__thumb {
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
 }
 
-.archive-card__thumb::after {
+.archive-entry__thumb::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(12,11,10,0.18);
+  background: rgba(12,11,10,0.16);
   transition: opacity 0.3s;
 }
 
-.archive-card:hover .archive-card__thumb::after { opacity: 0; }
+.archive-entry:hover .archive-entry__thumb::after,
+.archive-entry:focus-visible .archive-entry__thumb::after { opacity: 0; }
 
-.archive-card__thumb img {
+.archive-entry__thumb img {
   width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.5s var(--easing);
+  transition: transform 0.6s var(--easing);
 }
 
-.archive-card:hover .archive-card__thumb img { transform: scale(1.05); }
+.archive-entry:hover .archive-entry__thumb img,
+.archive-entry:focus-visible .archive-entry__thumb img { transform: scale(1.04); }
 
-.archive-card__body {
-  padding: 22px 24px 26px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
+.archive-entry__body { max-width: none; }
 
-.archive-card__meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 11px;
-}
-
-.archive-card__pill {
+.archive-entry__meta {
   font-family: var(--f-sans);
-  font-size: 0.58rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.46);
+  margin-bottom: 12px;
 }
 
-.archive-card__year {
-  font-family: var(--f-sans);
-  font-size: 0.58rem;
-  color: rgba(255,255,255,0.18);
-  margin-left: auto;
-}
-
-.archive-card__title {
+.archive-entry__title {
   font-family: var(--f-serif);
-  font-size: 1.05rem;
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
   font-weight: 400;
-  line-height: 1.32;
+  line-height: 1.2;
   color: var(--white);
   margin-bottom: 10px;
-  flex: 1;
 }
 
-.archive-card__desc {
+.archive-entry__inst {
   font-family: var(--f-sans);
-  font-size: 0.68rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 14px;
+}
+
+.archive-entry__desc {
+  font-family: var(--f-sans);
+  font-size: 0.85rem;
   line-height: 1.7;
-  color: rgba(255,255,255,0.38);
-  margin-bottom: 16px;
+  color: rgba(255,255,255,0.42);
+  max-width: 56ch;
+  margin-bottom: 22px;
 }
 
-.archive-card__cta {
+.archive-entry__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--f-sans);
-  font-size: 0.58rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
-  transition: color 0.18s;
+  color: rgba(255,255,255,0.58);
+  transition: color 0.2s var(--easing), gap 0.2s var(--easing);
 }
 
-.archive-card:hover .archive-card__cta { color: var(--white); }
+.archive-entry:hover .archive-entry__cta,
+.archive-entry:focus-visible .archive-entry__cta { color: var(--white); gap: 12px; }
 
 /* Archive note */
 .archive-note {
@@ -2186,7 +2189,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
    ══════════════════════════════════════════════════ */
 @media (prefers-reduced-motion: reduce) {
   .room-panel, #stage-video, #stage-dark, #stage-bg,
-  .room-nav, [data-reveal], .archive-card__thumb img,
+  .room-nav, [data-reveal], .archive-entry__thumb img,
   .project-card__img img,
   .home-identity, .home-enter-wrap, .home-stats,
   .room__intro, .feature-card, .room__secondary,
@@ -2221,8 +2224,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .site-nav nav ul { gap: 22px; flex-wrap: nowrap; padding-right: 4px; }
   .site-nav nav a { white-space: nowrap; }
 
-  .archive-grid { grid-template-columns: repeat(2, 1fr); }
-  .archive-header { grid-template-columns: 1fr; gap: 24px; }
+  .archive-entry { gap: 56px; }
   .recognition__grid { grid-template-columns: repeat(2, 1fr); }
   .recognition__item:nth-child(2) { border-right: none; }
   .recognition__item:nth-child(3),
@@ -2272,6 +2274,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .contact__right { padding: 60px 0; }
   .detail-content { grid-template-columns: 1fr; gap: 40px; padding: 60px 40px; }
   .detail-gallery { padding: 60px 40px; }
+
+  /* Archive: image full-width above the text block instead of
+     a fixed side column — same plate, stacked for a touch screen. */
+  .archive-entry { grid-template-columns: 1fr; gap: 20px; padding: 36px 0; }
+  .archive-entry__thumb { aspect-ratio: 16 / 9; }
 }
 
 @media (max-width: 640px) {
@@ -2349,9 +2356,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .pub-entry__title { font-size: 1rem; }
   .pub-entry__sub { font-size: 0.83rem; }
 
-  .archive-header { padding: calc(var(--nav-h) + 48px) 24px 48px; }
-  .archive-filters { padding: 16px 24px; }
-  .archive-grid { grid-template-columns: 1fr; }
+  .archive-header { padding: calc(var(--nav-h) + 48px) 24px 44px; }
+  .archive-header__desc { max-width: none; }
+  .archive-filters { padding: 0 24px; gap: 16px; }
+  .filter-btn { padding: 16px 12px; font-size: 0.66rem; }
+  .archive-grid { padding: 0 24px; }
+  .archive-entry { padding: 28px 0; }
+  .archive-entry__meta { font-size: 0.68rem; }
+  .archive-entry__title { font-size: 1.3rem; }
+  .archive-entry__cta { font-size: 0.7rem; }
   .archive-note { grid-template-columns: 1fr; padding: 48px 24px; }
   .archive-page-footer { padding: 24px; flex-direction: column; gap: 16px; text-align: center; }
 
