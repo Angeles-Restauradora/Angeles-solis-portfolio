@@ -1013,29 +1013,303 @@
     "works": []
   },
   {
-    "id": "colecciones-privadas",
-    "title": "Colecciones Privadas — Esperanza Parada y José Nogué Massó",
+    "id": "esperanza-parada",
+    "title": "Colección Pictórica — Esperanza Parada Pedrosa",
     "category": [
       "painting",
       "private-collections"
     ],
     "type": "Conservación y Restauración",
-    "institution": "Coleccionistas privados",
+    "institution": "Colección privada, gestión familiar",
     "location": "Madrid, España",
-    "year": "2000–2018",
-    "shortDescription": "Conservación de pinturas de caballete de colecciones privadas, incluyendo obras de la colección de la artista Esperanza Parada y obras atribuidas a José Nogué Massó.",
-    "longDescription": "Un programa continuado de trabajo de conservación para coleccionistas privados, que exige la discreción, precisión técnica y confianza personal propias de la práctica en colecciones privadas. Las obras incluyen varios bodegones de Esperanza Parada y pinturas del legado de José Nogué Massó, el pintor paisajista español.",
+    "year": "2017–2020",
+    "shortDescription": "Conservación y restauración de la colección pictórica de Esperanza Parada Pedrosa (El Escorial, 1928 — Madrid, 2011), en técnica mixta sobre lienzo y tabla.",
+    "longDescription": "Entre 2017 y 2020, gestionado por la familia de la pintora Esperanza Parada Pedrosa, se llevó a cabo la conservación y restauración de su colección pictórica en técnica mixta sobre lienzo y tabla. Las piezas presentaban un elevado deterioro de los soportes — especialmente en lienzos y tablas — además de inestabilidad de la capa pictórica derivada de la compleja técnica de la artista y de la reutilización de materiales. La intervención incluyó cambios de bastidor, tratamientos estructurales en tablas, eliminación de deformaciones, colocación de bandas perimetrales, injertos, limpieza de soportes y capas pictóricas, consolidación y reintegración cromática. Se restauraron 26 obras para exposiciones en el Museo Patio Herreriano y el Museo Ramón Gaya, además de nuevas piezas intervenidas en 2020.",
     "isSelected": false,
-    "heroImage": "assets/images/proj-particulares-hero.jpg",
+    "heroImage": "assets/images/proj-esperanza-parada-hero.jpg",
     "gallery": [],
     "tags": [
       "colección privada",
       "Esperanza Parada",
-      "José Nogué",
       "pintura de caballete",
+      "técnica mixta",
       "discreción"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "private-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet. Anteriormente publicada como parte de una entrada combinada «colecciones-privadas» (Esperanza Parada + José Nogué Massó, year 2000–2018); dividida en dos Projects independientes con documentación propia — decisión de producto aprobada, pendiente de confirmación final de Ángeles sobre la división y el rango de años exacto (2017–2020)."
+    ],
+    "works": [
+      {
+        "id": "esperanza-parada--bodegon-con-cesto",
+        "title": "Bodegón con Cesto",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-bodegon-cesto-before-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-cesto-before-02.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-esperanza-parada-bodegon-cesto-process-01.jpg"
+          ],
+          "after": [],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--bodegon-con-fuente-en-medio",
+        "title": "Bodegón con Fuente en Medio",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-bodegon-fuente-before-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-fuente-before-02.jpg"
+          ],
+          "during": [],
+          "process": [],
+          "after": [
+            "assets/images/work-esperanza-parada-bodegon-fuente-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--bodegon-con-llave-en-la-pared",
+        "title": "Bodegón con Llave en la Pared",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-bodegon-llave-before-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-llave-before-02.jpg"
+          ],
+          "during": [],
+          "process": [],
+          "after": [],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--bodegon-con-silla",
+        "title": "Bodegón con Silla",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-bodegon-silla-before-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-silla-before-02.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-esperanza-parada-bodegon-silla-process-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-silla-process-02.jpg"
+          ],
+          "after": [
+            "assets/images/work-esperanza-parada-bodegon-silla-after-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-silla-after-02.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--bodegon-del-cordon-negro",
+        "title": "Bodegón del Cordón Negro",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-bodegon-cordon-negro-before-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-cordon-negro-before-02.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-esperanza-parada-bodegon-cordon-negro-process-01.jpg"
+          ],
+          "after": [
+            "assets/images/work-esperanza-parada-bodegon-cordon-negro-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--bodegon-sobre-mesa-negra",
+        "title": "Bodegón sobre Mesa Negra",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-bodegon-mesa-negra-before-01.jpg",
+            "assets/images/work-esperanza-parada-bodegon-mesa-negra-before-02.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-esperanza-parada-bodegon-mesa-negra-process-01.jpg"
+          ],
+          "after": [
+            "assets/images/work-esperanza-parada-bodegon-mesa-negra-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--el-escorial",
+        "title": "El Escorial",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-el-escorial-before-01.jpg"
+          ],
+          "during": [
+            "assets/images/work-esperanza-parada-el-escorial-during-01.jpg",
+            "assets/images/work-esperanza-parada-el-escorial-during-02.jpg",
+            "assets/images/work-esperanza-parada-el-escorial-during-03.jpg"
+          ],
+          "process": [],
+          "after": [
+            "assets/images/work-esperanza-parada-el-escorial-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--paisaje-con-paleta-de-pintor",
+        "title": "Paisaje con Paleta de Pintor",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": null,
+          "before": [
+            "assets/images/work-esperanza-parada-paisaje-paleta-before-01.jpg",
+            "assets/images/work-esperanza-parada-paisaje-paleta-before-02.jpg"
+          ],
+          "during": [],
+          "process": [],
+          "after": [],
+          "detail": []
+        },
+        "notes": null
+      },
+      {
+        "id": "esperanza-parada--pueblo-de-galicia",
+        "title": "Pueblo de Galicia",
+        "author": "Esperanza Parada Pedrosa",
+        "inventoryCode": null,
+        "dateDisplay": null,
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-esperanza-parada-pueblo-galicia-hero.jpg",
+          "before": [
+            "assets/images/work-esperanza-parada-pueblo-galicia-before-01.jpg",
+            "assets/images/work-esperanza-parada-pueblo-galicia-before-02.jpg",
+            "assets/images/work-esperanza-parada-pueblo-galicia-before-03.jpg"
+          ],
+          "during": [],
+          "process": [
+            "assets/images/work-esperanza-parada-pueblo-galicia-process-01.jpg",
+            "assets/images/work-esperanza-parada-pueblo-galicia-process-02.jpg",
+            "assets/images/work-esperanza-parada-pueblo-galicia-process-03.jpg",
+            "assets/images/work-esperanza-parada-pueblo-galicia-process-04.jpg",
+            "assets/images/work-esperanza-parada-pueblo-galicia-process-05.jpg"
+          ],
+          "after": [
+            "assets/images/work-esperanza-parada-pueblo-galicia-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": null
+      }
+    ]
+  },
+  {
+    "id": "jose-nogue",
+    "title": "Colección Pictórica — José Nogué Massó",
+    "category": [
+      "painting",
+      "private-collections"
+    ],
+    "type": "Conservación y Restauración",
+    "institution": "Colección privada, gestión familiar",
+    "location": "Madrid, España",
+    "year": "2015–actualidad",
+    "shortDescription": "Conservación y restauración de la colección pictórica de José Nogué Massó (Santa Coloma de Queralt, 1880 — Huelva, 1973), pintor paisajista español, en óleo sobre lienzo y tabla.",
+    "longDescription": "Proyecto abierto desde 2015, gestionado por la familia del pintor paisajista José Nogué Massó, sobre obras en óleo sobre lienzo, tabla y otros soportes como cartón o contrachapado. Las piezas presentan problemas de estabilidad en los soportes, deformaciones, suciedad por contaminación, deterioro de bastidores e intervenciones anteriores inadecuadas. La intervención incluye cambios de bastidor, tratamientos estructurales en tablas, eliminación de deformaciones, colocación de bandas perimetrales, injertos, limpieza de soportes y capa pictórica, consolidación y reintegración cromática. Hasta la fecha se han intervenido alrededor de treinta obras, en un proyecto que continúa ampliándose con nuevas incorporaciones.",
+    "isSelected": false,
+    "heroImage": "assets/images/proj-jose-nogue-gallery-13.jpg",
+    "gallery": [
+      "assets/images/proj-jose-nogue-gallery-01.jpg",
+      "assets/images/proj-jose-nogue-gallery-02.jpg",
+      "assets/images/proj-jose-nogue-gallery-03.jpg",
+      "assets/images/proj-jose-nogue-gallery-04.jpg",
+      "assets/images/proj-jose-nogue-gallery-05.jpg",
+      "assets/images/proj-jose-nogue-gallery-06.jpg",
+      "assets/images/proj-jose-nogue-gallery-07.jpg",
+      "assets/images/proj-jose-nogue-gallery-08.jpg",
+      "assets/images/proj-jose-nogue-gallery-09.jpg",
+      "assets/images/proj-jose-nogue-gallery-10.jpg",
+      "assets/images/proj-jose-nogue-gallery-11.jpg",
+      "assets/images/proj-jose-nogue-gallery-12.jpg"
+    ],
+    "tags": [
+      "colección privada",
+      "José Nogué Massó",
+      "pintura de caballete",
+      "paisajismo",
+      "proyecto abierto"
+    ],
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "private-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet. Anteriormente publicada como parte de una entrada combinada «colecciones-privadas» (Esperanza Parada + José Nogué Massó, year 2000–2018); dividida en dos Projects independientes con documentación propia — decisión de producto aprobada, pendiente de confirmación final de Ángeles sobre la división y el rango de años exacto (2015–actualidad, proyecto abierto). Sin hero.jpg explícito en el material del cliente: se comparó una selección de las imágenes «after» disponibles y se eligió la vista de atardecer con la cúpula al fondo (antes gallery-13) como heroImage, aprobada explícitamente por el equipo tras comparativa visual — no un original del paquete marcado como portada."
+    ],
+    "works": []
   },
   {
     "id": "anjusil-metodologia",
