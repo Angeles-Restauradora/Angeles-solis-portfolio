@@ -719,14 +719,25 @@
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, España",
     "year": "2004–2014",
-    "shortDescription": "Conservación y restauración de pinturas de la colección permanente de la Real Academia de Bellas Artes de San Fernando, incluyendo obras de Alonso Cano y Van Dyck.",
-    "longDescription": "Más de una década de trabajo continuado sobre la colección pictórica de la Real Academia de Bellas Artes de San Fernando. Las obras tratadas incluyen La Muerte de San Francisco de Asís de Alonso Cano (inv. 553) y una pintura atribuida a Van Dyck, además de numerosas otras obras de la colección permanente. Los criterios de conservación priorizaron la integridad material, la coherencia cromática y la responsabilidad institucional.",
+    "shortDescription": "Intervención de urgencia en el fondo de pintura de la Real Academia de Bellas Artes de San Fernando, con obras de Alonso Cano y Van Dyck entre las piezas documentadas de la colección.",
+    "longDescription": "Intervención de urgencia sobre el fondo de pintura en los almacenes de la Real Academia de Bellas Artes de San Fernando, con cerca de cincuenta obras en óleo sobre lienzo afectadas por humedad, deformaciones de soporte, bastidores deteriorados y ataques de microorganismos. El tratamiento incluyó limpieza, sustitución de bastidores, forraciones, injertos textiles y sentado de color. La intervención permitió, además de la estabilización material de las obras, la identificación de firmas ocultas y nuevas atribuciones de autoría — entre ellas, la de La Virgen y el Niño con los Pecadores Arrepentidos, atribuida a Van Dyck, objeto de una exposición monográfica en Murcia (2011) y de un estudio técnico publicado en Ars Magazine (nº 10, 2011). La colección incluye también La Muerte de San Francisco de Asís, de Alonso Cano.",
     "isSelected": true,
     "heroImage": "assets/images/proj-pintura-rabasf-hero.jpg",
     "gallery": [
       "assets/images/painting-surface-detail-01.jpg",
-      "assets/images/painting-process-01.jpg",
-      "assets/images/painting-before-after-01.jpg"
+      "assets/images/painting-before-after-01.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-20.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-06.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-22.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-05.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-21.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-09.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-26.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-13.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-16.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-18.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-19.jpg",
+      "assets/images/proj-pintura-rabasf-gallery-28.jpg"
     ],
     "tags": [
       "RABASF",
@@ -735,7 +746,66 @@
       "Van Dyck",
       "institucional"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "painting",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives project years 2011–2015, conflicting with published 2004–2014; not applied without confirmation from Ángeles. 2 named works documented (Van Dyck inv. 0323, Alonso Cano inv. 0553) plus approximately 26 unidentified paintings from an urgent-intervention batch of roughly 50 works (project-level gallery only, no individual identification provided by the client for these pieces)"
+    ],
+    "works": [
+      {
+        "id": "pintura-rabasf--van-dyck",
+        "title": "La Virgen y el Niño con los Pecadores Arrepentidos",
+        "author": "Antón Van Dyck (atribución)",
+        "inventoryCode": "0323",
+        "dateDisplay": "1621–1627",
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-pintura-rabasf-van-dyck-hero.jpg",
+          "before": [
+            "assets/images/work-pintura-rabasf-van-dyck-before-01.jpg"
+          ],
+          "during": [
+            "assets/images/work-pintura-rabasf-van-dyck-during-01.jpg"
+          ],
+          "process": [
+            "assets/images/work-pintura-rabasf-van-dyck-process-01.jpg"
+          ],
+          "after": [
+            "assets/images/work-pintura-rabasf-van-dyck-after-01.jpg"
+          ],
+          "detail": []
+        },
+        "notes": "Identificada durante la intervención de urgencia como atribución a Van Dyck. Objeto de la exposición monográfica «Van Dyck, La Virgen y el Niño y los tres Santos Pecadores» (Murcia, abril de 2011) y de un estudio técnico publicado en Ars Magazine (nº 10, 2011), con preámbulo de Matías Díaz Padrón: «El Van Dyck del Escorial reencontrado»."
+      },
+      {
+        "id": "pintura-rabasf--alonso-cano",
+        "title": "La Muerte de San Francisco de Asís",
+        "author": "Alonso Cano",
+        "inventoryCode": "0553",
+        "dateDisplay": "Siglo XVII",
+        "materials": null,
+        "intervention": null,
+        "images": {
+          "hero": "assets/images/work-pintura-rabasf-alonso-cano-hero.jpg",
+          "before": [],
+          "during": [],
+          "process": [
+            "assets/images/work-pintura-rabasf-alonso-cano-process-01.jpg",
+            "assets/images/work-pintura-rabasf-alonso-cano-process-02.jpg"
+          ],
+          "after": [
+            "assets/images/work-pintura-rabasf-alonso-cano-after-01.jpg"
+          ],
+          "detail": [
+            "assets/images/work-pintura-rabasf-alonso-cano-detail-01.jpg"
+          ]
+        },
+        "notes": null
+      }
+    ]
   },
   {
     "id": "museo-malaga",
@@ -752,14 +822,29 @@
     "longDescription": "Proyecto de conservación para el Museo de Bellas Artes de Málaga, con obras de gran valor patrimonial regional, incluyendo pinturas de Nogales y Pato Denis Belgrano. El proyecto exigió adaptar los criterios de conservación a obras con historiales complejos de barnices e intervenciones previas.",
     "isSelected": true,
     "heroImage": "assets/images/proj-malaga-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-museo-malaga-gallery-01.jpg",
+      "assets/images/proj-museo-malaga-gallery-02.jpg",
+      "assets/images/proj-museo-malaga-gallery-03.jpg",
+      "assets/images/proj-museo-malaga-gallery-04.jpg",
+      "assets/images/proj-museo-malaga-gallery-05.jpg",
+      "assets/images/proj-museo-malaga-gallery-06.jpg",
+      "assets/images/proj-museo-malaga-gallery-07.jpg",
+      "assets/images/proj-museo-malaga-gallery-08.jpg"
+    ],
     "tags": [
       "Málaga",
       "pintura de caballete",
       "museo regional",
       "Nogales"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "painting",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives project years 2000–2003, conflicting with published 2010–2012; not applied without confirmation from Ángeles. Client sheet also names Junta de Andalucía / Ministerio de Cultura as institution (published: Museo de Bellas Artes de Málaga) and artists Sorolla, Muñoz Degrain, Emilio Sala (published text names Nogales, Pato Denis Belgrano) — both conflict with currently published content; neither institution nor description text overwritten. Client sheet also documents 37 pieces restored for the exhibition «Museo de Málaga. Primeras donaciones (1916–1930)»"
+    ]
   },
   {
     "id": "museo-granada",
@@ -772,18 +857,41 @@
     "institution": "Museo de Bellas Artes de Granada",
     "location": "Granada, España",
     "year": "2011–2014",
-    "shortDescription": "Amplio proyecto de conservación para el Museo de Bellas Artes de Granada, con múltiples pinturas sobre lienzo e intervenciones estructurales y superficiales complejas.",
-    "longDescription": "Uno de los proyectos de conservación de pintura más extensos de la trayectoria de Ángeles Solís Parra, con múltiples obras de gran formato sobre lienzo de la colección permanente del Museo de Bellas Artes de Granada. Las intervenciones abordaron el soporte de lienzo, la capa de preparación, la película pictórica y el barniz de una serie de obras con historiales de conservación superpuestos.",
+    "shortDescription": "Amplio proyecto de conservación para el Museo de Bellas Artes de Granada, con pinturas sobre lienzo, terracota y madera de autores como Juan Sánchez Cotán, Juan de Sevilla y José de Mora, entre otros.",
+    "longDescription": "Uno de los proyectos de conservación de pintura más extensos de la trayectoria de Ángeles Solís Parra, con múltiples obras de gran formato sobre lienzo, terracota y madera de la colección permanente del Museo de Bellas Artes de Granada, destinadas tanto a la colección estable como a exposiciones itinerantes. Las intervenciones abordaron el soporte, la limpieza, la consolidación, tratamientos fungicidas, la reintegración cromática y análisis químicos de pigmentos sobre obras de autores como Juan Sánchez Cotán, Juan de Sevilla, Juan van der Hamen, José Risueño, José de Mora y Diego de Siloé, así como un importante apostolado previamente sin catalogar.",
     "isSelected": true,
     "heroImage": "assets/images/proj-granada-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-museo-granada-gallery-01.jpg",
+      "assets/images/proj-museo-granada-gallery-02.jpg",
+      "assets/images/proj-museo-granada-gallery-03.jpg",
+      "assets/images/proj-museo-granada-gallery-04.jpg",
+      "assets/images/proj-museo-granada-gallery-05.jpg",
+      "assets/images/proj-museo-granada-gallery-06.jpg",
+      "assets/images/proj-museo-granada-gallery-07.jpg",
+      "assets/images/proj-museo-granada-gallery-08.jpg",
+      "assets/images/proj-museo-granada-gallery-09.jpg",
+      "assets/images/proj-museo-granada-gallery-10.jpg",
+      "assets/images/proj-museo-granada-gallery-11.jpg",
+      "assets/images/proj-museo-granada-gallery-12.jpg",
+      "assets/images/proj-museo-granada-gallery-13.jpg",
+      "assets/images/proj-museo-granada-gallery-14.jpg",
+      "assets/images/proj-museo-granada-gallery-15.jpg",
+      "assets/images/proj-museo-granada-gallery-16.jpg"
+    ],
     "tags": [
       "Granada",
       "pintura de caballete",
       "museo regional",
       "gran formato"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "painting",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives project years 2003, 2005, 2006, 2007, 2008, 2009, 2010, 2013, 2014, conflicting with published 2011–2014; not applied without confirmation from Ángeles. Institution and artist names added to the description are additive (no conflict with existing published text)"
+    ]
   },
   {
     "id": "campo-valdes-gijon",
