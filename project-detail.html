@@ -76,6 +76,7 @@
       <span class="detail-content__eyebrow">Sobre este proyecto</span>
       <p class="detail-content__lead" id="content-lead"></p>
       <p class="detail-content__text" id="content-text"></p>
+      <div id="content-cta" hidden></div>
     </div>
 
     <!-- SELECTED WORKS — renders only when project.works[] exists.
@@ -118,33 +119,22 @@
       'awards-grants': 'Reconocimientos'
     };
 
-    // Same presentation-only safeguard applied in Complete Archive:
-    // the Europa Nostra award year is disputed (diploma says 2005,
-    // CV says 2006) and unconfirmed. Strips the unconfirmed "2006"
-    // from rendered text without ever substituting "2005", and
-    // without touching projects.json. Legitimate project-duration
-    // ranges (e.g. 2001–2006, 2002–2007) never pass through this
-    // function — only title/shortDescription/longDescription do.
+    // Europa Nostra date resolved 2026-09-02: the diploma (primary source)
+    // says 2005; the CV said 2006, confirmed to be a transcription error.
+    // Kept as a permanent guard so the retired "2006" figure can never
+    // resurface in rendered text. Legitimate project-duration ranges
+    // (e.g. 2001–2006, 2002–2007) never pass through this function —
+    // only title/shortDescription/longDescription do.
     function safeguardEuropaNostra(text) {
       if (!text) return text;
       return text
-        // premios-reconocimientos.longDescription: "En 2006, el mismo
-        // proyecto fue reconocido con el Premio Europa Nostra" — el
-        // año precede la frase aquí, así que necesita su propia
-        // coincidencia exacta antes de los patrones genéricos
-        // "Europa Nostra ... 2006".
-        .replace(
-          /En 2006,\s*el mismo proyecto fue reconocido con el Premio Europa Nostra/i,
-          'El mismo proyecto fue reconocido con el Premio Europa Nostra'
-        )
-        .replace(/Premio Europa Nostra\s*\(?2006\)?/gi, 'Premio Europa Nostra')
-        .replace(/Europa Nostra\s*\(?2006\)?/gi, 'Europa Nostra')
+        .replace(/Premio Europa Nostra\s*\(?2006\)?/gi, 'Premio Europa Nostra 2005')
+        .replace(/Europa Nostra\s*\(?2006\)?/gi, 'Europa Nostra 2005')
         .replace(/\s{2,}/g, ' ')
         .trim();
     }
 
     function safeguardYear(p) {
-      if (p.id === 'premios-reconocimientos') return '2004';
       return p.year;
     }
 
@@ -192,6 +182,16 @@
         textEl.textContent = safeguardEuropaNostra(p.longDescription);
       } else {
         textEl.remove();
+      }
+
+      // Anjusil® is a methodology with no fixed public pricing — route
+      // interest through the site's own Contact section instead of a
+      // commercial quote flow, reusing the same CTA already approved on
+      // Complete Archive.
+      if (p.id === 'anjusil-metodologia') {
+        const cta = document.getElementById('content-cta');
+        cta.innerHTML = `<a href="index.html#contact" class="btn-primary" style="margin-top:16px;">Solicitar información o presupuesto <span class="btn-arrow">→</span></a>`;
+        cta.removeAttribute('hidden');
       }
 
       // Selected Works — only shown once a project carries real

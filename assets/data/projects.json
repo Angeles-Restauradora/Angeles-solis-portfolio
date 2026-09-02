@@ -166,7 +166,6 @@
           ],
           "during": [
             "assets/images/work-vaciados-rabasf-venus-pomo-during-01.jpg",
-            "assets/images/work-vaciados-rabasf-venus-pomo-during-02.jpg",
             "assets/images/work-vaciados-rabasf-venus-pomo-during-03.jpg"
           ],
           "process": [],
@@ -218,7 +217,7 @@
     "type": "Conservación y Restauración",
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, España",
-    "year": "2002–2007",
+    "year": "2015–2022",
     "shortDescription": "Conservación de la colección de Premios y Envíos de Roma en la RABASF, incluyendo obras de José Ginés (Apolino), Huberto Dumandré, Juan Adán y otros.",
     "longDescription": "La colección de Premios y Envíos de Roma representa la memoria institucional de la formación escultórica académica en España. Las obras tratadas incluyen el Apolino de José Ginés (E-7), Andrés Atado a la Cruz de Huberto Dumandré (E-213), Marsias de Juan Adán (E-222), Santa Leocadia Azotada de Manuel Llorente (E-393), San Francisco de Paula de José Guerra (E-396) y El Rey Don Alonso el Casto de Santiago Rodríguez (E-501). Cada pieza requirió protocolos de tratamiento individualizados, adaptados a su historia material y contexto institucional.",
     "isSelected": false,
@@ -234,9 +233,14 @@
     "roomNumber": "01",
     "schemaVersion": 2,
     "primaryCategory": "institutional-collections",
-    "years": [],
+    "years": [
+      {
+        "start": 2015,
+        "end": 2022
+      }
+    ],
     "sources": [
-      "client-project-sheet — 6 works documented (E-213, E-222, E-393, E-396, E-501, E-7). Client sheet gives project-level year 2015–2022, conflicting with published 2002–2007; not applied without confirmation from Ángeles"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2002–2007. Año aplicado: 2015–2022, según la ficha específica de este proyecto."
     ],
     "works": [
       {
@@ -406,7 +410,7 @@
     "type": "Conservación y Restauración",
     "institution": "Universidad de Sevilla",
     "location": "Sevilla, España",
-    "year": "2007–2009",
+    "year": "2009–2015",
     "shortDescription": "Conservación de la colección de vaciados históricos en la Universidad de Sevilla, aplicando la metodología Anjusil® desarrollada en la RABASF.",
     "longDescription": "Tras el reconocido trabajo en la RABASF, la Universidad de Sevilla encargó la conservación de su propia colección de vaciados. Este proyecto extendió la metodología Anjusil® a un contexto institucional y material distinto, consolidando su aplicación más allá de la colección original de la RABASF.",
     "isSelected": false,
@@ -428,9 +432,14 @@
     "roomNumber": "01",
     "schemaVersion": 2,
     "primaryCategory": "institutional-collections",
-    "years": [],
+    "years": [
+      2009,
+      2010,
+      2014,
+      2015
+    ],
     "sources": [
-      "client-project-sheet gives years 2009, 2010, 2014, 2015, conflicting with published 2007–2009; not applied without confirmation from Ángeles"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2007–2009. Año aplicado: 2009–2015, según la ficha específica de este proyecto."
     ]
   },
   {
@@ -482,7 +491,7 @@
     "type": "Conservación Arqueológica",
     "institution": "Yacimiento Arqueológico de Pompeya",
     "location": "Pompeya, Italia",
-    "year": "2005",
+    "year": "2008 y 2011",
     "shortDescription": "Consolidación de material arqueológico en el peristilo de la Casa de la Diana Arcaizante, en el yacimiento de Pompeya, con intervención sobre piedra, morteros, cerámica y mosaicos.",
     "longDescription": "El proyecto de consolidación de material arqueológico se desarrolló en el peristilo de la Casa de la Diana Arcaizante, en Pompeya, con el objetivo de estabilizar los restos, facilitar su estudio y contribuir a la reconstrucción del yacimiento. Las piezas — piedra, morteros, cerámica y mosaicos — presentaban problemas de humedad, disgregación de morteros y proliferación de microorganismos. La intervención incluyó limpieza, consolidación, tratamientos fungicidas y engasado para su posterior protección, permitiendo la conservación del material excavado y su integración en el estudio arqueológico y la documentación del conjunto.",
     "isSelected": true,
@@ -504,9 +513,13 @@
     "roomNumber": "01",
     "schemaVersion": 2,
     "primaryCategory": "archaeological-mural",
-    "years": [],
+    "years": [
+      2008,
+      2011
+    ],
     "sources": [
-      "client-project-sheet gives project years 2008 y 2011, conflicting with published 2005; not applied without confirmation from Ángeles. Client sheet also names institution as Universidad Complutense de Madrid, Real Academia de Bellas Artes de San Fernando y Escuela Española de Arqueología de Roma (published institution: Yacimiento Arqueológico de Pompeya) — conflict registered, not applied. Site per client sheet: peristilo de la Casa de la Diana Arcaizante (external ref.: www.dianaarcaizante.com)"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2005. Año aplicado: 2008 y 2011, según la ficha específica de este proyecto.",
+      "client-project-sheet also names institution as Universidad Complutense de Madrid, Real Academia de Bellas Artes de San Fernando y Escuela Española de Arqueología de Roma (published institution: Yacimiento Arqueológico de Pompeya) — NOT resolved in this pass (date-only scope), institution left untouched. Site per client sheet: peristilo de la Casa de la Diana Arcaizante (external ref.: www.dianaarcaizante.com)"
     ],
     "works": []
   },
@@ -520,7 +533,7 @@
     "type": "Conservación y Restauración",
     "institution": "Museo Nacional del Prado",
     "location": "Madrid, España",
-    "year": "2003–2004",
+    "year": "1996–2001",
     "shortDescription": "Conservación de obras escultóricas de la colección del Museo Nacional del Prado, en el marco de la beca Fundación Botín.",
     "longDescription": "Seleccionada para la prestigiosa beca de la Fundación Botín en el Museo Nacional del Prado, Ángeles Solís Parra realizó trabajos de conservación sobre piezas escultóricas de la colección permanente del Prado. Este proyecto supuso un reconocimiento profesional singular y la oportunidad de trabajar directamente con una de las colecciones de arte más importantes del mundo.",
     "isSelected": true,
@@ -544,9 +557,15 @@
     "roomNumber": "01",
     "schemaVersion": 2,
     "primaryCategory": "institutional-collections",
-    "years": [],
+    "years": [
+      1996,
+      1998,
+      1999,
+      2000,
+      2001
+    ],
     "sources": [
-      "client-project-sheet gives years 1996, 1998, 1999, 2000, 2001, conflicting with published 2003–2004; not applied without confirmation from Ángeles"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2003–2004. Año aplicado: 1996–2001, según la ficha específica de este proyecto."
     ]
   },
   {
@@ -692,7 +711,7 @@
     "type": "Conservación y Restauración",
     "institution": "Parroquia de San Andrés",
     "location": "Madrid, España",
-    "year": "2008",
+    "year": "1997",
     "shortDescription": "Conservación del conjunto escultórico de la Cúpula de San Andrés, en Madrid.",
     "longDescription": "Conservación del programa escultórico asociado a la cúpula de la iglesia de San Andrés en Madrid, un conjunto patrimonial barroco de gran relevancia. El trabajo incluyó consolidación estructural, limpieza superficial e integración cromática de los elementos escultóricos dentro de un edificio eclesiástico en uso activo.",
     "isSelected": false,
@@ -716,9 +735,11 @@
     "roomNumber": "01",
     "schemaVersion": 2,
     "primaryCategory": "archaeological-mural",
-    "years": [],
+    "years": [
+      1997
+    ],
     "sources": [
-      "client-project-sheet gives year 1997, conflicting with published 2008; not applied without confirmation from Ángeles"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2008. Año aplicado: 1997, según la ficha específica de este proyecto."
     ]
   },
   {
@@ -731,7 +752,7 @@
     "type": "Conservación y Restauración",
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, España",
-    "year": "2004–2014",
+    "year": "2011–2015",
     "shortDescription": "Intervención de urgencia en el fondo de pintura de la Real Academia de Bellas Artes de San Fernando, con obras de Alonso Cano y Van Dyck entre las piezas documentadas de la colección.",
     "longDescription": "Intervención de urgencia sobre el fondo de pintura en los almacenes de la Real Academia de Bellas Artes de San Fernando, con cerca de cincuenta obras en óleo sobre lienzo afectadas por humedad, deformaciones de soporte, bastidores deteriorados y ataques de microorganismos. El tratamiento incluyó limpieza, sustitución de bastidores, forraciones, injertos textiles y sentado de color. La intervención permitió, además de la estabilización material de las obras, la identificación de firmas ocultas y nuevas atribuciones de autoría — entre ellas, la de La Virgen y el Niño con los Pecadores Arrepentidos, atribuida a Van Dyck, objeto de una exposición monográfica en Murcia (2011) y de un estudio técnico publicado en Ars Magazine (nº 10, 2011). La colección incluye también La Muerte de San Francisco de Asís, de Alonso Cano.",
     "isSelected": true,
@@ -762,9 +783,14 @@
     "roomNumber": "02",
     "schemaVersion": 2,
     "primaryCategory": "painting",
-    "years": [],
+    "years": [
+      {
+        "start": 2011,
+        "end": 2015
+      }
+    ],
     "sources": [
-      "client-project-sheet gives project years 2011–2015, conflicting with published 2004–2014; not applied without confirmation from Ángeles. 2 named works documented (Van Dyck inv. 0323, Alonso Cano inv. 0553) plus approximately 26 unidentified paintings from an urgent-intervention batch of roughly 50 works (project-level gallery only, no individual identification provided by the client for these pieces)"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2004–2014. Año aplicado: 2011–2015, según la ficha específica de este proyecto."
     ],
     "works": [
       {
@@ -830,7 +856,7 @@
     "type": "Conservación y Restauración",
     "institution": "Museo de Bellas Artes de Málaga",
     "location": "Málaga, España",
-    "year": "2010–2012",
+    "year": "2000–2003",
     "shortDescription": "Conservación de pinturas del Museo de Bellas Artes de Málaga, incluyendo obras de Nogales y Denis Belgrano.",
     "longDescription": "Proyecto de conservación para el Museo de Bellas Artes de Málaga, con obras de gran valor patrimonial regional, incluyendo pinturas de Nogales y Pato Denis Belgrano. El proyecto exigió adaptar los criterios de conservación a obras con historiales complejos de barnices e intervenciones previas.",
     "isSelected": true,
@@ -854,9 +880,15 @@
     "roomNumber": "02",
     "schemaVersion": 2,
     "primaryCategory": "painting",
-    "years": [],
+    "years": [
+      {
+        "start": 2000,
+        "end": 2003
+      }
+    ],
     "sources": [
-      "client-project-sheet gives project years 2000–2003, conflicting with published 2010–2012; not applied without confirmation from Ángeles. Client sheet also names Junta de Andalucía / Ministerio de Cultura as institution (published: Museo de Bellas Artes de Málaga) and artists Sorolla, Muñoz Degrain, Emilio Sala (published text names Nogales, Pato Denis Belgrano) — both conflict with currently published content; neither institution nor description text overwritten. Client sheet also documents 37 pieces restored for the exhibition «Museo de Málaga. Primeras donaciones (1916–1930)»"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2010–2012. Año aplicado: 2000–2003, según la ficha específica de este proyecto.",
+      "client-project-sheet also names Junta de Andalucía / Ministerio de Cultura as institution (published: Museo de Bellas Artes de Málaga) and artists Sorolla, Muñoz Degrain, Emilio Sala (published text names Nogales, Pato Denis Belgrano) — both conflict with currently published content; NOT resolved in this pass (date-only scope), institution and description text left untouched. Client sheet also documents 37 pieces restored for the exhibition «Museo de Málaga. Primeras donaciones (1916–1930)»"
     ]
   },
   {
@@ -869,7 +901,7 @@
     "type": "Conservación y Restauración",
     "institution": "Museo de Bellas Artes de Granada",
     "location": "Granada, España",
-    "year": "2011–2014",
+    "year": "2003–2014",
     "shortDescription": "Amplio proyecto de conservación para el Museo de Bellas Artes de Granada, con pinturas sobre lienzo, terracota y madera de autores como Juan Sánchez Cotán, Juan de Sevilla y José de Mora, entre otros.",
     "longDescription": "Uno de los proyectos de conservación de pintura más extensos de la trayectoria de Ángeles Solís Parra, con múltiples obras de gran formato sobre lienzo, terracota y madera de la colección permanente del Museo de Bellas Artes de Granada, destinadas tanto a la colección estable como a exposiciones itinerantes. Las intervenciones abordaron el soporte, la limpieza, la consolidación, tratamientos fungicidas, la reintegración cromática y análisis químicos de pigmentos sobre obras de autores como Juan Sánchez Cotán, Juan de Sevilla, Juan van der Hamen, José Risueño, José de Mora y Diego de Siloé, así como un importante apostolado previamente sin catalogar.",
     "isSelected": true,
@@ -901,8 +933,19 @@
     "roomNumber": "02",
     "schemaVersion": 2,
     "primaryCategory": "painting",
-    "years": [],
+    "years": [
+      2003,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2013,
+      2014
+    ],
     "sources": [
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2011–2014. Año aplicado: 2003–2014, según la ficha específica de este proyecto.",
       "client-project-sheet gives project years 2003, 2005, 2006, 2007, 2008, 2009, 2010, 2013, 2014, conflicting with published 2011–2014; not applied without confirmation from Ángeles. Institution and artist names added to the description are additive (no conflict with existing published text)"
     ]
   },
@@ -916,7 +959,7 @@
     "type": "Conservación Arqueológica",
     "institution": "Museo-Yacimiento de Campo Valdés",
     "location": "Gijón, Asturias, España",
-    "year": "2006",
+    "year": "2002",
     "shortDescription": "Arranque y conservación de pintura mural romana (siglos I-II d.C.) en el yacimiento de las Termas de Campo Valdés, en Gijón.",
     "longDescription": "La pintura mural procedente del yacimiento romano de Campo Valdés se encontraba degradada por el exceso de cristales de sales en superficie. Tras el arranque in situ, la obra se trasladó en una caja rellena de poliuretano expandido para evitar cualquier movimiento durante el traslado a Madrid. Posteriormente se llevó a cabo un proceso de desalación controlada, junto con limpieza, consolidación, tratamientos fungicidas, relleno de grietas y reintegración cromática, hasta su musealización.",
     "isSelected": false,
@@ -938,9 +981,12 @@
     "roomNumber": "02",
     "schemaVersion": 2,
     "primaryCategory": "archaeological-mural",
-    "years": [],
+    "years": [
+      2002
+    ],
     "sources": [
-      "client-project-sheet gives project year 2002, conflicting with published 2006; not applied without confirmation from Ángeles. Institution per client sheet: Ayuntamiento de Gijón (published: Museo-Yacimiento de Campo Valdés) — registered, not applied"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2006. Año aplicado: 2002, según la ficha específica de este proyecto.",
+      "Institution per client sheet: Ayuntamiento de Gijón (published: Museo-Yacimiento de Campo Valdés) — NOT resolved in this pass (date-only scope), institution left untouched."
     ],
     "works": []
   },
@@ -954,7 +1000,7 @@
     "type": "Conservación y Restauración",
     "institution": "Casa de Diezmos",
     "location": "Somosierra, Madrid, España",
-    "year": "2007",
+    "year": "2005–2006",
     "shortDescription": "Arranque y conservación de los dos paneles de pintura mural del siglo XVIII (1759) de la fachada de la Casa de Diezmos, en Somosierra.",
     "longDescription": "Se llevó a cabo el arranque de dos paneles de pintura mural, realizada en 1759, ubicados en la fachada de la antigua Casa de Diezmos en Somosierra, entonces en ruinas y de propiedad particular. El arranque se ejecutó en condiciones de temperatura muy bajas, con dificultades añadidas por reparaciones modernas con cemento y por la inserción de los paneles en un muro de mampostería de pizarra. Tras el arranque, la intervención incluyó consolidación, limpieza, reintegración cromática y montaje sobre soporte inerte y rígido, con el objetivo de devolver los paneles a su emplazamiento original bajo la protección de Patrimonio Nacional.",
     "isSelected": false,
@@ -974,9 +1020,15 @@
     "roomNumber": "02",
     "schemaVersion": 2,
     "primaryCategory": "archaeological-mural",
-    "years": [],
+    "years": [
+      {
+        "start": 2005,
+        "end": 2006
+      }
+    ],
     "sources": [
-      "client-project-sheet gives project year 2005-2006, conflicting with published 2007; not applied without confirmation from Ángeles. Mural creation date per client sheet: 1759 (visible in the inscription panel itself). Institution per client sheet: private owner of the house, under supervision of Patrimonio Nacional (published: Casa de Diezmos) — additional detail registered, not applied"
+      "client-project-sheet — RESUELTO de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica del proyecto (ficha propia) prevalece sobre el texto general/CV previamente publicado. Año anterior publicado: 2007. Año aplicado: 2005–2006, según la ficha específica de este proyecto.",
+      "Mural creation date per client sheet: 1759 (visible in the inscription panel itself; distinct fact from the intervention year, not in conflict). Institution per client sheet: private owner of the house, under supervision of Patrimonio Nacional (published: Casa de Diezmos) — additional detail, NOT applied to the institution field in this pass."
     ],
     "works": []
   },
@@ -1008,7 +1060,7 @@
     "primaryCategory": "archaeological-mural",
     "years": [],
     "sources": [
-      "client-project-sheet identifies the mural as «El Diluvio Universal» (1660, siglo XVII), located in the Capilla de San Ildefonso — conflicts with published title/period (\"Capilla del Cardenal\", framed as pintura mural medieval); not applied. Company per client sheet: Kypsa. Intervention year per client sheet: 1990 (fase final, reintegración cromática de las lagunas), conflicting with published 2009; not applied without confirmation from Ángeles. IMPORTANT: this may not be the same intervention as the currently published catedral-zamora Project — chapel name, period and artwork identity all conflict simultaneously, not just the date. Pending clarification from Ángeles on whether this is the same Project or a distinct one, gallery[] was left empty and the 6 web-optimized images derived from this material were removed from assets/images/ (client originals untouched)."
+      "client-project-sheet identifies the mural as «El Diluvio Universal» (1660, siglo XVII), located in the Capilla de San Ildefonso — conflicts with published title/period (\"Capilla del Cardenal\", framed as pintura mural medieval); NOT applied. Empresa per client sheet: Kypsa. Intervention year per client sheet: 1990, conflicting with published 2009. EVALUATED 2026-09-02 under the primary-source-priority criterion and explicitly NOT resolved: unlike the other 10 date conflicts, here the chapel name, historical period and artwork identity all conflict simultaneously — insufficient evidence that this is the same intervention rather than a distinct one. year/title/description left unchanged; gallery[] remains empty and the 6 web-optimized images derived from this material remain unpublished pending clarification from Ángeles on project identity, not just the date."
     ],
     "works": []
   },
@@ -1322,7 +1374,7 @@
     "location": "Madrid, España",
     "year": "2003–2006",
     "shortDescription": "Desarrollo, ensayo y patente de Anjusil®, una metodología de limpieza especializada para colecciones de vaciados históricos en yeso, vinculada al Premio Nacional 2004 y al Premio Europa Nostra.",
-    "longDescription": "Anjusil® es un compuesto a base de un material filmógeno proteínico de origen natural (látex de caucho natural, activado con esteramina G al 0,1%), desarrollado por Ángeles Solís Parra para la limpieza de vaciados históricos en yeso durante la restauración de la colección de la RABASF. El compuesto se deposita en la superficie de la obra sin penetrar en su estructura, actuando como vehículo para el agua y los disolventes: el amoniaco disuelve las partículas grasas que taponan los poros, mientras el agua permite el desplazamiento de las sustancias ajenas a la obra depositadas en ellos. La evaporación y coagulación del látex, controladas en el tiempo, atrapan estas sustancias en la superficie para su posterior eliminación mecánica. Se utiliza para eliminar suciedad por contaminación ambiental (polvo, humo, hollín), reblandecer desmoldeantes antiguos (cera, barro, barbotina, cola animal, aceites) y corregir el pH ácido causado por la polución; actúa además como biocida. Su rendimiento varía según el material, el tipo de suciedad y las condiciones ambientales. Por su composición, requiere medidas de protección individual (guantes, gafas, indumentaria adecuada), al ser irritante para ojos, piel y vías respiratorias.",
+    "longDescription": "Anjusil® es un compuesto a base de un material filmógeno proteínico de origen natural (látex de caucho natural, activado con esteramina G al 0,1%), desarrollado por Ángeles Solís Parra para la limpieza de vaciados históricos en yeso durante la restauración de la colección de la RABASF. El compuesto se deposita en la superficie de la obra sin penetrar en su estructura, actuando como vehículo para el agua y los disolventes: el amoniaco disuelve las partículas grasas que taponan los poros, mientras el agua permite el desplazamiento de las sustancias ajenas a la obra depositadas en ellos. La evaporación y coagulación del látex, controladas en el tiempo, atrapan estas sustancias en la superficie para su posterior eliminación mecánica. Se aplica mediante brochas de hilo de nylon, lavables inmediatamente después de su uso con agua. Se utiliza para eliminar suciedad por contaminación ambiental (polvo, humo, hollín), reblandecer desmoldeantes antiguos (cera, barro, barbotina, cola animal, aceites) y corregir el pH ácido causado por la polución; actúa además como biocida. Su rendimiento varía según el material, el tipo de suciedad y las condiciones ambientales. Se presenta en envases de 1 y 5 litros, en presentación líquida o gelificada. Por su composición, requiere medidas de protección individual (guantes, gafas, indumentaria adecuada), al ser irritante para ojos, piel y vías respiratorias.",
     "isSelected": true,
     "heroImage": "assets/images/proj-anjusil-hero.jpg",
     "gallery": [
@@ -1351,22 +1403,22 @@
     "primaryCategory": "research-methodology",
     "years": [],
     "sources": [
-      "client-project-sheet (ficha técnica de Anjusil®) confirma composición, propiedades, forma de aplicación, mecanismo de actuación, rendimiento, toxicidad y precauciones de uso. Se excluyen intencionadamente del contenido público, por decisión pendiente de Ángeles sobre el alcance comercial (A3): formatos de envasado, precios (95–500€ según formato) y datos de contacto para presupuesto/venta. 4 ejemplos de aplicación documentados con imágenes antes/durante/proceso/después, sin nombre ni código individual de pieza en el material del cliente."
+      "client-project-sheet (ficha técnica de Anjusil®) — confirma composición, propiedades, forma de aplicación, mecanismo de actuación, rendimiento, formatos de envasado, toxicidad y precauciones de uso; todo publicado. Se excluyen intencionadamente del contenido público, por decisión explícita de Ángeles (2026-09-02): las 4 tarifas fijas del documento (95–500€ según formato/presentación), por poder quedar desactualizadas, y el email de contacto privado del documento original — sustituidos por una llamada a la acción hacia el sistema general de contacto del portfolio. 4 ejemplos de aplicación documentados con imágenes antes/durante/proceso/después, sin nombre ni código individual de pieza en el material del cliente."
     ],
     "works": []
   },
   {
     "id": "premios-reconocimientos",
-    "title": "Premio Nacional 2004 y Premio Europa Nostra",
+    "title": "Premio Nacional 2004 y Premio Europa Nostra 2005",
     "category": [
       "awards-grants"
     ],
     "type": "Reconocimiento",
     "institution": "Ministerio de Cultura / Europa Nostra",
     "location": "España / Europa",
-    "year": "2004",
-    "shortDescription": "Premio Nacional de Restauración y Conservación de Bienes Culturales (2004, Ministerio de Cultura) y Premio Europa Nostra, ambos vinculados a la recuperación de las colecciones de vaciados históricos.",
-    "longDescription": "En 2004, Ángeles Solís Parra recibió el Premio Nacional de Restauración y Conservación de Bienes Culturales del Ministerio de Cultura, en reconocimiento al trabajo realizado en la colección de vaciados históricos de la RABASF. Posteriormente, el mismo proyecto fue reconocido con el Premio Europa Nostra, el galardón europeo más prestigioso en materia de patrimonio cultural. Estos reconocimientos confirman la relevancia profesional e institucional del trabajo y de la metodología Anjusil® a nivel europeo.",
+    "year": "2004–2005",
+    "shortDescription": "Premio Nacional de Restauración y Conservación de Bienes Culturales (2004, Ministerio de Cultura) y Premio Europa Nostra (2005), ambos vinculados a la recuperación de las colecciones de vaciados históricos.",
+    "longDescription": "En 2004, Ángeles Solís Parra recibió el Premio Nacional de Restauración y Conservación de Bienes Culturales del Ministerio de Cultura, en reconocimiento al trabajo realizado en la colección de vaciados históricos de la RABASF. En 2005, el mismo proyecto fue reconocido con el Premio Europa Nostra, el galardón europeo más prestigioso en materia de patrimonio cultural. Estos reconocimientos confirman la relevancia profesional e institucional del trabajo y de la metodología Anjusil® a nivel europeo.",
     "isSelected": true,
     "heroImage": "assets/images/proj-premios-hero.jpg",
     "gallery": [
@@ -1382,9 +1434,12 @@
     "roomNumber": null,
     "schemaVersion": 2,
     "primaryCategory": "awards-grants",
-    "years": [],
+    "years": [
+      2004,
+      2005
+    ],
     "sources": [
-      "client-source (fotografías escaneadas de los dos diplomas). Europa Nostra: el diploma escaneado indica 2005; el CV entregado en el mismo paquete indica 2006 — contradicción dentro del propio material de Ángeles, sin resolver (pendiente A1). No se publica año para el Premio Europa Nostra en ningún texto ni campo `year`; se conserva únicamente el año confirmado del Premio Nacional (2004). Premio Nacional: el diploma acredita a un equipo de tres profesionales, incluida Ángeles Solís Parra (ver decisión B2 en content-data-model-v2.md)."
+      "client-source (fotografías escaneadas de los dos diplomas). Europa Nostra: RESUELTO — se adopta 2005, la fecha que figura en el diploma original (fuente primaria), frente a 2006 en el CV entregado en el mismo paquete (documento de trabajo, con error de transcripción). Decisión aplicada de forma autónoma el 2026-09-02 bajo criterio explícito de Ángeles: la documentación específica/diplomas prevalecen sobre el CV. Premio Nacional: el diploma acredita a un equipo de tres profesionales, incluida Ángeles Solís Parra (ver decisión B2 en content-data-model-v2.md)."
     ],
     "works": []
   }

@@ -109,25 +109,20 @@
       return cats[0] || 'other';
     }
 
-    // Presentation-only safeguard: the Europa Nostra award year is
-    // disputed (diploma says 2005, CV says 2006) and unconfirmed by
-    // Ángeles. projects.json is not touched — this only strips the
-    // unconfirmed "2006" from text as it's rendered here, without
-    // ever substituting the disputed "2005" in its place.
+    // Europa Nostra date resolved 2026-09-02: the diploma (primary source)
+    // says 2005; the CV said 2006, confirmed to be a transcription error.
+    // Kept as a permanent guard so the retired "2006" figure can never
+    // resurface in rendered text.
     function safeguardEuropaNostra(text) {
       if (!text) return text;
       return text
-        .replace(/Premio Europa Nostra\s*\(?2006\)?/gi, 'Premio Europa Nostra')
-        .replace(/Europa Nostra\s*\(?2006\)?/gi, 'Europa Nostra')
+        .replace(/Premio Europa Nostra\s*\(?2006\)?/gi, 'Premio Europa Nostra 2005')
+        .replace(/Europa Nostra\s*\(?2006\)?/gi, 'Europa Nostra 2005')
         .replace(/\s{2,}/g, ' ')
         .trim();
     }
 
     function safeguardYear(p) {
-      // premios-reconocimientos' "2004–2006" range encodes the same
-      // disputed Europa Nostra date as its end point — show only the
-      // confirmed National Award year until it's resolved.
-      if (p.id === 'premios-reconocimientos') return '2004';
       return p.year;
     }
 
