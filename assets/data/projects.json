@@ -483,11 +483,17 @@
     "institution": "Yacimiento Arqueológico de Pompeya",
     "location": "Pompeya, Italia",
     "year": "2005",
-    "shortDescription": "Intervención de conservación en el yacimiento arqueológico de Pompeya, tratando patrimonio escultórico y arquitectónico in situ.",
-    "longDescription": "Trabajo internacional de conservación en el yacimiento arqueológico de Pompeya. Ángeles Solís Parra contribuyó a la conservación in situ de elementos escultóricos, trabajando en las complejas condiciones materiales y ambientales propias del contexto volcánico y las exigencias de un yacimiento arqueológico en activo.",
+    "shortDescription": "Consolidación de material arqueológico en el peristilo de la Casa de la Diana Arcaizante, en el yacimiento de Pompeya, con intervención sobre piedra, morteros, cerámica y mosaicos.",
+    "longDescription": "El proyecto de consolidación de material arqueológico se desarrolló en el peristilo de la Casa de la Diana Arcaizante, en Pompeya, con el objetivo de estabilizar los restos, facilitar su estudio y contribuir a la reconstrucción del yacimiento. Las piezas — piedra, morteros, cerámica y mosaicos — presentaban problemas de humedad, disgregación de morteros y proliferación de microorganismos. La intervención incluyó limpieza, consolidación, tratamientos fungicidas y engasado para su posterior protección, permitiendo la conservación del material excavado y su integración en el estudio arqueológico y la documentación del conjunto.",
     "isSelected": true,
     "heroImage": "assets/images/proj-pompeya-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-pompeya-gallery-01.jpg",
+      "assets/images/proj-pompeya-gallery-02.jpg",
+      "assets/images/proj-pompeya-gallery-03.jpg",
+      "assets/images/proj-pompeya-gallery-04.jpg",
+      "assets/images/proj-pompeya-gallery-05.jpg"
+    ],
     "tags": [
       "Pompeya",
       "arqueológico",
@@ -495,7 +501,14 @@
       "in situ",
       "Italia"
     ],
-    "roomNumber": "01"
+    "roomNumber": "01",
+    "schemaVersion": 2,
+    "primaryCategory": "archaeological-mural",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives project years 2008 y 2011, conflicting with published 2005; not applied without confirmation from Ángeles. Client sheet also names institution as Universidad Complutense de Madrid, Real Academia de Bellas Artes de San Fernando y Escuela Española de Arqueología de Roma (published institution: Yacimiento Arqueológico de Pompeya) — conflict registered, not applied. Site per client sheet: peristilo de la Casa de la Diana Arcaizante (external ref.: www.dianaarcaizante.com)"
+    ],
+    "works": []
   },
   {
     "id": "museo-del-prado",
@@ -904,11 +917,17 @@
     "institution": "Museo-Yacimiento de Campo Valdés",
     "location": "Gijón, Asturias, España",
     "year": "2006",
-    "shortDescription": "Conservación de fragmentos de pintura mural en el museo-yacimiento arqueológico de Campo Valdés, en Gijón.",
-    "longDescription": "Conservación in situ de fragmentos de pintura mural romana en el yacimiento arqueológico de Campo Valdés, en Gijón, un importante complejo termal de la Hispania romana. El trabajo exigió adaptación al contexto arqueológico y al comportamiento material específico de la pintura mural fragmentaria.",
+    "shortDescription": "Arranque y conservación de pintura mural romana (siglos I-II d.C.) en el yacimiento de las Termas de Campo Valdés, en Gijón.",
+    "longDescription": "La pintura mural procedente del yacimiento romano de Campo Valdés se encontraba degradada por el exceso de cristales de sales en superficie. Tras el arranque in situ, la obra se trasladó en una caja rellena de poliuretano expandido para evitar cualquier movimiento durante el traslado a Madrid. Posteriormente se llevó a cabo un proceso de desalación controlada, junto con limpieza, consolidación, tratamientos fungicidas, relleno de grietas y reintegración cromática, hasta su musealización.",
     "isSelected": false,
     "heroImage": "assets/images/proj-campo-valdes-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-campo-valdes-gallery-01.jpg",
+      "assets/images/proj-campo-valdes-gallery-02.jpg",
+      "assets/images/proj-campo-valdes-gallery-03.jpg",
+      "assets/images/proj-campo-valdes-gallery-04.jpg",
+      "assets/images/proj-campo-valdes-gallery-05.jpg"
+    ],
     "tags": [
       "pintura mural",
       "romano",
@@ -916,7 +935,14 @@
       "Asturias",
       "in situ"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "archaeological-mural",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives project year 2002, conflicting with published 2006; not applied without confirmation from Ángeles. Institution per client sheet: Ayuntamiento de Gijón (published: Museo-Yacimiento de Campo Valdés) — registered, not applied"
+    ],
+    "works": []
   },
   {
     "id": "somosierra-mural",
@@ -929,18 +955,30 @@
     "institution": "Casa de Diezmos",
     "location": "Somosierra, Madrid, España",
     "year": "2007",
-    "shortDescription": "Conservación de pintura mural en la histórica Casa de Diezmos de Somosierra, Madrid.",
-    "longDescription": "Conservación de pinturas murales interiores en la Casa de Diezmos de Somosierra, un edificio histórico vinculado a la administración de tierras eclesiásticas. La intervención abordó el soporte estructural, la limpieza superficial y la consolidación de los programas murales figurativos y decorativos.",
+    "shortDescription": "Arranque y conservación de los dos paneles de pintura mural del siglo XVIII (1759) de la fachada de la Casa de Diezmos, en Somosierra.",
+    "longDescription": "Se llevó a cabo el arranque de dos paneles de pintura mural, realizada en 1759, ubicados en la fachada de la antigua Casa de Diezmos en Somosierra, entonces en ruinas y de propiedad particular. El arranque se ejecutó en condiciones de temperatura muy bajas, con dificultades añadidas por reparaciones modernas con cemento y por la inserción de los paneles en un muro de mampostería de pizarra. Tras el arranque, la intervención incluyó consolidación, limpieza, reintegración cromática y montaje sobre soporte inerte y rígido, con el objetivo de devolver los paneles a su emplazamiento original bajo la protección de Patrimonio Nacional.",
     "isSelected": false,
     "heroImage": "assets/images/proj-somosierra-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-somosierra-gallery-01.jpg",
+      "assets/images/proj-somosierra-gallery-02.jpg",
+      "assets/images/proj-somosierra-gallery-03.jpg",
+      "assets/images/proj-somosierra-gallery-04.jpg"
+    ],
     "tags": [
       "pintura mural",
       "edificio histórico",
       "Madrid",
       "decorativo"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "archaeological-mural",
+    "years": [],
+    "sources": [
+      "client-project-sheet gives project year 2005-2006, conflicting with published 2007; not applied without confirmation from Ángeles. Mural creation date per client sheet: 1759 (visible in the inscription panel itself). Institution per client sheet: private owner of the house, under supervision of Patrimonio Nacional (published: Casa de Diezmos) — additional detail registered, not applied"
+    ],
+    "works": []
   },
   {
     "id": "catedral-zamora",
@@ -965,7 +1003,14 @@
       "Zamora",
       "eclesiástico"
     ],
-    "roomNumber": "02"
+    "roomNumber": "02",
+    "schemaVersion": 2,
+    "primaryCategory": "archaeological-mural",
+    "years": [],
+    "sources": [
+      "client-project-sheet identifies the mural as «El Diluvio Universal» (1660, siglo XVII), located in the Capilla de San Ildefonso — conflicts with published title/period (\"Capilla del Cardenal\", framed as pintura mural medieval); not applied. Company per client sheet: Kypsa. Intervention year per client sheet: 1990 (fase final, reintegración cromática de las lagunas), conflicting with published 2009; not applied without confirmation from Ángeles. IMPORTANT: this may not be the same intervention as the currently published catedral-zamora Project — chapel name, period and artwork identity all conflict simultaneously, not just the date. Pending clarification from Ángeles on whether this is the same Project or a distinct one, gallery[] was left empty and the 6 web-optimized images derived from this material were removed from assets/images/ (client originals untouched)."
+    ],
+    "works": []
   },
   {
     "id": "colecciones-privadas",
