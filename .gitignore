@@ -5,6 +5,9 @@ docs/screenshots/
 
 # Client-supplied source material — private, not for the public repo
 docs/client-revisions*/
+REVISIÓN*.docx
+REVISION*.docx
+docs/superpowers/
 
 # OS metadata
 .DS_Store
