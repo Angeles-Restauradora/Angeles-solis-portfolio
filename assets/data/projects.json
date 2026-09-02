@@ -1321,11 +1321,24 @@
     "institution": "Independiente / RABASF",
     "location": "Madrid, España",
     "year": "2003–2006",
-    "shortDescription": "Desarrollo, ensayo y patente de Anjusil®, una metodología de limpieza especializada para colecciones de vaciados históricos en yeso. Vinculada al Premio Nacional 2004 y al Premio Europa Nostra 2006.",
-    "longDescription": "Anjusil® es la metodología de conservación patentada desarrollada por Ángeles Solís Parra durante la restauración de la colección de vaciados de la RABASF. La metodología aborda los retos específicos de la limpieza de vaciados históricos en yeso: la porosidad del material, la acumulación superficial de polvo, suciedad y crecimiento biológico, y la necesidad de preservar las huellas del uso y el envejecimiento históricos sin una intervención agresiva. El proceso de desarrollo incluyó ensayos de materiales, análisis químicos y documentación a lo largo de múltiples tipologías de vaciados.",
+    "shortDescription": "Desarrollo, ensayo y patente de Anjusil®, una metodología de limpieza especializada para colecciones de vaciados históricos en yeso, vinculada al Premio Nacional 2004 y al Premio Europa Nostra.",
+    "longDescription": "Anjusil® es un compuesto a base de un material filmógeno proteínico de origen natural (látex de caucho natural, activado con esteramina G al 0,1%), desarrollado por Ángeles Solís Parra para la limpieza de vaciados históricos en yeso durante la restauración de la colección de la RABASF. El compuesto se deposita en la superficie de la obra sin penetrar en su estructura, actuando como vehículo para el agua y los disolventes: el amoniaco disuelve las partículas grasas que taponan los poros, mientras el agua permite el desplazamiento de las sustancias ajenas a la obra depositadas en ellos. La evaporación y coagulación del látex, controladas en el tiempo, atrapan estas sustancias en la superficie para su posterior eliminación mecánica. Se utiliza para eliminar suciedad por contaminación ambiental (polvo, humo, hollín), reblandecer desmoldeantes antiguos (cera, barro, barbotina, cola animal, aceites) y corregir el pH ácido causado por la polución; actúa además como biocida. Su rendimiento varía según el material, el tipo de suciedad y las condiciones ambientales. Por su composición, requiere medidas de protección individual (guantes, gafas, indumentaria adecuada), al ser irritante para ojos, piel y vías respiratorias.",
     "isSelected": true,
     "heroImage": "assets/images/proj-anjusil-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-anjusil-gallery-01.jpg",
+      "assets/images/proj-anjusil-gallery-02.jpg",
+      "assets/images/proj-anjusil-gallery-03.jpg",
+      "assets/images/proj-anjusil-gallery-04.jpg",
+      "assets/images/proj-anjusil-gallery-05.jpg",
+      "assets/images/proj-anjusil-gallery-06.jpg",
+      "assets/images/proj-anjusil-gallery-07.jpg",
+      "assets/images/proj-anjusil-gallery-08.jpg",
+      "assets/images/proj-anjusil-gallery-09.jpg",
+      "assets/images/proj-anjusil-gallery-10.jpg",
+      "assets/images/proj-anjusil-gallery-11.jpg",
+      "assets/images/proj-anjusil-gallery-12.jpg"
+    ],
     "tags": [
       "Anjusil®",
       "patente",
@@ -1333,29 +1346,46 @@
       "metodología",
       "vaciados en yeso"
     ],
-    "roomNumber": null
+    "roomNumber": null,
+    "schemaVersion": 2,
+    "primaryCategory": "research-methodology",
+    "years": [],
+    "sources": [
+      "client-project-sheet (ficha técnica de Anjusil®) confirma composición, propiedades, forma de aplicación, mecanismo de actuación, rendimiento, toxicidad y precauciones de uso. Se excluyen intencionadamente del contenido público, por decisión pendiente de Ángeles sobre el alcance comercial (A3): formatos de envasado, precios (95–500€ según formato) y datos de contacto para presupuesto/venta. 4 ejemplos de aplicación documentados con imágenes antes/durante/proceso/después, sin nombre ni código individual de pieza en el material del cliente."
+    ],
+    "works": []
   },
   {
     "id": "premios-reconocimientos",
-    "title": "Premio Nacional 2004 y Europa Nostra 2006",
+    "title": "Premio Nacional 2004 y Premio Europa Nostra",
     "category": [
       "awards-grants"
     ],
     "type": "Reconocimiento",
     "institution": "Ministerio de Cultura / Europa Nostra",
     "location": "España / Europa",
-    "year": "2004–2006",
-    "shortDescription": "Premio Nacional de Restauración y Conservación de Bienes Culturales (2004, Ministerio de Cultura) y Premio Europa Nostra (2006), ambos vinculados a la recuperación de las colecciones de vaciados históricos.",
-    "longDescription": "En 2004, Ángeles Solís Parra recibió el Premio Nacional de Restauración y Conservación de Bienes Culturales del Ministerio de Cultura, en reconocimiento al trabajo realizado en la colección de vaciados históricos de la RABASF. En 2006, el mismo proyecto fue reconocido con el Premio Europa Nostra, el galardón europeo más prestigioso en materia de patrimonio cultural. Estos reconocimientos confirman la relevancia profesional e institucional del trabajo y de la metodología Anjusil® a nivel europeo.",
+    "year": "2004",
+    "shortDescription": "Premio Nacional de Restauración y Conservación de Bienes Culturales (2004, Ministerio de Cultura) y Premio Europa Nostra, ambos vinculados a la recuperación de las colecciones de vaciados históricos.",
+    "longDescription": "En 2004, Ángeles Solís Parra recibió el Premio Nacional de Restauración y Conservación de Bienes Culturales del Ministerio de Cultura, en reconocimiento al trabajo realizado en la colección de vaciados históricos de la RABASF. Posteriormente, el mismo proyecto fue reconocido con el Premio Europa Nostra, el galardón europeo más prestigioso en materia de patrimonio cultural. Estos reconocimientos confirman la relevancia profesional e institucional del trabajo y de la metodología Anjusil® a nivel europeo.",
     "isSelected": true,
     "heroImage": "assets/images/proj-premios-hero.jpg",
-    "gallery": [],
+    "gallery": [
+      "assets/images/proj-premios-gallery-02.jpg",
+      "assets/images/proj-premios-gallery-01.jpg"
+    ],
     "tags": [
       "Premio Nacional",
       "Europa Nostra",
       "Ministerio de Cultura",
       "reconocimiento"
     ],
-    "roomNumber": null
+    "roomNumber": null,
+    "schemaVersion": 2,
+    "primaryCategory": "awards-grants",
+    "years": [],
+    "sources": [
+      "client-source (fotografías escaneadas de los dos diplomas). Europa Nostra: el diploma escaneado indica 2005; el CV entregado en el mismo paquete indica 2006 — contradicción dentro del propio material de Ángeles, sin resolver (pendiente A1). No se publica año para el Premio Europa Nostra en ningún texto ni campo `year`; se conserva únicamente el año confirmado del Premio Nacional (2004). Premio Nacional: el diploma acredita a un equipo de tres profesionales, incluida Ángeles Solís Parra (ver decisión B2 en content-data-model-v2.md)."
+    ],
+    "works": []
   }
 ]
