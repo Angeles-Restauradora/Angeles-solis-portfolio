@@ -114,6 +114,41 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 .site-nav nav a.is-active::after { transform: scaleX(1); }
 
+/* Hamburger toggle — hidden on desktop, shown by the ≤1024px
+   breakpoint below. Three bars that cross into an X while open,
+   transform-only so nothing reflows. */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  /* Must stay above the drawer (z-index 102) once open — the drawer
+     spans the full header height and would otherwise cover this
+     button, leaving no way to close the menu from the same control. */
+  position: relative;
+  z-index: 103;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--white);
+  transition: transform 0.3s var(--easing), opacity 0.3s var(--easing);
+}
+
+.site-nav.is-open .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.site-nav.is-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.site-nav.is-open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.nav-backdrop {
+  display: none;
+}
+
 
 /* ══════════════════════════════════════════════════
    ROOM STAGE — stage architecture (unchanged for JS)
@@ -188,7 +223,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 /* Progressive reveal on room switch: content settles in a
    beat after the panel itself fades in, staggered by zone. */
 .home-identity, .home-enter-wrap, .home-stats,
-.room__intro, .feature-card, .room__secondary {
+.room__intro, .room__projects {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
@@ -199,8 +234,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .room-panel.is-active .home-stats     { opacity: 1; transform: none; transition-delay: 0.34s; }
 
 .room-panel.is-active .room__intro     { opacity: 1; transform: none; transition-delay: 0.15s; }
-.room-panel.is-active .feature-card    { opacity: 1; transform: none; transition-delay: 0.26s; }
-.room-panel.is-active .room__secondary { opacity: 1; transform: none; transition-delay: 0.36s; }
+.room-panel.is-active .room__projects  { opacity: 1; transform: none; transition-delay: 0.26s; }
 
 
 /* ══════════════════════════════════════════════════
@@ -565,33 +599,50 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 
 /* ══════════════════════════════════════════════════
-   PROJECT CARDS — in rooms (dark, image-first)
+   PROJECT CARDS — in rooms (dark, horizontal rows)
+   One consistent card for every project in a room: same
+   structural size, thumbnail always on the left, no card
+   is visually "featured" over the others. Compact enough
+   that all four sit comfortably within the room without
+   spilling past the viewport. Hover is a quiet border/
+   background/thumbnail-zoom shift — the card itself never
+   changes size or reflows.
    ══════════════════════════════════════════════════ */
 
 .room__projects {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(255,255,255,0.10);
+  gap: 13px;
 }
 
 .project-card {
   display: flex;
-  flex-direction: column;
-  background: rgba(18, 16, 14, 0.94);
-  color: var(--white);
+  flex-direction: row;
+  align-items: center;
+  gap: 31px;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.07);
-  transition: transform 0.3s var(--easing), border-color 0.3s;
-  overflow: hidden;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(8,7,6,0.3);
+  padding: 15px 34px 15px 15px;
+  transition: border-color 0.3s var(--easing), background 0.3s var(--easing);
 }
 
-.project-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255,255,255,0.16);
+.project-card:hover,
+.project-card:focus-visible {
+  border-color: rgba(255,255,255,0.4);
+  background: rgba(8,7,6,0.46);
+}
+
+.project-card:focus-visible {
+  outline: 1px solid rgba(255,255,255,0.6);
+  outline-offset: 3px;
 }
 
 .project-card__img {
-  aspect-ratio: 16 / 9;
+  width: 128px;
+  height: 128px;
+  aspect-ratio: 1;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -599,326 +650,61 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 .project-card__img img {
   width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.55s var(--easing);
+  transition: transform 0.5s var(--easing);
 }
 
-.project-card:hover .project-card__img img {
-  transform: scale(1.07);
+.project-card:hover .project-card__img img,
+.project-card:focus-visible .project-card__img img {
+  transform: scale(1.08);
 }
 
 .project-card__body {
-  padding: 12px 14px 14px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   flex: 1;
+  min-width: 0;
 }
 
 .project-card__meta {
   font-family: var(--f-sans);
-  font-size: 0.56rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.28);
+  color: rgba(255,255,255,0.5);
 }
 
 .project-card__body h3 {
   font-family: var(--f-serif);
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 1.3;
-  color: rgba(255,255,255,0.92);
-}
-
-.project-card__body p {
-  font-family: var(--f-sans);
-  font-size: 0.62rem;
-  line-height: 1.55;
-  color: rgba(255,255,255,0.35);
+  font-size: 1.56rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--white);
 }
 
 .project-card__link {
   font-family: var(--f-sans);
-  font-size: 0.56rem;
+  font-size: 0.84rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
-  margin-top: 4px;
+  color: rgba(255,255,255,0.55);
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: color 0.2s;
-}
-
-.project-card__link::after { content: '→'; font-weight: 300; letter-spacing: 0; }
-.project-card:hover .project-card__link { color: rgba(255,255,255,0.75); }
-
-/* ── ROOM PANELS: curated editorial spread ───────────
-   One protagonist (feature-card) + a quieter secondary
-   strip — replaces the old four-equal-rows list so the
-   room reads as a curated exhibit, not a UI panel glued
-   onto the photograph. No opaque panel behind the whole
-   list: each element carries its own legibility.
-   Scoped to .room__projects so the Archive grid (its own
-   page) is untouched.
-   ──────────────────────────────────────────────────── */
-
-.room__projects {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-/* Protagonist — image and text share one continuous frame
-   (border + wash) so the pair reads as a single exhibition
-   piece, not two elements placed near each other. */
-.feature-card {
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  align-items: stretch;
-  position: relative;
-  text-decoration: none;
-  color: var(--white);
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(8,7,6,0.26);
-  transition: border-color 0.3s var(--easing), background 0.3s var(--easing);
-}
-
-.feature-card:hover,
-.feature-card:focus-visible {
-  border-color: rgba(255,255,255,0.42);
-  background: rgba(8,7,6,0.4);
-}
-
-.feature-card:focus-visible {
-  outline: 1px solid rgba(255,255,255,0.6);
-  outline-offset: 3px;
-}
-
-/* Museum label plate — small, always-legible date chip in the
-   protagonist image's corner. Echoes the Hall CTA's bordered-
-   placard language rather than fighting a photograph for
-   contrast the way a giant translucent numeral would. */
-.feature-card__ghost {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  z-index: 2;
-  padding: 6px 12px;
-  background: rgba(12,11,10,0.74);
-  border: 1px solid rgba(255,255,255,0.24);
-  font-family: var(--f-serif);
-  font-style: italic;
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  color: rgba(255,255,255,0.88);
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.feature-card__frame {
-  position: relative;
-  z-index: 1;
-  min-height: 210px;
-  height: 100%;
-}
-
-.feature-card__img {
-  width: 100%; height: 100%;
-  overflow: hidden;
-}
-
-.feature-card__img img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s var(--easing);
-}
-
-.feature-card:hover .feature-card__img img { transform: scale(1.06); }
-
-.feature-card__detail {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  right: 14px;
-  bottom: -16px;
-  overflow: hidden;
-  border: 3px solid var(--ink);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.55);
-}
-
-.feature-card__detail img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-}
-
-.feature-card__body {
-  position: relative;
-  z-index: 1;
-  padding: 22px 26px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-}
-
-.feature-card__meta {
-  font-family: var(--f-sans);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.66);
-}
-
-.feature-card__body h3 {
-  font-family: var(--f-serif);
-  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
-  font-weight: 400;
-  line-height: 1.18;
-  color: var(--white);
-  max-width: 20ch;
-}
-
-.feature-card__link {
-  font-family: var(--f-sans);
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.74);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 4px;
   transition: color 0.2s, gap 0.2s;
 }
 
-.feature-card__link::after { content: '→'; font-weight: 300; letter-spacing: 0; }
-.feature-card:hover .feature-card__link,
-.feature-card:focus-visible .feature-card__link { color: var(--white); gap: 10px; }
+.project-card__link::after { content: '→'; font-weight: 300; letter-spacing: 0; }
+.project-card:hover .project-card__link,
+.project-card:focus-visible .project-card__link { color: var(--white); gap: 10px; }
 
-/* Secondary strip — each project is a compact, bounded cluster
-   (image + title + meta + action, all within reach of the eye)
-   rather than a row spread across the full width of the room.
-   The rest of the row stays open photograph. */
-/* Three clear horizontal rows: image, then a comfortably
-   sized text stack (metadata / title / CTA) immediately next
-   to it. Generous type and air — legibility for an audience
-   that should never have to lean in, over squeezing three
-   projects into the smallest possible space. */
-.room__secondary {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-.room__secondary .project-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 24px;
-  width: fit-content;
-  max-width: 100%;
-  min-height: 116px;
-  background: linear-gradient(100deg, rgba(8,7,6,0.36) 0%, rgba(8,7,6,0.12) 82%, transparent 100%);
-  border: none;
-  padding: 12px 32px 12px 12px;
-  transition: background 0.2s var(--easing);
-  overflow: visible;
-}
-
-.room__secondary .project-card:hover,
-.room__secondary .project-card:focus-visible {
-  transform: none;
-  background: linear-gradient(100deg, rgba(8,7,6,0.5) 0%, rgba(8,7,6,0.18) 82%, transparent 100%);
-}
-
-.room__secondary .project-card:focus-visible {
-  outline: 1px solid rgba(255,255,255,0.55);
-  outline-offset: 3px;
-}
-
-.room__secondary .project-card__img {
-  aspect-ratio: 1;
-  width: 112px;
-  height: 112px;
-  overflow: hidden;
-  flex-shrink: 0;
-  border: 1px solid rgba(255,255,255,0.16);
-}
-
-.room__secondary .project-card:hover .project-card__img img,
-.room__secondary .project-card:focus-visible .project-card__img img {
-  transform: scale(1.06);
-}
-
-.room__secondary .project-card__body {
-  padding: 0;
-  gap: 8px;
-  max-width: 34ch;
-  flex: none;
-}
-
-.room__secondary .project-card__meta {
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.66);
-  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
-}
-
-.room__secondary .project-card__body h3 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 1.25;
-  color: rgba(255,255,255,0.95);
-  text-shadow: 0 2px 8px rgba(0,0,0,0.65);
-}
-
-.room__secondary .project-card__link {
-  margin-top: 2px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.76);
-  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-.room__secondary .project-card:hover .project-card__link,
-.room__secondary .project-card:focus-visible .project-card__link {
-  color: var(--white);
-}
-
-/* Pintura variant: mirror the protagonist and warm the
-   image treatment slightly so the two rooms read as
-   siblings, not clones. */
-.feature-card { grid-template-columns: 210px 1fr; }
-#rp-pintura .feature-card { grid-template-columns: 1fr 210px; }
-
-#rp-pintura .feature-card__frame { order: 2; }
-#rp-pintura .feature-card__body  { order: 1; }
-
-#rp-pintura .feature-card__ghost {
-  left: auto;
-  right: 14px;
-}
-
-#rp-pintura .feature-card__detail {
-  right: auto;
-  left: 14px;
-}
-
-#rp-pintura .feature-card__img img,
-#rp-pintura .room__secondary .project-card__img img {
+/* Pintura variant: warm the image treatment slightly so the two
+   rooms read as siblings, not clones — a colour nuance only,
+   the card structure itself stays identical to Escultura's
+   (thumbnail always on the left, no exceptions). */
+#rp-pintura .project-card__img img {
   filter: sepia(10%) saturate(1.08);
 }
 
@@ -957,7 +743,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   /* Ivory read as a veil, not a solid block — a faint hint of
      the page's own dark atmosphere shows through at the edges. */
   background: rgba(236,212,198,0.8);
-  padding: calc(var(--nav-h) + 8px) 64px 8px;
+  padding: calc(var(--nav-h) + 8px) 64px 64px;
   max-width: none;
   display: flex;
   flex-direction: column;
@@ -1091,7 +877,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   font-family: var(--f-serif);
   font-size: clamp(2.4rem, 5vw, 5.5rem);
   font-weight: 300;
-  line-height: 1.07;
+  line-height: 0.92;
   letter-spacing: -0.015em;
   color: var(--ink);
   margin-bottom: 6px;
@@ -1121,6 +907,22 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   padding-left: 28px;
   border-left: 1px solid rgba(12,10,8,0.3);
   border-top: none;
+}
+
+/* Desktop-only: smaller heading + an 8px-based vertical rhythm
+   between eyebrow / heading / body / quote, so the three blocks
+   read as distinct steps instead of one continuous mass. Placed
+   after the base About rules so it wins the cascade at matching
+   widths. Scoped above the tablet/mobile breakpoint (1024px) so
+   those sizes stay exactly as approved. */
+@media (min-width: 1025px) {
+  .about__heading {
+    font-size: clamp(1.68rem, 3.5vw, 3.85rem);
+    margin-bottom: 32px;
+  }
+  .about__body {
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -2289,8 +2091,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .room-nav, [data-reveal], .archive-entry__thumb img,
   .project-card__img img,
   .home-identity, .home-enter-wrap, .home-stats,
-  .room__intro, .feature-card, .room__secondary,
-  .feature-card__img img { transition: none !important; opacity: 1 !important; transform: none !important; }
+  .room__intro, .room__projects { transition: none !important; opacity: 1 !important; transform: none !important; }
 }
 
 
@@ -2312,14 +2113,62 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 
 @media (max-width: 1024px) {
   /* Nav no longer has room for 8 items + brand at full tracking —
-     let the link list scroll horizontally instead of wrapping the
-     brand or clipping links. No hamburger in this phase: all items
-     stay one tap/swipe away rather than hidden behind a menu. */
+     switches to a hamburger button opening a right-side drawer,
+     with generous spacing between items instead of a cramped
+     horizontal list. */
   .site-nav { padding: 0 24px; gap: 14px; }
-  .site-nav nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-  .site-nav nav::-webkit-scrollbar { display: none; }
-  .site-nav nav ul { gap: 22px; flex-wrap: nowrap; padding-right: 4px; }
-  .site-nav nav a { white-space: nowrap; }
+  .nav-toggle { display: flex; }
+
+  .site-nav nav {
+    position: fixed;
+    top: 0; right: 0;
+    /* .site-nav has backdrop-filter, which makes it the containing
+       block for position:fixed descendants — bottom:0 would resolve
+       against the 60px header box, not the viewport. An explicit
+       height sidesteps that (vh/svh units always read the real
+       viewport, regardless of containing block). */
+    height: 100svh;
+    width: min(320px, 82vw);
+    background: #0E0C0A;
+    border-left: 1px solid rgba(255,255,255,0.08);
+    padding: calc(var(--nav-h) + 16px) 32px 32px;
+    overflow-y: auto;
+    z-index: 102;
+    transform: translateX(100%);
+    transition: transform 0.35s var(--easing);
+  }
+  .site-nav.is-open nav { transform: translateX(0); }
+
+  .site-nav nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+  .site-nav nav a {
+    display: block;
+    padding: 17px 2px;
+    font-size: 0.8rem;
+    letter-spacing: 0.09em;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .site-nav nav a::after { display: none; }
+
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    /* .site-nav establishes its own stacking context (position:fixed
+       + z-index), so the drawer's z-index:102 only wins ties inside
+       that context — for the backdrop to sit correctly beneath the
+       header/drawer, it needs a lower z-index than .site-nav itself
+       (100), not just lower than the drawer. */
+    z-index: 99;
+    background: rgba(6,5,4,0.55);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s var(--easing);
+  }
+  .nav-backdrop.is-open { opacity: 1; pointer-events: auto; }
 
   .archive-entry { gap: 56px; }
   .recognition__grid { grid-template-columns: repeat(2, 1fr); }
@@ -2352,10 +2201,17 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
     row-gap: 32px;
   }
 
-  .feature-card { grid-template-columns: 150px 1fr; }
-  #rp-pintura .feature-card { grid-template-columns: 1fr 150px; }
-  .feature-card__frame { min-height: 160px; }
-  .feature-card__body { padding: 16px 20px; }
+  /* Same horizontal row card as desktop — just a touch more
+     breathing room since the intro column now stacks above.
+     Text sizes pinned explicitly here so the desktop-only text
+     bump above doesn't cascade down to tablet. */
+  .room__projects { gap: 16px; }
+  .project-card { padding: 13px 23px 13px 13px; gap: 21px; }
+  .project-card__img { width: 98px; height: 98px; }
+  .project-card__body { gap: 5px; }
+  .project-card__meta { font-size: 0.72rem; }
+  .project-card__body h3 { font-size: 1.3rem; }
+  .project-card__link { font-size: 0.7rem; }
 
   .home-stats { grid-template-columns: repeat(2, 1fr); }
   .home-stat:nth-child(2) { border-right: none; }
@@ -2382,8 +2238,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
 @media (max-width: 640px) {
   .site-nav { padding: 0 16px; gap: 12px; }
   .site-nav__brand { font-size: 0.8rem; }
-  .site-nav nav ul { gap: 15px; }
-  .site-nav nav a { font-size: 0.6rem; }
+  .site-nav nav { width: min(300px, 86vw); padding: calc(var(--nav-h) + 12px) 24px 24px; }
 
   /* Density pass: #room-stage is overflow:hidden (fixed, tied
      to the video-transition system) so on short mobile viewports
@@ -2411,32 +2266,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--f-s
   .room__title { font-size: 3rem; }
   .room__subtitle { max-width: none; }
   .room__text { display: none; }
-  .room__projects { gap: 2px; }
 
-  /* Feature card stacks fully: image on top, text below —
-     still one bordered piece, just stacked instead of side by side. */
-  .feature-card,
-  #rp-pintura .feature-card {
-    grid-template-columns: 1fr;
-  }
-  #rp-pintura .feature-card__frame,
-  #rp-pintura .feature-card__body { order: initial; }
-
-  .feature-card__frame { min-height: 0; width: 100%; height: 30vw; max-height: 126px; }
-  .feature-card__body { padding: 10px 14px 12px; gap: 4px; }
-  .feature-card__body h3 { font-size: 1.3rem; }
-  .feature-card__meta { font-size: 0.85rem; }
-  .feature-card__link { font-size: 0.85rem; }
-  .feature-card__detail { width: 40px; height: 40px; right: 8px; bottom: -8px; }
-  #rp-pintura .feature-card__detail { left: 8px; right: auto; }
-
-  .room__secondary { gap: 18px; }
-  .room__secondary .project-card { gap: 14px; padding: 6px 12px 6px 4px; min-height: 0; max-width: none; }
-  .room__secondary .project-card__img { width: 76px; height: 76px; }
-  .room__secondary .project-card__body { gap: 4px; max-width: none; flex-shrink: 1; min-width: 0; }
-  .room__secondary .project-card__body h3 { font-size: 1rem; line-height: 1.25; }
-  .room__secondary .project-card__meta { font-size: 0.85rem; }
-  .room__secondary .project-card__link { font-size: 0.85rem; margin-top: 0; }
+  /* Same horizontal row card, compacted: small thumbnail + text
+     alongside it. Never the full-width image-on-top pattern —
+     that's what made the mobile cards oversized before. Reducing
+     comes from thumbnail size, padding and gap, not from the type
+     scale, which stays legible. */
+  .room__projects { gap: 13px; }
+  .project-card { padding: 10px 18px 10px 10px; gap: 16px; }
+  .project-card__img { width: 78px; height: 78px; }
+  .project-card__body { gap: 4px; }
+  .project-card__body h3 { font-size: 1rem; line-height: 1.22; }
+  .project-card__meta { font-size: 0.62rem; }
+  .project-card__link { font-size: 0.62rem; }
 
   .room-nav--cta { padding: 14px 16px 14px 18px; gap: 18px; }
   .room-nav--cta .room-nav__arrow { width: 32px; height: 32px; }

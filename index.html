@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link rel="stylesheet" href="assets/css/style.css?v=12">
 </head>
 <body>
 
@@ -19,7 +19,10 @@
   ════════════════════════════════════════════ -->
   <header class="site-nav" role="banner">
     <a class="site-nav__brand" href="#" data-room="rp-home">Ángeles Solís Parra</a>
-    <nav aria-label="Navegación principal">
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Navegación principal" id="site-nav-menu">
       <ul role="list">
         <li><a href="#" data-room="rp-vaciados">Escultura</a></li>
         <li><a href="#" data-room="rp-pintura">Pintura</a></li>
@@ -32,6 +35,7 @@
       </ul>
     </nav>
   </header>
+  <div class="nav-backdrop"></div>
 
 
   <!-- ════════════════════════════════════════════
@@ -135,55 +139,46 @@
           </div>
 
           <div class="room__projects">
-            <a href="project-detail.html?id=vaciados-rabasf&from=vaciados" class="feature-card">
-              <div class="feature-card__frame">
-                <p class="feature-card__ghost" aria-hidden="true">2001–06</p>
-                <div class="feature-card__img">
-                  <img src="assets/images/proj-vaciados-rabasf-hero.jpg" alt="Colección de vaciados RABASF" loading="lazy">
-                </div>
-                <div class="feature-card__detail" aria-hidden="true">
-                  <img src="assets/images/sculpture-plaster-detail-01.jpg" alt="" loading="lazy">
-                </div>
+            <a href="project-detail.html?id=vaciados-rabasf&from=vaciados" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-vaciados-rabasf-hero.jpg" alt="Colección de vaciados RABASF" loading="lazy">
               </div>
-              <div class="feature-card__body">
-                <span class="feature-card__meta">Escultura · 2001–2006</span>
+              <div class="project-card__body">
+                <span class="project-card__meta">Escultura · 2001–2006</span>
                 <h3>Real Academia de Bellas Artes de San Fernando</h3>
-                <span class="feature-card__link">Más información</span>
+                <span class="project-card__link">Más información</span>
               </div>
             </a>
-
-            <div class="room__secondary">
-              <a href="project-detail.html?id=museo-reproducciones-madrid&from=vaciados" class="project-card">
-                <div class="project-card__img">
-                  <img src="assets/images/proj-mnra-hero.jpg" alt="Museo de Reproducciones Artísticas" loading="lazy">
-                </div>
-                <div class="project-card__body">
-                  <span class="project-card__meta">Institucional · 2009–2011</span>
-                  <h3>Museo Nacional de Reproducciones Artísticas</h3>
-                  <span class="project-card__link">Más información</span>
-                </div>
-              </a>
-              <a href="project-detail.html?id=pompeya&from=vaciados" class="project-card">
-                <div class="project-card__img">
-                  <img src="assets/images/proj-pompeya-hero.jpg" alt="Pompeya" loading="lazy">
-                </div>
-                <div class="project-card__body">
-                  <span class="project-card__meta">Arqueológico · 2008 y 2011</span>
-                  <h3>Pompeya</h3>
-                  <span class="project-card__link">Más información</span>
-                </div>
-              </a>
-              <a href="project-detail.html?id=museo-del-prado&from=vaciados" class="project-card">
-                <div class="project-card__img">
-                  <img src="assets/images/proj-prado-hero.jpg" alt="Museo del Prado" loading="lazy">
-                </div>
-                <div class="project-card__body">
-                  <span class="project-card__meta">Escultura · 1996–2001</span>
-                  <h3>Museo Nacional del Prado</h3>
-                  <span class="project-card__link">Más información</span>
-                </div>
-              </a>
-            </div>
+            <a href="project-detail.html?id=museo-reproducciones-madrid&from=vaciados" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-mnra-hero.jpg" alt="Museo de Reproducciones Artísticas" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__meta">Institucional · 2009–2011</span>
+                <h3>Museo Nacional de Reproducciones Artísticas</h3>
+                <span class="project-card__link">Más información</span>
+              </div>
+            </a>
+            <a href="project-detail.html?id=pompeya&from=vaciados" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-pompeya-hero.jpg" alt="Pompeya" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__meta">Arqueológico · 2008 y 2011</span>
+                <h3>Pompeya</h3>
+                <span class="project-card__link">Más información</span>
+              </div>
+            </a>
+            <a href="project-detail.html?id=museo-del-prado&from=vaciados" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-prado-hero.jpg" alt="Museo del Prado" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__meta">Escultura · 1996–2001</span>
+                <h3>Museo Nacional del Prado</h3>
+                <span class="project-card__link">Más información</span>
+              </div>
+            </a>
           </div>
 
         </div><!-- /.room__layout -->
@@ -229,55 +224,46 @@
           </div>
 
           <div class="room__projects">
-            <a href="project-detail.html?id=pintura-rabasf&from=pintura" class="feature-card">
-              <div class="feature-card__frame">
-                <p class="feature-card__ghost" aria-hidden="true">2004–14</p>
-                <div class="feature-card__img">
-                  <img src="assets/images/proj-pintura-rabasf-hero.jpg" alt="Pintura RABASF" loading="lazy">
-                </div>
-                <div class="feature-card__detail" aria-hidden="true">
-                  <img src="assets/images/painting-surface-detail-01.jpg" alt="" loading="lazy">
-                </div>
+            <a href="project-detail.html?id=pintura-rabasf&from=pintura" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-pintura-rabasf-hero.jpg" alt="Pintura RABASF" loading="lazy">
               </div>
-              <div class="feature-card__body">
-                <span class="feature-card__meta">Pintura · 2011–2015</span>
+              <div class="project-card__body">
+                <span class="project-card__meta">Pintura · 2011–2015</span>
                 <h3>Real Academia de Bellas Artes de San Fernando</h3>
-                <span class="feature-card__link">Más información</span>
+                <span class="project-card__link">Más información</span>
               </div>
             </a>
-
-            <div class="room__secondary">
-              <a href="project-detail.html?id=museo-malaga&from=pintura" class="project-card">
-                <div class="project-card__img">
-                  <img src="assets/images/proj-malaga-hero.jpg" alt="Museo de Bellas Artes de Málaga" loading="lazy">
-                </div>
-                <div class="project-card__body">
-                  <span class="project-card__meta">Pintura · 2000–2003</span>
-                  <h3>Museo de Bellas Artes de Málaga</h3>
-                  <span class="project-card__link">Más información</span>
-                </div>
-              </a>
-              <a href="project-detail.html?id=catedral-zamora&from=pintura" class="project-card">
-                <div class="project-card__img">
-                  <img src="assets/images/proj-zamora-hero.jpg" alt="Catedral de Zamora" loading="lazy">
-                </div>
-                <div class="project-card__body">
-                  <span class="project-card__meta">Mural · 2009</span>
-                  <h3>Capilla del Cardenal, Catedral de Zamora</h3>
-                  <span class="project-card__link">Más información</span>
-                </div>
-              </a>
-              <a href="project-detail.html?id=museo-granada&from=pintura" class="project-card">
-                <div class="project-card__img">
-                  <img src="assets/images/proj-granada-hero.jpg" alt="Museo de Bellas Artes de Granada" loading="lazy">
-                </div>
-                <div class="project-card__body">
-                  <span class="project-card__meta">Pintura · 2003–2014</span>
-                  <h3>Museo de Bellas Artes de Granada</h3>
-                  <span class="project-card__link">Más información</span>
-                </div>
-              </a>
-            </div>
+            <a href="project-detail.html?id=museo-malaga&from=pintura" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-malaga-hero.jpg" alt="Museo de Bellas Artes de Málaga" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__meta">Pintura · 2000–2003</span>
+                <h3>Museo de Bellas Artes de Málaga</h3>
+                <span class="project-card__link">Más información</span>
+              </div>
+            </a>
+            <a href="project-detail.html?id=catedral-zamora&from=pintura" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-zamora-hero.jpg" alt="Catedral de Zamora" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__meta">Mural · 2009</span>
+                <h3>Capilla del Cardenal, Catedral de Zamora</h3>
+                <span class="project-card__link">Más información</span>
+              </div>
+            </a>
+            <a href="project-detail.html?id=museo-granada&from=pintura" class="project-card">
+              <div class="project-card__img">
+                <img src="assets/images/proj-granada-hero.jpg" alt="Museo de Bellas Artes de Granada" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__meta">Pintura · 2003–2014</span>
+                <h3>Museo de Bellas Artes de Granada</h3>
+                <span class="project-card__link">Más información</span>
+              </div>
+            </a>
           </div>
 
         </div><!-- /.room__layout -->
@@ -437,10 +423,11 @@
   </section>
 
 
+  <script src="assets/js/nav.js?v=1"></script>
   <script src="assets/js/transitions.js?v=2"></script>
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=5"></script>
   <script src="assets/js/micro.js?v=2"></script>
-  <script src="assets/js/publications.js?v=1"></script>
+  <script src="assets/js/publications.js?v=2"></script>
   <script>
     // Restore room panel when returning from a project detail page (?room=vaciados|pintura)
     const roomParam = new URLSearchParams(location.search).get('room');

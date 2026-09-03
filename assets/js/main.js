@@ -56,20 +56,24 @@ function updateNavActive() {
 
   if (inStage) {
     const activePanel = document.querySelector('.room-panel.is-active');
-    const map = { 'rp-home': 'Hall', 'rp-vaciados': 'Vaciados', 'rp-pintura': 'Pintura' };
+    const map = { 'rp-home': 'Hall', 'rp-vaciados': 'Escultura', 'rp-pintura': 'Pintura' };
     const label = map[activePanel?.id];
     if (label) {
       navLinks.forEach(l => { if (l.textContent.trim() === label) l.classList.add('is-active'); });
     }
   } else {
-    const sections = ['about', 'recognition', 'research', 'archive', 'contact'];
+    // "archive" has no #archive nav link — its menu item ("Obras") points
+    // to complete-archive.html instead, so it needs its own href to match.
+    const navHrefOverrides = { archive: 'complete-archive.html' };
+    const sections = ['about', 'recognition', 'research', 'publications', 'archive', 'contact'];
     sections.forEach(id => {
       const el = document.getElementById(id);
       if (!el) return;
       const rect = el.getBoundingClientRect();
       if (rect.top <= 100 && rect.bottom > 100) {
+        const href = navHrefOverrides[id] || `#${id}`;
         navLinks.forEach(l => {
-          if (l.getAttribute('href') === `#${id}`) l.classList.add('is-active');
+          if (l.getAttribute('href') === href) l.classList.add('is-active');
         });
       }
     });
