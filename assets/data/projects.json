@@ -9,15 +9,20 @@
     "type": "Conservación y Restauración",
     "institution": "Real Academia de Bellas Artes de San Fernando",
     "location": "Madrid, España",
-    "year": "2001–2006",
+    "year": "2001–2026",
     "shortDescription": "Conservación y restauración de la colección de vaciados históricos en la Real Academia de Bellas Artes de San Fernando. Proyecto vinculado directamente al Premio Nacional 2004 y al Premio Europa Nostra 2006.",
     "longDescription": "Este proyecto representa el trabajo definitorio de la carrera de Ángeles Solís Parra: la conservación y restauración sistemática de la colección de vaciados históricos en la Real Academia de Bellas Artes de San Fernando. Las obras tratadas incluyen la Ariadna, la Crátera de Estabia, la Flora Farnese, la Puerta del Paraíso, la Venus del Pomo y la Venus Médici. El proyecto exigió el desarrollo de una metodología de limpieza patentada — Anjusil® — diseñada específicamente para el complejo comportamiento superficial de los vaciados históricos en yeso.",
     "isSelected": true,
     "heroImage": "assets/images/proj-vaciados-rabasf-hero.jpg",
     "gallery": [
-      "assets/images/sculpture-before-after-01.jpg",
-      "assets/images/sculpture-process-01.jpg",
-      "assets/images/sculpture-plaster-detail-01.jpg"
+      "assets/images/gallery-vaciados-rabasf-01.jpg",
+      "assets/images/gallery-vaciados-rabasf-02.jpg",
+      "assets/images/gallery-vaciados-rabasf-03.jpg",
+      "assets/images/gallery-vaciados-rabasf-04.jpg",
+      "assets/images/gallery-vaciados-rabasf-05.jpg",
+      "assets/images/gallery-vaciados-rabasf-06.jpg",
+      "assets/images/gallery-vaciados-rabasf-07.jpg",
+      "assets/images/gallery-vaciados-rabasf-08.jpg"
     ],
     "tags": [
       "vaciados en yeso",
@@ -31,7 +36,8 @@
     "primaryCategory": "institutional-collections",
     "years": [],
     "sources": [
-      "client-project-sheet — 6 works documented (Ariadna V-011, Crátera Estabia V-465, Flora Farnese V-002, Puerta del Paraíso, Venus del Pomo V-007, Venus Médici V-076): image roles only, no per-work date/material/intervention text provided by the client for these pieces"
+      "client-project-sheet — 6 works documented (Ariadna V-011, Crátera Estabia V-465, Flora Farnese V-002, Puerta del Paraíso, Venus del Pomo V-007, Venus Médici V-076): image roles only, no per-work date/material/intervention text provided by the client for these pieces",
+      "year range updated 2026-09-03 to 2001–2026 — corrección directa de Ángeles, sustituye el rango anterior 2001–2006"
     ],
     "works": [
       {
