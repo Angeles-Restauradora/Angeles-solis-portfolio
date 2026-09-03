@@ -48,6 +48,17 @@ function renderPublications(pubs) {
   }).join('');
 
   list.innerHTML = html;
+
+  // Publications loads asynchronously and is much taller than its
+  // placeholder, so it pushes every section below it (Archive CTA,
+  // Contact) further down the page. If the browser already performed
+  // its native #hash scroll before this fetch resolved, that scroll
+  // now lands on the wrong section — re-apply it once the real height
+  // is in place.
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    if (target) target.scrollIntoView();
+  }
 }
 
 fetch('assets/data/publications.json')
