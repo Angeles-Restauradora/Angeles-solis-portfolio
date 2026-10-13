@@ -177,6 +177,11 @@
       document.getElementById('meta-institution').textContent = p.institution;
       document.getElementById('meta-location').textContent    = p.location;
       document.getElementById('meta-year').textContent        = safeguardYear(p);
+      // Do not imply metadata that the source does not document.
+      ['meta-institution', 'meta-location', 'meta-year'].forEach(id => {
+        const value = document.getElementById(id);
+        value.parentElement.hidden = !value.textContent.trim();
+      });
 
       // Content — lead (shortDescription) + body (longDescription),
       // no repetition of the hero title.

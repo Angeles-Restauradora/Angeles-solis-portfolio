@@ -146,7 +146,7 @@
           <img src="${p.heroImage}" alt="${title}" loading="lazy" width="600" height="450">
         </div>
         <div class="archive-entry__body">
-          <p class="archive-entry__meta">${label} · ${safeguardYear(p)}</p>
+          <p class="archive-entry__meta">${[label, safeguardYear(p)].filter(Boolean).join(' · ')}</p>
           <h2 class="archive-entry__title">${title}</h2>
           ${instLine ? `<p class="archive-entry__inst">${instLine}</p>` : ''}
           <p class="archive-entry__desc">${desc}</p>

@@ -459,8 +459,8 @@
     "institution": "Museo Nacional de Reproducciones Artísticas de Madrid",
     "location": "Madrid, España",
     "year": "2009–2011",
-    "shortDescription": "Conservación de la colección de vaciados y reproducciones del Museo Nacional de Reproducciones Artísticas de Madrid.",
-    "longDescription": "El Museo Nacional de Reproducciones Artísticas alberga una de las colecciones de reproducciones artísticas más importantes de Europa, incluyendo vaciados en yeso y copias en bronce y piedra de grandes obras antiguas y renacentistas. Este proyecto de conservación abarcó la evaluación, estabilización y tratamiento de obras seleccionadas de la colección permanente.",
+    "shortDescription": "Conservación y restauración de la colección de vaciados del Museo Nacional de Reproducciones Artísticas de Madrid.",
+    "longDescription": "El Museo Nacional de Reproducciones Artísticas se encuentra entre uno de los más importantes que albergan una de las colecciones de reproducciones del S-XIX, incluyendo vaciados en yeso y copias en bronce y piedra de grandes obras antiguas y renacentistas. Este proyecto de conservación abarcó la evaluación, estabilización y tratamiento de obras seleccionadas de la colección permanente.",
     "isSelected": true,
     "heroImage": "assets/images/proj-mnra-hero.jpg",
     "gallery": [
@@ -653,8 +653,8 @@
     "institution": "Kipsa",
     "location": "Medina de Rioseco, Valladolid, España",
     "year": "1991",
-    "shortDescription": "Restauración del retablo mayor barroco (1666), desmontado, de la Iglesia-Museo de la Santa Cruz, en Medina de Rioseco.",
-    "longDescription": "La restauración del retablo mayor se llevó a cabo en 1991 con la empresa Kipsa. El conjunto, realizado en madera dorada y policromada, se encontraba desmontado, lo que supuso un importante reto de intervención estructural. El trabajo se centró en la restauración y el remontaje de la estructura del retablo, junto con limpieza general, consolidación de la policromía, consolidación de materiales, tratamientos fungicidas y reintegración volumétrica y cromática, con el objetivo de recuperar su estabilidad y lectura histórico-artística.",
+    "shortDescription": "Restauración del retablo mayor barroco (1666) de la Iglesia-Museo de la Santa Cruz, en Medina de Rioseco.",
+    "longDescription": "La restauración del retablo mayor se llevó a cabo en 1991 con la empresa Kipsa. El conjunto, realizado en madera dorada y policromada, se encontraba desmontado, lo que supuso un importante reto de intervención estructural. El trabajo se centró en la restauración y el montaje del retablo completo, junto con limpieza general, consolidación de la policromía, consolidación de materiales, tratamientos fungicidas y reintegración volumétrica y cromática, con el objetivo de recuperar su estabilidad y lectura histórico-artística.",
     "isSelected": false,
     "heroImage": "assets/images/proj-retablo-medina-rioseco-hero.jpg",
     "gallery": [
@@ -718,8 +718,8 @@
     "institution": "Parroquia de San Andrés",
     "location": "Madrid, España",
     "year": "1997",
-    "shortDescription": "Conservación del conjunto escultórico de la Cúpula de San Andrés, en Madrid.",
-    "longDescription": "Conservación del programa escultórico asociado a la cúpula de la iglesia de San Andrés en Madrid, un conjunto patrimonial barroco de gran relevancia. El trabajo incluyó consolidación estructural, limpieza superficial e integración cromática de los elementos escultóricos dentro de un edificio eclesiástico en uso activo.",
+    "shortDescription": "Conservación y restauración del apostolado en piedra del S-XVII, ubicado en la cúpula en la Iglesia de san Andrés, en Madrid, un conjunto patrimonial barroco de gran relevancia.",
+    "longDescription": "El trabajo incluyó el desmontaje desde el tambor y el traslado al interior del edificio. La intervención incluyó la limpieza y consolidación de las piezas, así como la reintegración volumétrica de las pérdidas mediante modelado en barro y un sistema de vaciado a molde perdido, garantizando la estabilidad y lectura formal del conjunto escultórico.",
     "isSelected": false,
     "heroImage": "assets/images/proj-san-andres-hero.jpg",
     "gallery": [
@@ -1049,7 +1049,7 @@
     "institution": "Catedral de Zamora",
     "location": "Zamora, España",
     "year": "2009",
-    "shortDescription": "Conservación del ciclo de pintura mural de la Capilla del Cardenal, en la Catedral de Zamora.",
+    "shortDescription": "Reintegración cromática de la pintura mural “El Diluvio Universal” (1660), ubicada en la Catedral de Zamora en la también conocida como la Capilla de San Ildefonso.",
     "longDescription": "Conservación de pinturas murales medievales en la Capilla del Cardenal de la Catedral de Zamora, un edificio de gran relevancia arquitectónica y patrimonial. El proyecto incluyó consolidación preventiva, limpieza y reintegración cromática de un programa mural de varias capas superpuestas.",
     "isSelected": true,
     "heroImage": "assets/images/proj-zamora-hero.jpg",
@@ -1366,6 +1366,51 @@
     "years": [],
     "sources": [
       "client-project-sheet. Anteriormente publicada como parte de una entrada combinada «colecciones-privadas» (Esperanza Parada + José Nogué Massó, year 2000–2018); dividida en dos Projects independientes con documentación propia — decisión de producto aprobada, pendiente de confirmación final de Ángeles sobre la división y el rango de años exacto (2015–actualidad, proyecto abierto). Sin hero.jpg explícito en el material del cliente: se comparó una selección de las imágenes «after» disponibles y se eligió la vista de atardecer con la cúpula al fondo (antes gallery-13) como heroImage, aprobada explícitamente por el equipo tras comparativa visual — no un original del paquete marcado como portada."
+    ],
+    "works": []
+  },
+  {
+    "id": "trabajos-colecciones-privadas",
+    "title": "Trabajos de conservación y restauración — Colecciones privadas",
+    "category": [
+      "painting",
+      "private-collections"
+    ],
+    "type": "Conservación y Restauración",
+    "institution": "",
+    "location": "",
+    "year": "",
+    "shortDescription": "Desde el inicio de mi carrera como restauradora, he desarrollado una importante actividad profesional en el ámbito de las colecciones privadas.",
+    "longDescription": "He trabajado en obras de distintas épocas y técnicas, realizando intervenciones de conservación y restauración adaptadas a las necesidades específicas de cada pieza.",
+    "isSelected": false,
+    "heroImage": "assets/images/proj-trabajos-colecciones-privadas-after-01.jpg",
+    "gallery": [
+      "assets/images/proj-trabajos-colecciones-privadas-before-01.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-during-01.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-after-01.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-before-02.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-during-02.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-after-02.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-before-03.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-process-03.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-detail-03.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-after-03.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-before-04.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-process-04.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-after-04.jpg",
+      "assets/images/proj-trabajos-colecciones-privadas-overview.jpg"
+    ],
+    "tags": [
+      "colecciones privadas",
+      "conservación",
+      "restauración"
+    ],
+    "schemaVersion": 2,
+    "primaryCategory": "private-collections",
+    "years": [],
+    "sources": [
+      "client-project-sheet",
+      "client-source"
     ],
     "works": []
   },
